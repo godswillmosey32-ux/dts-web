@@ -1,0 +1,2981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alumni | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+
+}
+
+
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+
+color:white;
+
+text-align:center;
+
+padding:10px;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+position:sticky;
+
+top:1000;
+
+z-index:1000;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+
+url("images/alumni-banner.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   FORM STYLE
+===================================== */
+
+
+input,
+select{
+
+width:100%;
+
+padding:14px;
+
+margin:10px 0;
+
+border:1px solid #ccc;
+
+border-radius:6px;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Alumni Portal |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+
+<li>
+<a href="research.html">
+Research
+</a>
+</li>
+
+
+
+<li>
+<a href="events.html">
+Events
+</a>
+</li>
+
+
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+
+
+<li>
+<a href="students-portal.html">
+Students
+</a>
+</li>
+
+
+
+<li>
+<a href="alumni.html">
+Alumni
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO SECTION
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Alumni Network
+</h2>
+
+
+
+
+<p>
+
+Connecting graduates of the Department of Data Science
+through innovation, career growth, mentorship and lifelong
+relationships.
+
+</p>
+
+
+
+
+
+<a href="#alumni-login"
+class="btn">
+
+Join Alumni Network
+
+</a>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ALUMNI STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+Alumni Community
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+
+500+
+
+</h1>
+
+
+<h3>
+Graduates
+</h3>
+
+
+<p>
+Successful alumni worldwide.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+
+20+
+
+</h1>
+
+
+<h3>
+Countries
+</h3>
+
+
+<p>
+Alumni working globally.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+
+100+
+
+</h1>
+
+
+<h3>
+Career Stories
+</h3>
+
+
+<p>
+Professional achievements shared.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+
+50+
+
+</h1>
+
+
+<h3>
+Industry Partners
+</h3>
+
+
+<p>
+Career and networking connections.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ALUMNI LOGIN / REGISTRATION
+===================================== -->
+
+
+<section id="alumni-login">
+
+
+<h2 class="title">
+Alumni Login & Registration
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Access Alumni Account
+</h3>
+
+
+
+
+<form>
+
+
+<label>
+Email Address
+</label>
+
+
+<input type="email"
+
+placeholder="Enter your email">
+
+
+
+
+
+
+<label>
+Password
+</label>
+
+
+<input type="password"
+
+placeholder="Enter password">
+
+
+
+
+
+
+<button class="btn">
+
+Login
+
+</button>
+
+
+
+</form>
+
+
+
+
+
+<br>
+
+
+
+
+
+<a href="#"
+class="btn">
+
+Create Alumni Account
+
+</a>
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     ALUMNI SUCCESS STORIES
+===================================== -->
+
+
+<section id="success-stories">
+
+
+<h2 class="title">
+Alumni Success Stories
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Celebrating graduates who are making remarkable
+contributions in technology, research and industry.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/alumni1.jpg"
+
+alt="Alumni Profile"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Data Scientist - Technology Industry
+</h3>
+
+
+<p>
+
+A graduate building innovative data solutions using
+analytics, artificial intelligence and machine learning.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Read Story
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/alumni2.jpg"
+
+alt="Alumni Profile"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+AI Research Professional
+</h3>
+
+
+<p>
+
+An alumnus contributing to advanced research in artificial
+intelligence and intelligent systems.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Read Story
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/alumni3.jpg"
+
+alt="Alumni Profile"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Technology Entrepreneur
+</h3>
+
+
+<p>
+
+A graduate creating digital solutions and supporting
+technology innovation.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Read Story
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     DISTINGUISHED ALUMNI
+===================================== -->
+
+
+<section id="distinguished-alumni">
+
+
+<h2 class="title">
+Distinguished Alumni
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Dr. David Okon
+</h3>
+
+
+<p>
+
+<strong>Field:</strong>
+
+Data Science & Artificial Intelligence
+
+</p>
+
+
+
+<p>
+
+Recognized for outstanding contributions to research,
+analytics and technology development.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Engr. Sarah James
+</h3>
+
+
+<p>
+
+<strong>Field:</strong>
+
+Data Engineering
+
+</p>
+
+
+
+<p>
+
+Leading innovative projects focused on data systems and
+digital transformation.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Mr. Michael Udoh
+</h3>
+
+
+<p>
+
+<strong>Field:</strong>
+
+Technology Entrepreneurship
+
+</p>
+
+
+
+<p>
+
+Building solutions that connect data, business and
+innovation.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CAREER ACHIEVEMENTS
+===================================== -->
+
+
+<section id="career-achievements">
+
+
+<h2 class="title">
+Career Achievements
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Industry Leadership
+</h3>
+
+
+<p>
+
+Our alumni hold professional positions in leading
+technology companies and organizations.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Explore Careers
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Excellence
+</h3>
+
+
+<p>
+
+Graduates contribute to academic research, publications
+and technology advancement.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Research
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Global Impact
+</h3>
+
+
+<p>
+
+Alumni are creating solutions that improve communities
+through data-driven innovation.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Learn More
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ALUMNI DIRECTORY
+===================================== -->
+
+
+<section id="alumni-directory">
+
+
+<h2 class="title">
+Alumni Directory
+</h2>
+
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Connect with graduates, professionals and former students
+of the Department of Data Science.
+
+</p>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Search Alumni
+</h3>
+
+
+
+
+
+<input type="text"
+
+placeholder="Search by name...">
+
+
+
+
+
+
+<select>
+
+
+<option>
+Select Graduation Year
+</option>
+
+
+<option>
+2026
+</option>
+
+
+<option>
+2025
+</option>
+
+
+<option>
+2024
+</option>
+
+
+<option>
+2023
+</option>
+
+
+</select>
+
+
+
+
+
+
+<select>
+
+
+<option>
+Select Career Field
+</option>
+
+
+<option>
+Data Science
+</option>
+
+
+<option>
+Artificial Intelligence
+</option>
+
+
+<option>
+Software Engineering
+</option>
+
+
+<option>
+Data Analytics
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<button class="btn">
+
+Search Alumni
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+John Emmanuel
+</h3>
+
+
+<p>
+
+Graduation Year: 2025
+
+</p>
+
+
+<p>
+
+Career:
+Data Analyst
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Profile
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Grace Williams
+</h3>
+
+
+<p>
+
+Graduation Year: 2024
+
+</p>
+
+
+<p>
+
+Career:
+Machine Learning Engineer
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Profile
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Daniel Joseph
+</h3>
+
+
+<p>
+
+Graduation Year: 2023
+
+</p>
+
+
+<p>
+
+Career:
+Data Scientist
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Profile
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     ALUMNI EVENTS
+===================================== -->
+
+
+<section id="alumni-events">
+
+
+<h2 class="title">
+Alumni Events
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Stay connected through reunions, conferences, workshops
+and professional networking events.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Annual Alumni Reunion
+</h3>
+
+
+<p>
+
+A yearly gathering where graduates reconnect, share
+experiences and celebrate achievements.
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+December 2026
+
+</p>
+
+
+<a href="#" class="btn">
+
+Register Event
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Technology Career Conference
+</h3>
+
+
+<p>
+
+An event connecting alumni, students and industry experts
+through technology discussions.
+
+</p>
+
+
+<p>
+
+<strong>Location:</strong>
+University Campus
+
+</p>
+
+
+<a href="#" class="btn">
+
+Join Conference
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Alumni Workshop Series
+</h3>
+
+
+<p>
+
+Professional workshops covering AI, data analytics,
+leadership and entrepreneurship.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Workshops
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     NETWORKING PLATFORM
+===================================== -->
+
+
+<section id="networking">
+
+
+<h2 class="title">
+Alumni Networking Platform
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Professional Connections
+</h3>
+
+
+<p>
+
+Connect with graduates working in different industries
+around the world.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Find Connections
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Industry Community
+</h3>
+
+
+<p>
+
+Join professional groups based on career fields,
+expertise and interests.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Join Community
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Knowledge Sharing
+</h3>
+
+
+<p>
+
+Share experiences, resources and career advice with other
+alumni.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Share Knowledge
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     MENTORSHIP PROGRAMME
+===================================== -->
+
+
+<section id="mentorship">
+
+
+<h2 class="title">
+Alumni Mentorship Programme
+</h2>
+
+
+
+
+
+<p style="margin-bottom:25px;">
+
+A platform connecting experienced alumni with students
+and young graduates for guidance and career development.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Become a Mentor
+</h3>
+
+
+<p>
+
+Share your professional experience and support the next
+generation of data scientists.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Register as Mentor
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Find a Mentor
+</h3>
+
+
+<p>
+
+Connect with professionals who can provide career advice,
+technical guidance and support.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Find Mentor
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Mentorship Sessions
+</h3>
+
+
+<p>
+
+Participate in online meetings, career talks and
+professional development sessions.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Sessions
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     JOB OPPORTUNITIES
+===================================== -->
+
+
+<section id="job-opportunities">
+
+
+<h2 class="title">
+Career & Job Opportunities
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Technology Jobs
+</h3>
+
+
+<p>
+
+Explore opportunities in data science, software
+engineering, analytics and artificial intelligence.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Browse Jobs
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Internship Opportunities
+</h3>
+
+
+<p>
+
+Find internship positions offered by alumni and industry
+partners.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Internships
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Career Development
+</h3>
+
+
+<p>
+
+Access CV reviews, interview preparation and professional
+development resources.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Career Support
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ALUMNI CONTRIBUTIONS
+===================================== -->
+
+
+<section id="contributions">
+
+
+<h2 class="title">
+Alumni Contributions
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Scholarship Support
+</h3>
+
+
+<p>
+
+Alumni can support students through scholarships and
+educational assistance.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Support Students
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Collaboration
+</h3>
+
+
+<p>
+
+Partner with the department on research projects,
+innovation and knowledge exchange.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Collaborate
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Community Development
+</h3>
+
+
+<p>
+
+Contribute to departmental growth through donations,
+training and mentorship.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Get Involved
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     ALUMNI NEWSLETTER
+===================================== -->
+
+
+<section id="newsletter">
+
+
+<h2 class="title">
+Alumni Newsletter
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<p>
+
+Stay updated with alumni achievements, upcoming events,
+career opportunities and departmental news.
+
+</p>
+
+
+
+
+
+<input type="email"
+
+placeholder="Enter your email address">
+
+
+
+
+
+<button class="btn">
+
+Subscribe
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ALUMNI TESTIMONIALS
+===================================== -->
+
+
+<section id="testimonials">
+
+
+<h2 class="title">
+Alumni Testimonials
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+"Excellent Foundation"
+</h3>
+
+
+<p>
+
+"The Department of Data Science provided me with the
+knowledge and skills needed to succeed in the technology
+industry."
+
+</p>
+
+
+<strong>
+- Alumni Graduate
+</strong>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+"Career Growth"
+</h3>
+
+
+<p>
+
+"Through mentorship and academic support, I was able to
+develop my professional career."
+
+</p>
+
+
+<strong>
+- Data Science Professional
+</strong>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+"Innovation & Opportunity"
+</h3>
+
+
+<p>
+
+"The department continues to create opportunities for
+students and graduates."
+
+</p>
+
+
+<strong>
+- Technology Entrepreneur
+</strong>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ALUMNI REGISTRATION FORM
+===================================== -->
+
+
+<section id="registration">
+
+
+<h2 class="title">
+Join Alumni Community
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Alumni Registration
+
+</h3>
+
+
+
+
+<form>
+
+
+<label>
+Full Name
+</label>
+
+
+<input type="text"
+
+placeholder="Enter your full name">
+
+
+
+
+
+<label>
+Email Address
+</label>
+
+
+<input type="email"
+
+placeholder="Enter email">
+
+
+
+
+
+<label>
+Graduation Year
+</label>
+
+
+<select>
+
+
+<option>
+Select Year
+</option>
+
+
+<option>
+2026
+</option>
+
+
+<option>
+2025
+</option>
+
+
+<option>
+2024
+</option>
+
+
+<option>
+2023
+</option>
+
+
+</select>
+
+
+
+
+
+
+<label>
+Career Field
+</label>
+
+
+<select>
+
+
+<option>
+Select Career Field
+</option>
+
+
+<option>
+Data Science
+</option>
+
+
+<option>
+Artificial Intelligence
+</option>
+
+
+<option>
+Data Analytics
+</option>
+
+
+<option>
+Software Engineering
+</option>
+
+
+</select>
+
+
+
+
+
+<button class="btn">
+
+Register
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONTACT SECTION
+===================================== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Alumni Contact Centre
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Alumni Office
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Contact Information
+</h3>
+
+
+<p>
+
+<strong>Email:</strong>
+
+alumni.datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+<p>
+
+<strong>Office Hours:</strong>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Follow Alumni Network
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+Instagram
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+<p>
+X (Twitter)
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer
+
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="
+color:#00C2B8;">
+
+Department of Data Science
+
+</h2>
+
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+
+<p>
+
+Building connections between graduates,
+students and industry through innovation.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Quick Links
+
+</h3>
+
+
+
+<p>
+
+<a href="index.html"
+style="color:white;">
+
+Home
+
+</a>
+
+</p>
+
+
+
+
+<p>
+
+<a href="students-portal.html"
+style="color:white;">
+
+Students Portal
+
+</a>
+
+</p>
+
+
+
+
+<p>
+
+<a href="downloads.html"
+style="color:white;">
+
+Downloads
+
+</a>
+
+</p>
+
+
+
+
+<p>
+
+<a href="research.html"
+style="color:white;">
+
+Research
+
+</a>
+
+</p>
+
+
+
+
+<p>
+
+<a href="contact.html"
+style="color:white;">
+
+Contact
+
+</a>
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Alumni Services
+
+</h3>
+
+
+
+<p>
+Alumni Registration
+</p>
+
+
+<p>
+Mentorship
+</p>
+
+
+<p>
+Career Support
+</p>
+
+
+<p>
+Networking
+</p>
+
+
+<p>
+Events
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

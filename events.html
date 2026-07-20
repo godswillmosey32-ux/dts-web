@@ -1,0 +1,3169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Events | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+
+}
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+color:white;
+text-align:center;
+padding:10px;
+font-weight:bold;
+
+}
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+position:sticky;
+
+top:1000;
+
+z-index:1000;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+
+url("images/events-banner.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+
+}
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   SEARCH BOX
+===================================== */
+
+
+.search-box{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.search-box input{
+
+width:320px;
+
+padding:14px;
+
+border:none;
+
+border-radius:6px;
+
+outline:none;
+
+}
+
+
+
+.search-box select{
+
+padding:14px;
+
+border:none;
+
+border-radius:6px;
+
+}
+
+
+
+.search-box button{
+
+padding:14px 25px;
+
+background:#00C2B8;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+.search-box button:hover{
+
+background:white;
+
+color:#4B0082;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Department Events Calendar |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+
+<li>
+<a href="research.html">
+Research
+</a>
+</li>
+
+
+
+<li>
+<a href="publications.html">
+Publications
+</a>
+</li>
+
+
+
+<li>
+<a href="events.html">
+Events
+</a>
+</li>
+
+
+
+<li>
+<a href="students.html">
+Students
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Department Events
+</h2>
+
+
+
+<p>
+
+Discover seminars, workshops, conferences, guest lectures,
+student activities and important departmental ceremonies.
+
+</p>
+
+
+
+
+
+<div class="search-box">
+
+
+<input type="text"
+placeholder="Search events...">
+
+
+
+
+
+<select>
+
+
+<option>
+All Events
+</option>
+
+
+<option>
+Seminars
+</option>
+
+
+<option>
+Workshops
+</option>
+
+
+<option>
+Conferences
+</option>
+
+
+<option>
+Orientation
+</option>
+
+
+<option>
+Guest Lectures
+</option>
+
+
+</select>
+
+
+
+
+
+
+<select>
+
+
+<option>
+All Months
+</option>
+
+
+<option>
+January
+</option>
+
+
+<option>
+February
+</option>
+
+
+<option>
+March
+</option>
+
+
+<option>
+April
+</option>
+
+
+<option>
+May
+</option>
+
+
+<option>
+June
+</option>
+
+
+</select>
+
+
+
+
+
+
+<button>
+Search
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     EVENT STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+Event Statistics
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+100+
+</h1>
+
+
+<h3>
+Total Events
+</h3>
+
+
+<p>
+Department activities held annually.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+25+
+</h1>
+
+
+<h3>
+Upcoming Events
+</h3>
+
+
+<p>
+Scheduled academic activities.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+30+
+</h1>
+
+
+<h3>
+Workshops
+</h3>
+
+
+<p>
+Training and skill development events.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+15+
+</h1>
+
+
+<h3>
+Conferences
+</h3>
+
+
+<p>
+Research and technology events.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     SEMINARS
+===================================== -->
+
+
+<section id="seminars">
+
+
+<h2 class="title">
+Seminars
+</h2>
+
+
+
+<p style="margin-bottom:25px;">
+
+Academic seminars featuring researchers, industry experts
+and professionals sharing knowledge on emerging
+technologies.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Artificial Intelligence and Future Technologies
+</h3>
+
+
+<p>
+
+<strong>Speaker:</strong>
+Prof. John Data
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+August 15, 2026
+
+</p>
+
+
+<p>
+
+<strong>Venue:</strong>
+Department Seminar Hall
+
+</p>
+
+
+<p>
+
+<strong>Description:</strong>
+
+A seminar discussing recent developments in AI, machine
+learning and intelligent systems.
+
+</p>
+
+
+<a href="#" class="btn">
+Register
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Big Data Analytics Seminar
+</h3>
+
+
+<p>
+
+<strong>Speaker:</strong>
+Dr. Sarah Computing
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+September 10, 2026
+
+</p>
+
+
+<p>
+
+<strong>Venue:</strong>
+Computing Auditorium
+
+</p>
+
+
+<p>
+
+<strong>Description:</strong>
+
+Exploring modern techniques for processing and analysing
+large datasets.
+
+</p>
+
+
+<a href="#" class="btn">
+Register
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Cybersecurity and Data Protection
+</h3>
+
+
+<p>
+
+<strong>Speaker:</strong>
+Industry Security Expert
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+October 5, 2026
+
+</p>
+
+
+<p>
+
+<strong>Venue:</strong>
+ICT Laboratory
+
+</p>
+
+
+<p>
+
+<strong>Description:</strong>
+
+Discussion on cybersecurity challenges and protecting
+digital information.
+
+</p>
+
+
+<a href="#" class="btn">
+Register
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     WORKSHOPS
+===================================== -->
+
+
+<section id="workshops">
+
+
+<h2 class="title">
+Workshops
+</h2>
+
+
+
+<p style="margin-bottom:25px;">
+
+Practical training sessions designed to improve technical
+skills and professional development.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Python Programming Workshop
+</h3>
+
+
+<p>
+
+<strong>Instructor:</strong>
+Data Science Programming Team
+
+</p>
+
+
+<p>
+
+<strong>Duration:</strong>
+3 Days
+
+</p>
+
+
+<p>
+
+<strong>Participants:</strong>
+Students and Researchers
+
+</p>
+
+
+<p>
+
+Hands-on training on Python programming, data analysis and
+automation.
+
+</p>
+
+
+<a href="#" class="btn">
+Join Workshop
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Machine Learning Training Workshop
+</h3>
+
+
+<p>
+
+<strong>Instructor:</strong>
+AI Research Laboratory
+
+</p>
+
+
+<p>
+
+<strong>Duration:</strong>
+5 Days
+
+</p>
+
+
+<p>
+
+<strong>Participants:</strong>
+Undergraduate and Postgraduate Students
+
+</p>
+
+
+<p>
+
+Practical introduction to building and evaluating machine
+learning models.
+
+</p>
+
+
+<a href="#" class="btn">
+Join Workshop
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Data Visualization Workshop
+</h3>
+
+
+<p>
+
+<strong>Instructor:</strong>
+Data Analytics Team
+
+</p>
+
+
+<p>
+
+<strong>Duration:</strong>
+2 Days
+
+</p>
+
+
+<p>
+
+<strong>Tools:</strong>
+Power BI, Python and Visualization Libraries
+
+</p>
+
+
+<p>
+
+Training on transforming complex data into meaningful
+visual information.
+
+</p>
+
+
+<a href="#" class="btn">
+Join Workshop
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONFERENCES
+===================================== -->
+
+
+<section id="conferences">
+
+
+<h2 class="title">
+Conferences
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+International Data Science Conference
+</h3>
+
+
+<p>
+
+<strong>Theme:</strong>
+
+Data-Driven Solutions for Global Challenges
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+
+November 2026
+
+</p>
+
+
+<p>
+
+<strong>Location:</strong>
+
+University Conference Centre
+
+</p>
+
+
+<p>
+
+Researchers, students and industry professionals present
+innovative research findings.
+
+</p>
+
+
+<a href="#" class="btn">
+Conference Details
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Computing Innovation Summit
+</h3>
+
+
+<p>
+
+<strong>Theme:</strong>
+
+Technology and Digital Transformation
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+
+December 2026
+
+</p>
+
+
+<p>
+
+<strong>Location:</strong>
+
+Faculty of Computing
+
+</p>
+
+
+<p>
+
+Showcasing innovative projects and emerging technologies.
+
+</p>
+
+
+<a href="#" class="btn">
+Conference Details
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Research Conference
+</h3>
+
+
+<p>
+
+<strong>Theme:</strong>
+
+Student Innovation and Research Excellence
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+
+October 2026
+
+</p>
+
+
+<p>
+
+<strong>Location:</strong>
+
+Department Auditorium
+
+</p>
+
+
+<p>
+
+Students present final year projects and research work.
+
+</p>
+
+
+<a href="#" class="btn">
+Register
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ORIENTATION
+===================================== -->
+
+
+<section id="orientation">
+
+
+<h2 class="title">
+Student Orientation
+</h2>
+
+
+
+
+<div class="card">
+
+
+<h3>
+New Student Orientation Programme
+</h3>
+
+
+<p>
+
+The orientation programme introduces new students to the
+Department of Data Science, academic requirements,
+facilities and student support services.
+
+</p>
+
+
+<ul>
+
+<li>
+Introduction to department structure
+</li>
+
+<li>
+Course registration guidance
+</li>
+
+<li>
+Student handbook orientation
+</li>
+
+<li>
+Laboratory tour
+</li>
+
+<li>
+Meet academic advisers
+</li>
+
+</ul>
+
+
+
+<p>
+
+<strong>Date:</strong>
+First week of academic session
+
+</p>
+
+
+<a href="#" class="btn">
+View Programme
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     MATRICULATION
+===================================== -->
+
+
+<section id="matriculation">
+
+
+<h2 class="title">
+Matriculation Ceremony
+</h2>
+
+
+
+
+<div class="card">
+
+
+<h3>
+Departmental Matriculation Ceremony
+</h3>
+
+
+<p>
+
+A formal ceremony welcoming newly admitted students into
+the university community.
+
+</p>
+
+
+<p>
+
+<strong>Activities Include:</strong>
+
+</p>
+
+
+<ul>
+
+<li>
+Welcome address
+</li>
+
+<li>
+Academic introduction
+</li>
+
+<li>
+Student oath ceremony
+</li>
+
+<li>
+Department tour
+</li>
+
+
+</ul>
+
+
+<a href="#" class="btn">
+Event Information
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONVOCATION
+===================================== -->
+
+
+<section id="convocation">
+
+
+<h2 class="title">
+Convocation Ceremony
+</h2>
+
+
+
+
+<div class="card">
+
+
+<h3>
+Data Science Graduates Convocation Celebration
+</h3>
+
+
+<p>
+
+Celebrating graduates who have successfully completed
+their academic programmes.
+
+</p>
+
+
+<p>
+
+<strong>Highlights:</strong>
+
+</p>
+
+
+<ul>
+
+<li>
+Graduation ceremony
+</li>
+
+<li>
+Award presentations
+</li>
+
+<li>
+Alumni networking
+</li>
+
+<li>
+Career opportunities
+</li>
+
+
+</ul>
+
+
+<a href="#" class="btn">
+View Details
+</a>
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     GUEST LECTURES
+===================================== -->
+
+
+<section id="guest-lectures">
+
+
+<h2 class="title">
+Guest Lectures
+</h2>
+
+
+
+<p style="margin-bottom:25px;">
+
+Special lectures delivered by professionals, researchers
+and industry leaders sharing practical knowledge and
+career insights.
+
+</p>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Building Careers in Data Science
+</h3>
+
+
+<p>
+
+<strong>Guest Speaker:</strong>
+
+Industry Data Scientist
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+
+November 20, 2026
+
+</p>
+
+
+<p>
+
+<strong>Topic:</strong>
+
+Career opportunities, skills and industry expectations in
+Data Science.
+
+</p>
+
+
+<a href="#" class="btn">
+Register
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+The Future of Artificial Intelligence
+</h3>
+
+
+<p>
+
+<strong>Guest Speaker:</strong>
+
+AI Research Specialist
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+
+December 10, 2026
+
+</p>
+
+
+<p>
+
+<strong>Topic:</strong>
+
+Emerging AI technologies and their impact on society.
+
+</p>
+
+
+<a href="#" class="btn">
+Register
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Entrepreneurship in Technology
+</h3>
+
+
+<p>
+
+<strong>Guest Speaker:</strong>
+
+Technology Entrepreneur
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+
+January 15, 2027
+
+</p>
+
+
+<p>
+
+<strong>Topic:</strong>
+
+Creating innovative technology solutions and startups.
+
+</p>
+
+
+<a href="#" class="btn">
+Register
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     EVENT CALENDAR
+===================================== -->
+
+
+<section id="calendar">
+
+
+<h2 class="title">
+Event Calendar
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3 style="text-align:center;">
+2026 Academic Event Calendar
+</h3>
+
+
+
+<table style="
+width:100%;
+border-collapse:collapse;
+margin-top:25px;
+">
+
+
+
+<tr style="
+background:#4B0082;
+color:white;
+">
+
+<th style="padding:15px;">
+Date
+</th>
+
+
+<th style="padding:15px;">
+Event
+</th>
+
+
+<th style="padding:15px;">
+Category
+</th>
+
+
+<th style="padding:15px;">
+Venue
+</th>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+August 15
+</td>
+
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+AI Seminar
+</td>
+
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+Seminar
+</td>
+
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+Seminar Hall
+</td>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+September 10
+</td>
+
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+Python Workshop
+</td>
+
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+Workshop
+</td>
+
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+Computer Laboratory
+</td>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+November 20
+</td>
+
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+Guest Lecture
+</td>
+
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+Lecture
+</td>
+
+
+<td style="padding:15px;border-bottom:1px solid #ddd;">
+Auditorium
+</td>
+
+
+</tr>
+
+
+
+
+</table>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     EVENT COUNTDOWN
+===================================== -->
+
+
+<section id="countdown">
+
+
+<h2 class="title">
+Upcoming Event Countdown
+</h2>
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h3>
+International Data Science Conference
+</h3>
+
+
+
+<p>
+
+Countdown to the next major departmental event.
+
+</p>
+
+
+
+
+<div style="
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:25px;
+">
+
+
+
+
+
+<div style="
+background:#4B0082;
+color:white;
+padding:20px;
+border-radius:10px;
+">
+
+<h1 id="days">
+30
+</h1>
+
+<p>
+Days
+</p>
+
+</div>
+
+
+
+
+
+
+<div style="
+background:#4B0082;
+color:white;
+padding:20px;
+border-radius:10px;
+">
+
+<h1 id="hours">
+12
+</h1>
+
+<p>
+Hours
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:#4B0082;
+color:white;
+padding:20px;
+border-radius:10px;
+">
+
+<h1 id="minutes">
+45
+</h1>
+
+<p>
+Minutes
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div style="
+background:#4B0082;
+color:white;
+padding:20px;
+border-radius:10px;
+">
+
+<h1 id="seconds">
+20
+</h1>
+
+<p>
+Seconds
+</p>
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     EVENT REGISTRATION
+===================================== -->
+
+
+<section id="registration">
+
+
+<h2 class="title">
+Event Registration
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+
+<form>
+
+
+<label>
+Full Name
+</label>
+
+
+<br>
+
+
+<input type="text"
+placeholder="Enter your name"
+
+style="
+width:100%;
+padding:14px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+
+<br>
+
+
+
+<label>
+Email Address
+</label>
+
+
+<br>
+
+
+<input type="email"
+placeholder="Enter email"
+
+style="
+width:100%;
+padding:14px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+
+<br>
+
+
+
+<label>
+Category
+</label>
+
+
+<br>
+
+
+
+<select
+
+style="
+width:100%;
+padding:14px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+<option>
+Student
+</option>
+
+
+<option>
+Staff
+</option>
+
+
+<option>
+Visitor
+</option>
+
+
+</select>
+
+
+
+<br>
+
+
+
+<label>
+Select Event
+</label>
+
+
+<br>
+
+
+<select
+
+style="
+width:100%;
+padding:14px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+<option>
+Seminar
+</option>
+
+
+<option>
+Workshop
+</option>
+
+
+<option>
+Conference
+</option>
+
+
+<option>
+Guest Lecture
+</option>
+
+
+</select>
+
+
+
+
+<br>
+
+
+<button class="btn">
+
+Submit Registration
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     PAST EVENTS GALLERY
+===================================== -->
+
+
+<section id="gallery">
+
+
+<h2 class="title">
+Past Events Gallery
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/event1.jpg"
+
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+<h3>
+Research Seminar
+</h3>
+
+
+<p>
+Academic discussions and knowledge sharing sessions.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/event2.jpg"
+
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+<h3>
+Technology Workshop
+</h3>
+
+
+<p>
+Practical training and hands-on learning.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/event3.jpg"
+
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+<h3>
+Student Innovation Showcase
+</h3>
+
+
+<p>
+Students presenting creative technology projects.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     VIDEO GALLERY
+===================================== -->
+
+
+<section id="video-gallery">
+
+
+<h2 class="title">
+Event Video Gallery
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<video controls
+style="
+width:100%;
+height:220px;
+border-radius:8px;
+">
+
+
+<source src="videos/seminar.mp4"
+type="video/mp4">
+
+
+Your browser does not support video.
+
+</video>
+
+
+<h3>
+Research Seminar Highlights
+</h3>
+
+
+<p>
+
+Highlights from departmental research presentations and
+academic discussions.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<video controls
+style="
+width:100%;
+height:220px;
+border-radius:8px;
+">
+
+
+<source src="videos/workshop.mp4"
+type="video/mp4">
+
+
+Your browser does not support video.
+
+</video>
+
+
+<h3>
+Workshop Activities
+</h3>
+
+
+<p>
+
+Students participating in practical training sessions.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<video controls
+style="
+width:100%;
+height:220px;
+border-radius:8px;
+">
+
+
+<source src="videos/conference.mp4"
+type="video/mp4">
+
+
+Your browser does not support video.
+
+</video>
+
+
+<h3>
+Conference Highlights
+</h3>
+
+
+<p>
+
+Research presentations and technology exhibitions.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     EVENT ANNOUNCEMENT
+===================================== -->
+
+
+<section id="announcement">
+
+
+<h2 class="title">
+Event Announcements
+</h2>
+
+
+
+
+<div class="card">
+
+
+<ul>
+
+
+<li>
+Registration is now open for upcoming Data Science
+workshops.
+</li>
+
+
+<li>
+Students are encouraged to participate in research
+seminars.
+</li>
+
+
+<li>
+Conference paper submission deadline has been announced.
+</li>
+
+
+<li>
+New event schedules will be updated regularly.
+</li>
+
+
+<li>
+Certificates will be issued to registered participants.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     NEWSLETTER
+===================================== -->
+
+
+<section id="newsletter">
+
+
+<h2 class="title">
+Subscribe For Event Updates
+</h2>
+
+
+
+
+<div class="card">
+
+
+<p>
+
+Receive notifications about seminars, workshops,
+conferences and departmental activities.
+
+</p>
+
+
+
+<br>
+
+
+
+<input type="email"
+
+placeholder="Enter your email address"
+
+style="
+width:70%;
+padding:14px;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+
+
+
+<button class="btn">
+
+Subscribe
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONTACT SECTION
+===================================== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Event Office Contact
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Department Event Office
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Contact Information
+</h3>
+
+
+<p>
+
+<strong>Email:</strong>
+
+events.datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+<p>
+
+<strong>Office Hours:</strong>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Social Media Platforms
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+<p>
+Instagram
+</p>
+
+
+<p>
+X (Twitter)
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer
+
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+<p>
+
+Organizing academic events,
+research activities and innovation programmes.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Quick Links
+</h3>
+
+
+<p>
+<a href="index.html"
+style="color:white;">
+Home
+</a>
+</p>
+
+
+<p>
+<a href="about.html"
+style="color:white;">
+About
+</a>
+</p>
+
+
+<p>
+<a href="research.html"
+style="color:white;">
+Research
+</a>
+</p>
+
+
+<p>
+<a href="students.html"
+style="color:white;">
+Students
+</a>
+</p>
+
+
+<p>
+<a href="contact.html"
+style="color:white;">
+Contact
+</a>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Event Categories
+</h3>
+
+
+<p>
+Seminars
+</p>
+
+
+<p>
+Workshops
+</p>
+
+
+<p>
+Conferences
+</p>
+
+
+<p>
+Guest Lectures
+</p>
+
+
+<p>
+Student Activities
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

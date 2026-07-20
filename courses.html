@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Course Catalogue | Department of Data Science | University of Uyo</title>
+
+<style>
+
+/* ===============================
+   GLOBAL STYLE
+================================ */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+}
+
+
+/* ===============================
+   TOP BAR
+================================ */
+
+.topbar{
+
+background:#00C2B8;
+color:white;
+text-align:center;
+padding:10px;
+font-weight:bold;
+
+}
+
+
+/* ===============================
+   HEADER
+================================ */
+
+header{
+
+background:#4B0082;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+flex-wrap:wrap;
+position:sticky;
+top:1000;
+z-index:1000;
+
+}
+
+
+.logo h1{
+
+color:#00C2B8;
+font-size:30px;
+
+}
+
+
+.logo p{
+
+color:white;
+font-size:14px;
+
+}
+
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:20px;
+
+}
+
+
+nav ul li a{
+
+color:white;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+/* ===============================
+   HERO SECTION
+================================ */
+
+.hero{
+
+background:
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+url("images/course-banner.jpg");
+
+
+background-size:cover;
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+.hero h2{
+
+font-size:48px;
+color:#00C2B8;
+margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+max-width:900px;
+margin:auto;
+font-size:18px;
+
+}
+
+
+/* ===============================
+   SEARCH FILTER
+================================ */
+
+
+.search-box{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+}
+
+
+.search-box input,
+.search-box select{
+
+padding:12px;
+
+width:260px;
+
+border:none;
+
+border-radius:6px;
+
+outline:none;
+
+}
+
+
+.search-box button{
+
+padding:12px 25px;
+
+background:#00C2B8;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+.search-box button:hover{
+
+background:white;
+
+color:#4B0082;
+
+}
+
+
+
+/* ===============================
+   SECTIONS
+================================ */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+/* ===============================
+   GRID
+================================ */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+/* ===============================
+   CARDS
+================================ */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.08);
+
+border-top:5px solid #00C2B8;
+
+transition:.3s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+/* ===============================
+   BUTTON
+================================ */
+
+
+.btn{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:12px 25px;
+
+background:#00C2B8;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+Course Catalogue | Department of Data Science | University of Uyo
+
+</div>
+
+
+
+<!-- HEADER -->
+
+<header>
+
+
+<div class="logo">
+
+<h1>
+Department of Data Science
+</h1>
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+</div>
+
+
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="programmes.html">Programmes</a></li>
+
+<li><a href="courses.html">Courses</a></li>
+
+<li><a href="students.html">Students</a></li>
+
+<li><a href="staff.html">Staff</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<!-- HERO SECTION -->
+
+
+<section class="hero">
+
+
+<h2>
+Course Catalogue
+</h2>
+
+
+<p>
+
+Explore the complete undergraduate and postgraduate
+course catalogue of the Department of Data Science.
+Search courses by level, code or title and access
+course descriptions, learning outcomes and recommended
+resources.
+
+</p>
+
+
+
+<div class="search-box">
+
+
+<input type="text"
+placeholder="Search Course Code or Title">
+
+
+<select>
+
+<option>
+All Levels
+</option>
+
+
+<option>
+100 Level
+</option>
+
+
+<option>
+200 Level
+</option>
+
+
+<option>
+300 Level
+</option>
+
+
+<option>
+400 Level
+</option>
+
+
+</select>
+
+
+
+<button>
+Search
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- COURSE STATISTICS -->
+
+
+<section>
+
+
+<h2 class="title">
+Course Statistics
+</h2>
+
+
+
+<div class="grid">
+
+
+
+<div class="card" style="text-align:center;">
+
+<h1 style="color:#00C2B8;font-size:48px;">
+64
+</h1>
+
+<h3>
+Total Courses
+</h3>
+
+<p>
+Departmental and general courses offered.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+<h1 style="color:#00C2B8;font-size:48px;">
+148
+</h1>
+
+<h3>
+Credit Units
+</h3>
+
+<p>
+Total programme credit requirements.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+<h1 style="color:#00C2B8;font-size:48px;">
+20
+</h1>
+
+<h3>
+Practical Courses
+</h3>
+
+<p>
+Laboratory and hands-on courses.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+<h1 style="color:#00C2B8;font-size:48px;">
+12
+</h1>
+
+<h3>
+Elective Courses
+</h3>
+
+<p>
+Specialized learning options.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- COURSE OVERVIEW -->
+
+
+<section>
+
+
+<h2 class="title">
+Course Overview
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+
+The Department of Data Science provides a comprehensive
+curriculum designed to develop expertise in Artificial
+Intelligence, Machine Learning, Data Analytics, Programming,
+Statistics, Database Systems, Cloud Computing, Big Data
+Technologies and Data Engineering.
+
+
+<br><br>
+
+
+Each course combines theoretical knowledge with practical
+applications through lectures, projects, laboratory sessions
+and industry-focused training.
+
+
+<br><br>
+
+
+Students are equipped with the skills required to solve
+real-world problems using modern data-driven technologies.
+
+</p>
+
+
+
+</div>
+
+
+</section>
+<!-- =========================================
+     100 LEVEL COURSES
+========================================= -->
+
+<section id="level100">
+
+<h2 class="title">100 Level Courses</h2>
+
+<p style="margin-bottom:25px;">
+Foundation courses designed to introduce students to basic
+computing concepts, mathematics, programming and essential
+academic skills required for Data Science.
+</p>
+
+
+<div class="grid">
+
+
+<!-- COURSE 1 -->
+
+<div class="card">
+
+<h3>DSC 101 - Introduction to Data Science</h3>
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> First Semester</p>
+
+<p><strong>Lecturer:</strong> Department of Data Science</p>
+
+<p>
+Introduces the concepts, principles and applications of Data
+Science including data collection, analysis, visualization
+and decision making.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Explain the role of Data Science in modern industries.</li>
+<li>Understand the data science workflow.</li>
+<li>Identify common data analysis techniques.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Data Science Fundamentals.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+<!-- COURSE 2 -->
+
+<div class="card">
+
+<h3>CSC 101 - Introduction to Computing</h3>
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> First Semester</p>
+
+<p><strong>Lecturer:</strong> Computing Department</p>
+
+<p>
+Provides basic knowledge of computer systems, hardware,
+software, operating systems and information technology.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Understand computer components.</li>
+<li>Explain computer operations.</li>
+<li>Use basic computing tools.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Computer Science: An Overview.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+
+<!-- COURSE 3 -->
+
+<div class="card">
+
+<h3>MTH 101 - Elementary Mathematics I</h3>
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> First Semester</p>
+
+<p><strong>Lecturer:</strong> Mathematics Unit</p>
+
+<p>
+Covers algebra, functions, equations, sequences and basic
+calculus concepts.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Solve mathematical problems.</li>
+<li>Apply analytical reasoning.</li>
+<li>Understand mathematical models.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Engineering Mathematics.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+
+<!-- COURSE 4 -->
+
+<div class="card">
+
+<h3>GST 111 - Communication in English</h3>
+
+<p><strong>Credit Units:</strong> 2</p>
+
+<p><strong>Semester:</strong> First Semester</p>
+
+<p><strong>Lecturer:</strong> GST Unit</p>
+
+<p>
+Develops communication skills, academic writing,
+presentation and effective language usage.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Write academic reports.</li>
+<li>Improve communication skills.</li>
+<li>Deliver presentations effectively.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Effective Communication Skills.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+
+<!-- COURSE 5 -->
+
+<div class="card">
+
+<h3>DSC 102 - Programming Fundamentals</h3>
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> Second Semester</p>
+
+<p><strong>Lecturer:</strong> Department of Data Science</p>
+
+<p>
+Introduces programming concepts using languages such as
+Python, including variables, functions and problem solving.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Write basic programs.</li>
+<li>Understand programming logic.</li>
+<li>Develop problem-solving skills.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Python Programming: An Introduction.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- =========================================
+     200 LEVEL COURSES
+========================================= -->
+
+
+<section id="level200">
+
+
+<h2 class="title">200 Level Courses</h2>
+
+
+<p style="margin-bottom:25px;">
+Intermediate courses that build strong foundations in
+programming, databases, statistics and data management.
+</p>
+
+
+
+<div class="grid">
+
+
+
+
+
+<!-- COURSE -->
+
+<div class="card">
+
+
+<h3>
+DSC 201 - Data Structures and Algorithms
+</h3>
+
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> First Semester</p>
+
+<p><strong>Lecturer:</strong> Data Science Unit</p>
+
+
+<p>
+Studies arrays, linked lists, stacks, queues, trees, graphs
+and algorithm analysis.
+</p>
+
+
+<h4>Learning Outcomes</h4>
+
+
+<ul>
+
+<li>Design efficient algorithms.</li>
+
+<li>Implement data structures.</li>
+
+<li>Analyze algorithm performance.</li>
+
+</ul>
+
+
+<p>
+<strong>Recommended Textbook:</strong>
+Data Structures and Algorithms.
+</p>
+
+
+<a href="#" class="btn">
+Download Outline
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+DSC 203 - Database Management Systems
+</h3>
+
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> Second Semester</p>
+
+<p><strong>Lecturer:</strong> Department of Data Science</p>
+
+
+<p>
+Introduces database design, SQL, normalization,
+database security and management systems.
+</p>
+
+
+<h4>Learning Outcomes</h4>
+
+
+<ul>
+
+<li>Create database structures.</li>
+
+<li>Write SQL queries.</li>
+
+<li>Manage database systems.</li>
+
+</ul>
+
+
+<p>
+<strong>Recommended Textbook:</strong>
+Database System Concepts.
+</p>
+
+
+<a href="#" class="btn">
+Download Outline
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+STA 201 - Statistics for Data Science
+</h3>
+
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> First Semester</p>
+
+<p><strong>Lecturer:</strong> Statistics Unit</p>
+
+
+<p>
+Covers probability, statistical methods, distributions,
+sampling and data interpretation.
+</p>
+
+
+<h4>Learning Outcomes</h4>
+
+
+<ul>
+
+<li>Apply statistical techniques.</li>
+
+<li>Analyze datasets.</li>
+
+<li>Interpret statistical results.</li>
+
+</ul>
+
+
+<p>
+<strong>Recommended Textbook:</strong>
+Introduction to Statistics.
+</p>
+
+
+<a href="#" class="btn">
+Download Outline
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+DSC 205 - Object Oriented Programming
+</h3>
+
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> Second Semester</p>
+
+<p><strong>Lecturer:</strong> Programming Unit</p>
+
+
+<p>
+Introduces classes, objects, inheritance and software
+development principles.
+</p>
+
+
+<h4>Learning Outcomes</h4>
+
+
+<ul>
+
+<li>Create object-oriented programs.</li>
+
+<li>Apply programming concepts.</li>
+
+<li>Develop reusable software components.</li>
+
+</ul>
+
+
+<p>
+<strong>Recommended Textbook:</strong>
+Object Oriented Programming Concepts.
+</p>
+
+
+<a href="#" class="btn">
+Download Outline
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =========================================
+     300 LEVEL COURSES
+========================================= -->
+
+<section id="level300">
+
+<h2 class="title">300 Level Courses</h2>
+
+<p style="margin-bottom:25px;">
+Advanced courses designed to develop professional skills in
+Data Analytics, Machine Learning, Artificial Intelligence,
+Software Development and Research.
+</p>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>DSC 301 - Machine Learning</h3>
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> First Semester</p>
+
+<p><strong>Lecturer:</strong> Artificial Intelligence Unit</p>
+
+<p>
+Introduces supervised and unsupervised learning techniques,
+model training, evaluation and practical machine learning
+applications.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Understand machine learning concepts.</li>
+<li>Build predictive models.</li>
+<li>Evaluate learning algorithms.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Introduction to Machine Learning.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>DSC 303 - Data Visualization</h3>
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> First Semester</p>
+
+<p><strong>Lecturer:</strong> Data Analytics Unit</p>
+
+<p>
+Covers graphical representation of data, dashboards,
+visual analytics and communication of insights.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Create effective data visualizations.</li>
+<li>Use visualization tools.</li>
+<li>Present analytical findings.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Data Visualization Principles.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>DSC 305 - Artificial Intelligence</h3>
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> Second Semester</p>
+
+<p><strong>Lecturer:</strong> AI Research Unit</p>
+
+<p>
+Explores intelligent systems, knowledge representation,
+search algorithms and AI applications.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Understand AI techniques.</li>
+<li>Develop intelligent solutions.</li>
+<li>Apply AI algorithms.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Artificial Intelligence: A Modern Approach.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>DSC 307 - Big Data Analytics</h3>
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> Second Semester</p>
+
+<p><strong>Lecturer:</strong> Data Engineering Unit</p>
+
+<p>
+Introduces large-scale data processing, distributed systems,
+cloud platforms and big data technologies.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Understand big data concepts.</li>
+<li>Process large datasets.</li>
+<li>Use modern analytics platforms.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Big Data Analytics.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>DSC 309 - Research Methodology</h3>
+
+<p><strong>Credit Units:</strong> 2</p>
+
+<p><strong>Semester:</strong> Second Semester</p>
+
+<p><strong>Lecturer:</strong> Research Unit</p>
+
+<p>
+Introduces research design, data collection methods,
+analysis techniques and academic writing.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Develop research proposals.</li>
+<li>Apply research methods.</li>
+<li>Write technical reports.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Research Methods in Computing.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- =========================================
+     400 LEVEL COURSES
+========================================= -->
+
+
+<section id="level400">
+
+
+<h2 class="title">400 Level Courses</h2>
+
+
+<p style="margin-bottom:25px;">
+Final year courses focused on specialization, innovation,
+industrial applications and research projects.
+</p>
+
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+<h3>DSC 401 - Advanced Machine Learning</h3>
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> First Semester</p>
+
+<p><strong>Lecturer:</strong> AI Research Unit</p>
+
+<p>
+Advanced study of neural networks, deep learning,
+optimization techniques and intelligent systems.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Design deep learning models.</li>
+<li>Apply advanced ML techniques.</li>
+<li>Develop AI applications.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Deep Learning with Python.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>DSC 403 - Cloud Computing</h3>
+
+<p><strong>Credit Units:</strong> 3</p>
+
+<p><strong>Semester:</strong> First Semester</p>
+
+<p><strong>Lecturer:</strong> Cloud Computing Unit</p>
+
+<p>
+Studies cloud architecture, cloud services, deployment
+models and scalable computing.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Understand cloud technologies.</li>
+<li>Deploy cloud applications.</li>
+<li>Manage cloud resources.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Cloud Computing Concepts.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>DSC 405 - Data Science Project</h3>
+
+<p><strong>Credit Units:</strong> 6</p>
+
+<p><strong>Semester:</strong> Second Semester</p>
+
+<p><strong>Lecturer:</strong> Project Supervisor</p>
+
+<p>
+A practical research project where students apply Data
+Science techniques to solve real-world problems.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Conduct independent research.</li>
+<li>Develop data-driven solutions.</li>
+<li>Present technical findings.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Research Project Guidelines.
+</p>
+
+<a href="#" class="btn">Download Guide</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>DSC 407 - Seminar</h3>
+
+<p><strong>Credit Units:</strong> 2</p>
+
+<p><strong>Semester:</strong> Second Semester</p>
+
+<p><strong>Lecturer:</strong> Department Seminar Coordinator</p>
+
+<p>
+Students present research topics, review publications and
+develop professional presentation skills.
+</p>
+
+<h4>Learning Outcomes</h4>
+
+<ul>
+<li>Review scientific literature.</li>
+<li>Present research findings.</li>
+<li>Develop academic communication skills.</li>
+</ul>
+
+<p>
+<strong>Recommended Textbook:</strong>
+Academic Research Writing.
+</p>
+
+<a href="#" class="btn">Download Outline</a>
+
+</div>
+
+
+
+
+</div>
+
+</section>
+<!-- =========================================
+     COURSE ADVISING
+========================================= -->
+
+<section id="advising">
+
+<h2 class="title">Course Advising</h2>
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>Academic Adviser Guidance</h3>
+
+<p>
+
+Students are advised to meet their assigned Academic Adviser
+before course registration to ensure correct course selection
+and academic progression.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Credit Unit Requirements</h3>
+
+<p>
+
+Students must register approved courses within the minimum and
+maximum credit unit limits specified by University regulations.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Course Selection Guidelines</h3>
+
+<ul>
+
+<li>Select only courses approved for your level.</li>
+
+<li>Complete prerequisite courses before advanced courses.</li>
+
+<li>Seek approval before adding or dropping courses.</li>
+
+<li>Maintain good academic standing.</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Academic Adviser Contact</h3>
+
+<p>
+
+<strong>Department:</strong>
+Department of Data Science
+
+</p>
+
+<p>
+
+<strong>Email:</strong>
+datascience@uniuyo.edu.ng
+
+</p>
+
+<p>
+
+<strong>Office Hours:</strong>
+Monday - Friday (8:00 AM - 4:00 PM)
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<!-- =========================================
+     COURSE CATALOGUE DOWNLOADS
+========================================= -->
+
+
+<section id="downloads">
+
+
+<h2 class="title">Course Catalogue Downloads</h2>
+
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+<h3>Undergraduate Curriculum</h3>
+
+<p>
+
+Complete undergraduate Data Science curriculum containing all
+levels, courses and credit requirements.
+
+</p>
+
+<a href="#" class="btn">
+Download PDF
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Programme Handbook</h3>
+
+<p>
+
+Official handbook containing academic regulations,
+programme structure and graduation requirements.
+
+</p>
+
+<a href="#" class="btn">
+Download Handbook
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Course Outline Collection</h3>
+
+<p>
+
+Detailed course outlines, learning objectives and assessment
+methods.
+
+</p>
+
+<a href="#" class="btn">
+Download Outlines
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Academic Calendar</h3>
+
+<p>
+
+Important academic dates including registration,
+lectures, examinations and semester breaks.
+
+</p>
+
+<a href="#" class="btn">
+Download Calendar
+</a>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- =========================================
+     COURSE SEARCH SYSTEM
+========================================= -->
+
+
+<section id="course-search">
+
+
+<h2 class="title">
+Course Search & Filter
+</h2>
+
+
+<div class="card">
+
+
+<input type="text"
+id="courseSearch"
+placeholder="Search course..."
+style="
+width:100%;
+padding:15px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:16px;
+">
+
+
+
+<br><br>
+
+
+
+<select id="levelFilter"
+style="
+width:100%;
+padding:15px;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+<option>
+Filter by Level
+</option>
+
+
+<option>
+100 Level
+</option>
+
+
+<option>
+200 Level
+</option>
+
+
+<option>
+300 Level
+</option>
+
+
+<option>
+400 Level
+</option>
+
+
+</select>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- =========================================
+     IMPORTANT INFORMATION
+========================================= -->
+
+
+<section>
+
+
+<h2 class="title">
+Important Course Information
+</h2>
+
+
+<div class="card">
+
+
+<ul>
+
+<li>
+All courses must be approved by the Department before registration.
+</li>
+
+
+<li>
+Students must complete required courses before graduation.
+</li>
+
+
+<li>
+Practical courses require laboratory attendance.
+</li>
+
+
+<li>
+Final year students must complete a research project.
+</li>
+
+
+<li>
+Course materials should be accessed through approved departmental platforms.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================================
+     CONTACT INFORMATION
+========================================= -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Contact Department
+</h2>
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+<h3>
+Department Office
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+Contact Details
+</h3>
+
+
+<p>
+
+<strong>Email:</strong><br>
+
+datascience@uniuyo.edu.ng
+
+</p>
+
+
+<p>
+
+<strong>Phone:</strong><br>
+
++234 800 123 4567
+
+</p>
+
+
+<p>
+
+<strong>Office Hours:</strong><br>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+Follow Us
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+Instagram
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+<p>
+X (Twitter)
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+
+<footer
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+<div class="grid">
+
+
+
+<div>
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+<p>
+
+Building future professionals in Artificial Intelligence,
+Machine Learning and Data Analytics.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+<h3 style="color:#00C2B8;">
+Quick Links
+</h3>
+
+
+<p>
+<a href="index.html" style="color:white;">
+Home
+</a>
+</p>
+
+
+<p>
+<a href="students.html" style="color:white;">
+Students
+</a>
+</p>
+
+
+<p>
+<a href="staff.html" style="color:white;">
+Staff
+</a>
+</p>
+
+
+<p>
+<a href="research.html" style="color:white;">
+Research
+</a>
+</p>
+
+
+<p>
+<a href="contact.html" style="color:white;">
+Contact
+</a>
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+<h3 style="color:#00C2B8;">
+Student Portals
+</h3>
+
+
+<p>
+Student Login
+</p>
+
+
+<p>
+Course Registration
+</p>
+
+
+<p>
+Result Checking
+</p>
+
+
+<p>
+Learning Resources
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+<p style="text-align:center;margin-top:10px;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+</footer>
+
+
+
+</body>
+
+</html>

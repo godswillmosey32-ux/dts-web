@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Academic Programmes | Department of Data Science | University of Uyo</title>
+
+<style>
+
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+line-height:1.7;
+}
+
+/* ===========================
+   TOP BAR
+=========================== */
+
+.topbar{
+background:#00C2B8;
+color:#fff;
+text-align:center;
+padding:10px;
+font-weight:bold;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+background:#4B0082;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 10px 0;
+}
+
+.logo h1{
+color:#00C2B8;
+}
+
+.logo p{
+font-size:14px;
+margin-left:10px;
+text-align:right;
+}
+
+/* Navigation */
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00C2B8;
+}
+
+/* Search */
+
+.search{
+display:flex;
+margin-top:10px;
+}
+
+.search input{
+padding:8px;
+width:220px;
+border:none;
+outline:none;
+}
+
+.search button{
+background:#00C2B8;
+color:white;
+border:none;
+padding:8px 15px;
+cursor:pointer;
+}
+
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+background-image:linear-gradient(rgba(75,0,130,0.1),rgba(75,0,130,0.1)),
+url("../images/images.jpg");
+
+background-size:cover;
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.hero h2{
+
+font-size:48px;
+
+color:#ffff;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+background:rgba(0,0,0,.3);
+border-radius:5px;
+max-width:800px;
+margin:auto;
+font-size:18px;
+color: #ffff;
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section{
+padding:70px 8%;
+}
+
+.title{
+font-size:34px;
+color:#4B0082;
+border-left:6px solid #00C2B8;
+padding-left:15px;
+margin-bottom:25px;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+border-top:5px solid #00C2B8;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#4B0082;
+margin-bottom:15px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 24px;
+background:#00C2B8;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#4B0082;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+nav ul{
+flex-direction:column;
+margin-top:20px;
+}
+
+.search{
+margin-top:15px;
+}
+
+.hero h2{
+font-size:34px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+Academic Programmes | Department of Data Science | University of Uyo
+</div>
+<header>
+
+<div class="logo">
+<h3>Department of Data Science</h3>
+<br>
+<p>Faculty of Computing | University of Uyo</p>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="programmes.html">Programmes</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="staff.html">Staff</a></li>
+
+<li><a href="students.html">Students</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="search">
+
+<input id="content" placeholder="Search...">
+
+<button>Search</button>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h2>Academic Programmes</h2>
+
+<p>
+
+The Department of Data Science offers high-quality
+undergraduate and postgraduate programmes designed to equip
+students with advanced knowledge, practical skills and
+research experience in Data Science, Artificial Intelligence,
+Machine Learning, Big Data Analytics and related fields.
+
+</p>
+
+</section>
+
+<!-- ===========================
+     PROGRAMME OVERVIEW
+=========================== -->
+
+<section>
+
+<h2 class="title">Programme Overview</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Undergraduate Programme</h3>
+
+<p>
+
+The Bachelor of Science (B.Sc.) in Data Science provides a
+strong foundation in mathematics, statistics, computing,
+programming, databases, artificial intelligence and data
+analytics.
+
+Students gain practical experience through laboratory work,
+industry internships and research projects.
+
+</p>
+
+<a href="#" class="btn">Explore B.Sc.</a>
+
+</div>
+
+<div class="card">
+
+<h3>Postgraduate Programmes</h3>
+
+<p>
+
+The department offers PGD, M.Sc. and Ph.D. programmes that
+prepare graduates for advanced research, academic careers,
+industry leadership and innovation in Data Science and
+Artificial Intelligence.
+
+</p>
+
+<a href="#" class="btn">Explore Postgraduate</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+     UNDERGRADUATE PROGRAMME
+=========================== -->
+
+<section>
+
+<h2 class="title">Bachelor of Science (B.Sc.) in Data Science</h2>
+
+<div class="card">
+
+<h3>Programme Overview</h3>
+
+<p>
+
+The Bachelor of Science (B.Sc.) in Data Science is a
+comprehensive undergraduate programme designed to equip
+students with theoretical knowledge and practical skills in
+data analysis, programming, artificial intelligence, machine
+learning, database systems, cloud computing and business
+analytics.
+
+Students learn to collect, process, analyse and visualize
+large datasets to support informed decision-making across
+different sectors.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     ADMISSION REQUIREMENTS
+=========================== -->
+
+<section>
+
+<h2 class="title">Admission Requirements</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>UTME (JAMB)</h3>
+
+<ul>
+
+<li>Minimum UTME score as approved by the University.</li>
+
+<li>Five (5) O'Level credit passes including:</li>
+
+<li>English Language</li>
+
+<li>Mathematics</li>
+
+<li>Physics</li>
+
+<li>Chemistry</li>
+
+<li>One other Science subject.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Direct Entry</h3>
+
+<ul>
+
+<li>OND, HND or NCE in relevant disciplines.</li>
+
+<li>A-Level passes in Mathematics and related subjects.</li>
+
+<li>IJMB or JUPEB qualifications accepted according to University regulations.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     PROGRAMME DURATION
+=========================== -->
+
+<section>
+
+<h2 class="title">Programme Duration</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>UTME Candidates</h3>
+
+<p>
+
+Four (4) academic sessions consisting of eight (8)
+semesters.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Direct Entry Candidates</h3>
+
+<p>
+
+Three (3) academic sessions consisting of six (6)
+semesters.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     COURSE OUTLINE
+=========================== -->
+
+<section>
+
+<h2 class="title">Course Outline</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>100 Level</h3>
+
+<ul>
+
+<li>GST Courses</li>
+
+<li>Introduction to Data Science</li>
+
+<li>Programming Fundamentals</li>
+
+<li>Calculus</li>
+
+<li>General Physics</li>
+
+<li>Communication Skills</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>200 Level</h3>
+
+<ul>
+
+<li>Data Structures</li>
+
+<li>Object-Oriented Programming</li>
+
+<li>Database Systems</li>
+
+<li>Discrete Mathematics</li>
+
+<li>Statistics for Data Science</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>300 Level</h3>
+
+<ul>
+
+<li>Machine Learning</li>
+
+<li>Artificial Intelligence</li>
+
+<li>Data Mining</li>
+
+<li>Cloud Computing</li>
+
+<li>Data Visualization</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>400 Level</h3>
+
+<ul>
+
+<li>Big Data Analytics</li>
+
+<li>Research Project</li>
+
+<li>Industrial Training (SIWES)</li>
+
+<li>Information Security</li>
+
+<li>Entrepreneurship</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     GRADUATION REQUIREMENTS
+=========================== -->
+
+<section>
+
+<h2 class="title">Graduation Requirements</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Successfully complete all compulsory and elective courses.</li>
+
+<li>Earn the minimum required credit units approved by the University.</li>
+
+<li>Complete and defend the final-year research project.</li>
+
+<li>Successfully complete SIWES/Industrial Training.</li>
+
+<li>Meet the University's minimum CGPA requirement for graduation.</li>
+
+<li>Fulfil all departmental and university academic regulations.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     CAREER OPPORTUNITIES
+=========================== -->
+
+<section>
+
+<h2 class="title">Career Opportunities</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Data Scientist</h3>
+<p>Analyze complex datasets to solve business and scientific problems.</p>
+</div>
+
+<div class="card">
+<h3>Machine Learning Engineer</h3>
+<p>Develop intelligent systems using modern AI technologies.</p>
+</div>
+
+<div class="card">
+<h3>Data Analyst</h3>
+<p>Transform raw data into meaningful insights for organizations.</p>
+</div>
+
+<div class="card">
+<h3>Business Intelligence Analyst</h3>
+<p>Support strategic decision-making through dashboards and analytics.</p>
+</div>
+
+<div class="card">
+<h3>Research Scientist</h3>
+<p>Conduct innovative research in data science and artificial intelligence.</p>
+</div>
+
+<div class="card">
+<h3>Software Engineer</h3>
+<p>Design and build software applications powered by data and AI.</p>
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+     POSTGRADUATE PROGRAMMES
+=========================== -->
+
+<section>
+
+<h2 class="title">Postgraduate Programmes</h2>
+
+<p>
+
+The Department of Data Science offers postgraduate
+programmes that develop advanced knowledge, research skills
+and professional competence in Data Science, Artificial
+Intelligence and related computing disciplines.
+
+</p>
+
+</section>
+
+<!-- ===========================
+     PGD PROGRAMME
+=========================== -->
+
+<section>
+
+<h2 class="title">Postgraduate Diploma (PGD)</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Programme Overview</h3>
+
+<p>
+
+The PGD programme is designed for graduates who wish to
+acquire professional knowledge and practical skills in Data
+Science or transition into the field from related
+disciplines.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Entry Requirements</h3>
+
+<ul>
+
+<li>Bachelor's degree from a recognized university.</li>
+
+<li>HND (Upper Credit) in a related discipline may be considered.</li>
+
+<li>Applicants must satisfy the University's postgraduate admission requirements.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Duration</h3>
+
+<p>
+
+Full-Time: 2 Semesters (1 Academic Session)
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Expected Outcomes</h3>
+
+<p>
+
+Graduates acquire practical knowledge in programming,
+database systems, statistics, data analysis and machine
+learning.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     M.Sc. PROGRAMME
+=========================== -->
+
+<section>
+
+<h2 class="title">Master of Science (M.Sc.)</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Programme Overview</h3>
+
+<p>
+
+The M.Sc. programme prepares students for advanced
+professional practice, research and doctoral studies through
+coursework, seminars and a supervised research dissertation.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Entry Requirements</h3>
+
+<ul>
+
+<li>B.Sc. in Data Science, Computer Science or related field.</li>
+
+<li>Minimum Second Class Honours (Lower Division).</li>
+
+<li>Applicants must meet the School of Postgraduate Studies requirements.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Duration</h3>
+
+<p>
+
+Full-Time: 3–4 Semesters
+
+</p>
+
+<p>
+
+Part-Time: 4–6 Semesters
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Research Areas</h3>
+
+<ul>
+
+<li>Artificial Intelligence</li>
+
+<li>Machine Learning</li>
+
+<li>Data Mining</li>
+
+<li>Big Data Analytics</li>
+
+<li>Cloud Computing</li>
+
+<li>Business Intelligence</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     Ph.D. PROGRAMME
+=========================== -->
+
+<section>
+
+<h2 class="title">Doctor of Philosophy (Ph.D.)</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Programme Overview</h3>
+
+<p>
+
+The Ph.D. programme is research-intensive and prepares
+scholars for careers in academia, industry and research
+institutions through original contributions to knowledge.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Entry Requirements</h3>
+
+<ul>
+
+<li>M.Sc. in Data Science or a closely related discipline.</li>
+
+<li>Minimum CGPA as prescribed by the University.</li>
+
+<li>Submission of a research proposal may be required.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Duration</h3>
+
+<p>
+
+Full-Time: 6–8 Semesters
+
+</p>
+
+<p>
+
+Part-Time: As approved by the School of Postgraduate Studies.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Research Focus</h3>
+
+<ul>
+
+<li>Deep Learning</li>
+
+<li>Natural Language Processing</li>
+
+<li>Computer Vision</li>
+
+<li>Cybersecurity Analytics</li>
+
+<li>Health Informatics</li>
+
+<li>Financial Data Analytics</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     TUITION INFORMATION
+=========================== -->
+
+<section>
+
+<h2 class="title">Tuition Information</h2>
+
+<div class="card">
+
+<p>
+
+Tuition and other fees are determined by the University of
+Uyo and may be reviewed from time to time.
+
+Applicants are advised to consult the University's official
+admissions office or School of Postgraduate Studies for the
+latest approved fee schedule.
+
+</p>
+
+<a href="#" class="btn">Download Fee Schedule</a>
+
+</div>
+
+</section>
+<!-- ===========================
+     RESEARCH AREAS
+=========================== -->
+
+<section>
+
+<h2 class="title">Research Areas</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Artificial Intelligence</h3>
+<p>Intelligent systems, expert systems and AI applications for solving real-world problems.</p>
+</div>
+
+<div class="card">
+<h3>Machine Learning</h3>
+<p>Predictive modelling, deep learning, supervised and unsupervised learning techniques.</p>
+</div>
+
+<div class="card">
+<h3>Big Data Analytics</h3>
+<p>Large-scale data processing, visualization and business intelligence.</p>
+</div>
+
+<div class="card">
+<h3>Cloud Computing</h3>
+<p>Cloud platforms, distributed computing and scalable data infrastructure.</p>
+</div>
+
+<div class="card">
+<h3>Data Engineering</h3>
+<p>Database design, data pipelines and enterprise data management.</p>
+</div>
+
+<div class="card">
+<h3>Cybersecurity Analytics</h3>
+<p>Security intelligence, digital forensics and cyber threat analysis.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     PROGRAMME LEARNING OUTCOMES
+=========================== -->
+
+<section>
+
+<h2 class="title">Programme Learning Outcomes</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Develop strong analytical and computational problem-solving skills.</li>
+
+<li>Design and implement modern data-driven software solutions.</li>
+
+<li>Apply Artificial Intelligence and Machine Learning techniques to real-world problems.</li>
+
+<li>Conduct independent research using scientific methods.</li>
+
+<li>Communicate technical findings effectively to diverse audiences.</li>
+
+<li>Demonstrate ethical and professional responsibility in data management.</li>
+
+<li>Work effectively in multidisciplinary teams.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     WHY STUDY WITH US
+=========================== -->
+
+<section>
+
+<h2 class="title">Why Study Data Science at the University of Uyo?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Modern Curriculum</h3>
+<p>Industry-aligned courses designed to meet current global technology trends.</p>
+</div>
+
+<div class="card">
+<h3>Experienced Lecturers</h3>
+<p>Highly qualified academics with strong research and industry experience.</p>
+</div>
+
+<div class="card">
+<h3>Research Opportunities</h3>
+<p>Access to innovative research projects, laboratories and collaborations.</p>
+</div>
+
+<div class="card">
+<h3>Industry Exposure</h3>
+<p>Internships, SIWES placements and partnerships with technology organizations.</p>
+</div>
+
+<div class="card">
+<h3>Career Support</h3>
+<p>Mentorship, entrepreneurship training and career guidance for students.</p>
+</div>
+
+<div class="card">
+<h3>Global Perspective</h3>
+<p>Preparation for international careers and postgraduate studies.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     APPLY NOW
+=========================== -->
+
+<section>
+
+<h2 class="title">Apply for Admission</h2>
+
+<div class="card" style="text-align:center;">
+
+<p>
+
+Applications are open for undergraduate and postgraduate
+programmes. Join the Department of Data Science and become
+part of a community dedicated to innovation, research and
+academic excellence.
+
+</p>
+
+<a href="admissions.html" class="btn">Apply Now</a>
+
+<a href="#" class="btn" style="margin-left:15px;">Download Brochure</a>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     CONTACT
+=========================== -->
+
+<section>
+
+<h2 class="title">Contact the Department</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Office Address</h3>
+
+<p>
+
+Department of Data Science<br>
+Faculty of Computing<br>
+University of Uyo<br>
+PMB 1017, Uyo,<br>
+Akwa Ibom State, Nigeria
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Contact Details</h3>
+
+<p><strong>Email:</strong> datascience@uniuyo.edu.ng</p>
+
+<p><strong>Phone:</strong> +234 (0) 800 123 4567</p>
+
+<p><strong>Office Hours:</strong> Monday – Friday (8:00 AM – 4:00 PM)</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+
+<footer style="background:#4B0082;color:white;padding:40px 8%;text-align:center;">
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+<p>
+Faculty of Computing<br>
+University of Uyo
+</p>
+
+<br>
+
+<p>
+
+<a href="index.html" style="color:#00C2B8;text-decoration:none;">Home</a> |
+
+<a href="about.html" style="color:#00C2B8;text-decoration:none;">About</a> |
+
+<a href="hod.html" style="color:#00C2B8;text-decoration:none;">HOD</a> |
+
+<a href="programmes.html" style="color:#00C2B8;text-decoration:none;">Programmes</a> |
+
+<a href="admissions.html" style="color:#00C2B8;text-decoration:none;">Admissions</a> |
+
+<a href="contact.html" style="color:#00C2B8;text-decoration:none;">Contact</a>
+
+</p>
+
+<br>
+
+<p>
+
+Follow Us:
+Facebook |
+Instagram |
+LinkedIn |
+YouTube |
+X (Twitter)
+
+</p>
+
+<br>
+
+<hr style="border:1px solid #00C2B8;">
+
+<br>
+
+<p>
+
+&copy; 2026 Department of Data Science,<br>
+Faculty of Computing,<br>
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+<p>
+
+Designed with HTML5 • Deep Violet & Cyber Teal Theme
+
+</p>
+
+</footer>
+
+</body>
+</html>

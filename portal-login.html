@@ -1,0 +1,2640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portal Login | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+
+background:#f4f7fb;
+
+min-height:100vh;
+
+color:#333;
+
+}
+
+
+
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+
+color:white;
+
+text-align:center;
+
+padding:12px;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   HERO LOGIN AREA
+===================================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.95),
+rgba(75,0,130,.95)
+),
+
+url("images/login-banner.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:80px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+
+.hero h2{
+
+font-size:45px;
+
+color:#00C2B8;
+
+margin-bottom:15px;
+
+}
+
+
+
+.hero p{
+
+font-size:18px;
+
+max-width:850px;
+
+margin:auto;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   LOGIN SECTION
+===================================== */
+
+
+section{
+
+padding:60px 8%;
+
+}
+
+
+
+
+
+
+
+.title{
+
+font-size:32px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   LOGIN CARDS
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:12px;
+
+text-align:center;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+cursor:pointer;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   LOGIN FORM
+===================================== */
+
+
+input,
+select{
+
+width:100%;
+
+padding:14px;
+
+margin:10px 0;
+
+border:1px solid #ccc;
+
+border-radius:6px;
+
+}
+
+
+
+
+
+.login-box{
+
+background:white;
+
+max-width:500px;
+
+margin:auto;
+
+padding:35px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+
+footer{
+
+background:#4B0082;
+
+color:white;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Unified Portal Login |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="students-portal.html">
+Students
+</a>
+</li>
+
+
+
+<li>
+<a href="alumni.html">
+Alumni
+</a>
+</li>
+
+
+
+<li>
+<a href="careers.html">
+Careers
+</a>
+</li>
+
+
+
+<li>
+<a href="faq.html">
+FAQ
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Welcome To The Portal
+
+</h2>
+
+
+
+
+<p>
+
+Secure access point for students, staff, administrators
+and alumni services.
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LOGIN OPTIONS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+
+Select Portal Access
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Portal
+</h3>
+
+
+<p>
+
+Access course registration, results, academic records and
+student services.
+
+</p>
+
+
+<a href="#student-login"
+class="btn">
+
+Student Login
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Staff Portal
+</h3>
+
+
+<p>
+
+Manage courses, student information, academic records and
+department activities.
+
+</p>
+
+
+<a href="#staff-login"
+class="btn">
+
+Staff Login
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Administrator Portal
+</h3>
+
+
+<p>
+
+Manage the website, users, announcements and departmental
+systems.
+
+</p>
+
+
+<a href="#admin-login"
+class="btn">
+
+Admin Login
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STUDENT LOGIN PREVIEW
+===================================== -->
+
+
+<section id="student-login">
+
+
+<h2 class="title">
+
+Student Login
+
+</h2>
+
+
+
+
+
+<div class="login-box">
+
+
+<h3>
+
+Student Account Access
+
+</h3>
+
+
+
+<form>
+
+
+<input type="text"
+
+placeholder="Student ID">
+
+
+
+
+
+<input type="password"
+
+placeholder="Password">
+
+
+
+
+
+
+<button class="btn">
+
+Login
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     STAFF LOGIN PORTAL
+===================================== -->
+
+
+<section id="staff-login">
+
+
+<h2 class="title">
+
+Staff Portal Login
+
+</h2>
+
+
+
+
+
+<div class="login-box">
+
+
+<h3>
+
+Staff Account Access
+
+</h3>
+
+
+
+<form>
+
+
+<input type="text"
+
+placeholder="Staff ID">
+
+
+
+
+
+<input type="password"
+
+placeholder="Password">
+
+
+
+
+
+
+<select>
+
+
+<option>
+
+Select Department
+
+</option>
+
+
+<option>
+
+Data Science
+
+</option>
+
+
+<option>
+
+Computer Science
+
+</option>
+
+
+<option>
+
+Information Technology
+
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<button class="btn">
+
+Login
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ADMIN LOGIN PORTAL
+===================================== -->
+
+
+<section id="admin-login">
+
+
+<h2 class="title">
+
+Administrator Login
+
+</h2>
+
+
+
+
+
+<div class="login-box">
+
+
+<h3>
+
+System Administration
+
+</h3>
+
+
+
+<form>
+
+
+<input type="text"
+
+placeholder="Admin Username">
+
+
+
+
+
+<input type="password"
+
+placeholder="Admin Password">
+
+
+
+
+
+<input type="text"
+
+placeholder="Security Code">
+
+
+
+
+
+
+<button class="btn">
+
+Admin Login
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     PASSWORD RECOVERY
+===================================== -->
+
+
+<section id="password-recovery">
+
+
+<h2 class="title">
+
+Password Recovery
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Forgot Password?
+
+</h3>
+
+
+
+<p>
+
+Recover access to your portal account using your
+registered email address.
+
+</p>
+
+
+<a href="#reset-password"
+
+class="btn">
+
+Reset Password
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Account Verification
+
+</h3>
+
+
+
+<p>
+
+Verify your identity before creating a new password.
+
+</p>
+
+
+<a href="#verify-account"
+
+class="btn">
+
+Verify Account
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESET PASSWORD FORM
+===================================== -->
+
+
+<section id="reset-password">
+
+
+<h2 class="title">
+
+Reset Password
+
+</h2>
+
+
+
+
+
+<div class="login-box">
+
+
+<h3>
+
+Create New Password
+
+</h3>
+
+
+
+
+
+<form>
+
+
+
+<input type="email"
+
+placeholder="Registered Email">
+
+
+
+
+
+<input type="password"
+
+placeholder="New Password">
+
+
+
+
+
+<input type="password"
+
+placeholder="Confirm New Password">
+
+
+
+
+
+<button class="btn">
+
+Update Password
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     SECURITY NOTICE
+===================================== -->
+
+
+<section id="security">
+
+
+<h2 class="title">
+
+Portal Security Information
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Secure Access
+
+</h3>
+
+
+<p>
+
+Always protect your login details and avoid sharing your
+password with others.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Data Protection
+
+</h3>
+
+
+<p>
+
+Student, staff and administrative information is handled
+through secure systems.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Login Support
+
+</h3>
+
+
+<p>
+
+Contact the portal administrator if you experience any
+access problems.
+
+</p>
+
+
+<a href="contact.html"
+
+class="btn">
+
+Get Support
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     ACCOUNT REGISTRATION
+===================================== -->
+
+
+<section id="registration">
+
+
+<h2 class="title">
+
+Create Portal Account
+
+</h2>
+
+
+
+
+
+<div class="login-box">
+
+
+<h3>
+
+New User Registration
+
+</h3>
+
+
+
+
+
+<form>
+
+
+
+<label>
+
+Full Name
+
+</label>
+
+
+<input type="text"
+
+placeholder="Enter your full name">
+
+
+
+
+
+<label>
+
+Email Address
+
+</label>
+
+
+<input type="email"
+
+placeholder="Enter your email">
+
+
+
+
+
+<label>
+
+Phone Number
+
+</label>
+
+
+<input type="text"
+
+placeholder="Enter phone number">
+
+
+
+
+
+<label>
+
+Account Type
+
+</label>
+
+
+
+<select>
+
+
+<option>
+
+Select Account Type
+
+</option>
+
+
+<option>
+
+Student
+
+</option>
+
+
+<option>
+
+Staff
+
+</option>
+
+
+<option>
+
+Alumni
+
+</option>
+
+
+</select>
+
+
+
+
+
+
+<label>
+
+Create Password
+
+</label>
+
+
+<input type="password"
+
+placeholder="Create password">
+
+
+
+
+
+
+<label>
+
+Confirm Password
+
+</label>
+
+
+<input type="password"
+
+placeholder="Confirm password">
+
+
+
+
+
+
+<button class="btn">
+
+Create Account
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     PROFILE CREATION
+===================================== -->
+
+
+<section id="profile">
+
+
+<h2 class="title">
+
+Profile Setup
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Student Profile
+
+</h3>
+
+
+<p>
+
+Add student information including programme, level,
+registration details and academic information.
+
+</p>
+
+
+<a href="students-portal.html"
+
+class="btn">
+
+Setup Profile
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Staff Profile
+
+</h3>
+
+
+<p>
+
+Manage staff details, department information and academic
+responsibilities.
+
+</p>
+
+
+<a href="#"
+
+class="btn">
+
+Setup Profile
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Alumni Profile
+
+</h3>
+
+
+<p>
+
+Create an alumni profile to connect with graduates and
+career opportunities.
+
+</p>
+
+
+<a href="alumni.html"
+
+class="btn">
+
+Setup Profile
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     PORTAL FEATURES PREVIEW
+===================================== -->
+
+
+<section id="features">
+
+
+<h2 class="title">
+
+Portal Features
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Student Services
+
+</h3>
+
+
+<p>
+
+Access course registration, examination results,
+academic records and announcements.
+
+</p>
+
+
+<a href="students-portal.html"
+
+class="btn">
+
+Student Services
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Staff Management
+
+</h3>
+
+
+<p>
+
+Manage courses, student information, research activities
+and academic records.
+
+</p>
+
+
+<a href="#"
+
+class="btn">
+
+Staff Services
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Alumni Network
+
+</h3>
+
+
+<p>
+
+Connect with graduates, mentorship programmes and career
+opportunities.
+
+</p>
+
+
+<a href="alumni.html"
+
+class="btn">
+
+Alumni Services
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Department Updates
+
+</h3>
+
+
+<p>
+
+Receive announcements, events, academic notices and
+important information.
+
+</p>
+
+
+<a href="faq.html"
+
+class="btn">
+
+View Updates
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     DASHBOARD PREVIEW
+===================================== -->
+
+
+<section id="dashboard">
+
+
+<h2 class="title">
+
+Portal Dashboard Preview
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Welcome User
+
+</h3>
+
+
+<p>
+
+Personalized dashboard showing account information and
+quick actions.
+
+</p>
+
+
+<a href="#"
+
+class="btn">
+
+Open Dashboard
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Notifications
+
+</h3>
+
+
+<p>
+
+View academic announcements, messages and system alerts.
+
+</p>
+
+
+<a href="#"
+
+class="btn">
+
+View Notifications
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Documents
+
+</h3>
+
+
+<p>
+
+Access uploaded files, forms, certificates and important
+documents.
+
+</p>
+
+
+<a href="downloads.html"
+
+class="btn">
+
+Open Documents
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     PORTAL SUPPORT CENTRE
+===================================== -->
+
+
+<section id="support">
+
+
+<h2 class="title">
+
+Portal Support Centre
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Technical Support
+
+</h3>
+
+
+
+<p>
+
+Get assistance with login issues, account recovery and
+portal errors.
+
+</p>
+
+
+
+<a href="contact.html"
+
+class="btn">
+
+Contact Support
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Student Help Desk
+
+</h3>
+
+
+
+<p>
+
+Receive support for registration, results, academic
+records and student services.
+
+</p>
+
+
+
+<a href="students-portal.html"
+
+class="btn">
+
+Student Help
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+System Administrator
+
+</h3>
+
+
+
+<p>
+
+Report technical problems and request system assistance
+from the administrator.
+
+</p>
+
+
+
+<a href="#"
+
+class="btn">
+
+Report Issue
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     SYSTEM INFORMATION
+===================================== -->
+
+
+<section id="system-info">
+
+
+<h2 class="title">
+
+System Information
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Portal Availability
+
+</h3>
+
+
+<p>
+
+The portal is available 24/7 for students, staff and
+authorized users.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Supported Devices
+
+</h3>
+
+
+<p>
+
+Access the portal using computers, tablets and mobile
+devices.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Security Features
+
+</h3>
+
+
+<p>
+
+The system uses secure authentication and user
+verification processes.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONTACT SECTION
+===================================== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+
+Portal Contact Information
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Portal Administration Office
+
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Contact Details
+
+</h3>
+
+
+
+<p>
+
+<strong>Email:</strong>
+
+portal.datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+
+<p>
+
+<strong>Working Hours:</strong>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Follow Department
+
+</h3>
+
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+Instagram
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+<p>
+X (Twitter)
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="
+color:#00C2B8;">
+
+Department of Data Science
+
+</h2>
+
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+
+<p>
+
+A secure digital platform connecting students,
+staff, administrators and alumni.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Quick Links
+
+</h3>
+
+
+
+<p>
+
+<a href="index.html"
+
+style="color:white;">
+
+Home
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="students-portal.html"
+
+style="color:white;">
+
+Students Portal
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="alumni.html"
+
+style="color:white;">
+
+Alumni
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="careers.html"
+
+style="color:white;">
+
+Careers
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="faq.html"
+
+style="color:white;">
+
+FAQ
+
+</a>
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Portal Services
+
+</h3>
+
+
+
+<p>
+Student Login
+</p>
+
+
+<p>
+Staff Login
+</p>
+
+
+<p>
+Admin Login
+</p>
+
+
+<p>
+Account Recovery
+</p>
+
+
+<p>
+User Registration
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,2136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Research | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLES
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#f4f7fb;
+color:#333 ;
+line-height:1.7;
+
+}
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+color:white;
+text-align:center;
+padding:10px;
+font-weight:bold;
+
+}
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+flex-wrap:wrap;
+position:sticky;
+top:1000;
+z-index:1000;
+
+}
+
+.logo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 10px 0;
+}
+.logo h3{
+color:#fff;
+}
+
+.logo p{
+font-size:14px;
+margin-left:10px;
+text-align:right;
+color: #ccc;
+}
+
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00C2B8;
+}
+
+.search{
+display:flex;
+margin-top:10px;
+}
+
+.search input{
+padding:8px;
+width:220px;
+border:none;
+outline:none;
+}
+
+.search button{
+background:#00C2B8;
+color:white;
+border:none;
+padding:8px 15px;
+cursor:pointer;
+}
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero{
+background-image:linear-gradient(rgba(75,0,130,0.1),rgba(75,0,130,0.1)),
+url("../images/uni.jpg");
+background-size:cover;
+object-fit:cover;
+background-position:center;
+padding:100px 20px;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:20px;
+color:#ffff;
+}
+
+.hero p{
+background:rgba(0,0,0,.3);
+border-radius:5px;
+max-width:800px;
+margin:auto;
+font-size:18px;
+color: #ffff;
+}
+
+
+
+/* =====================================
+   SEARCH BOX
+===================================== */
+
+
+.search-box{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+}
+
+
+.search-box input{
+
+width:300px;
+
+padding:14px;
+
+border:none;
+
+border-radius:6px;
+
+outline:none;
+
+}
+
+
+
+.search-box button{
+
+padding:14px 25px;
+
+background:#00C2B8;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+.search-box button:hover{
+
+background:white;
+
+color:#4B0082;
+
+}
+
+
+
+
+/* =====================================
+   SECTION
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.08);
+
+border-top:5px solid #00C2B8;
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+padding:12px 25px;
+
+margin-top:15px;
+
+background:#00C2B8;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<div class="topbar">
+
+Research & Innovation Hub |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+<header>
+
+<div class="logo">
+<h3>Department of Data Science</h3>
+<br>
+<p>Faculty of Computing | University of Uyo</p>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="programmes.html">Programmes</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="staff.html">Staff</a></li>
+
+<li><a href="students.html">Students</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="search">
+
+<input type="text" placeholder="Search...">
+
+<button>Search</button>
+
+</div>
+
+</header>
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Research & Innovation
+</h2>
+
+
+<p>
+
+The Department of Data Science conducts innovative research
+in Artificial Intelligence, Machine Learning, Data Analytics,
+Big Data, Cloud Computing and emerging technologies aimed at
+solving real-world problems.
+
+</p>
+
+
+
+<div class="search-box">
+
+
+<input type="text"
+placeholder="Search research topics...">
+
+
+<button>
+Search
+</button>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH OVERVIEW
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+Research Overview
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+
+The Department of Data Science promotes cutting-edge research
+through interdisciplinary collaboration, industry partnerships
+and innovative solutions driven by data and technology.
+
+
+<br><br>
+
+
+Our researchers explore advanced computational methods,
+intelligent systems, predictive analytics, digital
+transformation and applications of data science across
+different sectors including healthcare, education, finance,
+agriculture and industry.
+
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+Research Statistics
+</h2>
+
+
+
+<div class="grid">
+
+
+
+<div class="card" style="text-align:center;">
+
+<h1 style="color:#00C2B8;font-size:45px;">
+50+
+</h1>
+
+<h3>
+Research Publications
+</h3>
+
+<p>
+Journal and conference publications.
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+10+
+</h1>
+
+
+<h3>
+Research Projects
+</h3>
+
+
+<p>
+Ongoing and completed projects.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+5
+</h1>
+
+
+<h3>
+Research Laboratories
+</h3>
+
+
+<p>
+Modern innovation facilities.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+20+
+</h1>
+
+
+<h3>
+Researchers
+</h3>
+
+
+<p>
+Academic staff and collaborators.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     RESEARCH PUBLICATIONS
+===================================== -->
+
+<section id="publications">
+
+<h2 class="title">
+Research Publications
+</h2>
+
+
+<p style="margin-bottom:25px;">
+
+Explore scholarly works, research outputs and academic
+contributions from the Department of Data Science.
+
+</p>
+
+
+
+<!-- PUBLICATION SEARCH -->
+
+<div class="card">
+
+
+<input type="text"
+placeholder="Search publications by title, author or keyword..."
+style="
+width:100%;
+padding:15px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:16px;
+">
+
+
+<br><br>
+
+
+
+<select
+style="
+width:100%;
+padding:15px;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+<option>
+Filter Publication Category
+</option>
+
+<option>
+Journal Articles
+</option>
+
+<option>
+Conference Papers
+</option>
+
+<option>
+Books
+</option>
+
+<option>
+Book Chapters
+</option>
+
+<option>
+Technical Reports
+</option>
+
+<option>
+Student Publications
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+<br><br>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<!-- JOURNAL ARTICLE -->
+
+
+<div class="card">
+
+
+<h3>
+Journal Articles
+</h3>
+
+
+<p>
+
+Research papers published in international and local
+peer-reviewed journals covering Artificial Intelligence,
+Machine Learning, Data Analytics and Computing.
+
+</p>
+
+
+<ul>
+
+<li>
+Machine Learning Applications in Healthcare Analytics
+</li>
+
+<li>
+Predictive Data Models for Decision Support Systems
+</li>
+
+<li>
+Artificial Intelligence Techniques for Smart Systems
+</li>
+
+</ul>
+
+
+<a href="#" class="btn">
+View Articles
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- CONFERENCE -->
+
+<div class="card">
+
+
+<h3>
+Conference Papers
+</h3>
+
+
+<p>
+
+Research presented at national and international
+conferences, workshops and academic meetings.
+
+</p>
+
+
+<ul>
+
+<li>
+International Conference on Data Science
+</li>
+
+<li>
+Artificial Intelligence Research Conference
+</li>
+
+<li>
+Computing Innovation Workshop
+</li>
+
+
+</ul>
+
+
+<a href="#" class="btn">
+View Conference Papers
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- BOOKS -->
+
+
+<div class="card">
+
+
+<h3>
+Books & Chapters
+</h3>
+
+
+<p>
+
+Academic books and contributed chapters written by
+department researchers and collaborators.
+
+</p>
+
+
+<ul>
+
+<li>
+Data Science Fundamentals
+</li>
+
+<li>
+Machine Learning Concepts
+</li>
+
+<li>
+Big Data Analytics Handbook
+</li>
+
+
+</ul>
+
+
+<a href="#" class="btn">
+View Books
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- TECHNICAL REPORTS -->
+
+<div class="card">
+
+
+<h3>
+Technical Reports
+</h3>
+
+
+<p>
+
+Research reports, project documentation and technical
+publications from completed and ongoing projects.
+
+</p>
+
+
+<ul>
+
+<li>
+Research Project Reports
+</li>
+
+<li>
+System Development Reports
+</li>
+
+<li>
+Innovation Documentation
+</li>
+
+
+</ul>
+
+
+<a href="#" class="btn">
+View Reports
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- STUDENT PUBLICATIONS -->
+
+<div class="card">
+
+
+<h3>
+Student Publications
+</h3>
+
+
+<p>
+
+Highlights outstanding research publications produced by
+undergraduate and postgraduate students.
+
+</p>
+
+
+<ul>
+
+<li>
+Final Year Project Publications
+</li>
+
+<li>
+Student Research Articles
+</li>
+
+<li>
+Innovation Papers
+</li>
+
+
+</ul>
+
+
+<a href="#" class="btn">
+View Student Works
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================
+     CONFERENCES & SEMINARS
+===================================== -->
+
+
+<section id="conferences">
+
+
+<h2 class="title">
+Conferences & Seminars
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Annual Data Science Conference
+</h3>
+
+
+<p>
+
+A platform for researchers, students and industry experts
+to discuss emerging trends in Data Science and Artificial
+Intelligence.
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+October 2026
+
+</p>
+
+
+<a href="#" class="btn">
+Event Details
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+AI Research Seminar Series
+</h3>
+
+
+<p>
+
+Monthly seminars focused on Artificial Intelligence,
+Machine Learning and innovative computing solutions.
+
+</p>
+
+
+<p>
+
+<strong>Status:</strong>
+Upcoming
+
+</p>
+
+
+<a href="#" class="btn">
+Register
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Data Analytics Workshop
+</h3>
+
+
+<p>
+
+Practical workshop covering modern data analysis tools,
+visualization techniques and research methods.
+
+</p>
+
+
+<p>
+
+<strong>Status:</strong>
+Scheduled
+
+</p>
+
+
+<a href="#" class="btn">
+Learn More
+</a>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH LABORATORIES
+===================================== -->
+
+
+<section id="laboratories">
+
+
+<h2 class="title">
+Research Laboratories
+</h2>
+
+
+<p style="margin-bottom:25px;">
+
+Our laboratories provide facilities for innovation,
+experimentation and practical research development.
+
+</p>
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Artificial Intelligence Laboratory
+</h3>
+
+
+<p>
+
+<strong>Research Areas:</strong>
+
+Deep Learning, Computer Vision,
+Natural Language Processing and Intelligent Systems.
+
+</p>
+
+
+<p>
+
+<strong>Facilities:</strong>
+
+AI workstations, GPU computing systems and development tools.
+
+</p>
+
+
+<p>
+
+<strong>Staff:</strong>
+
+AI Research Team
+
+</p>
+
+
+<a href="#" class="btn">
+View Laboratory
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Data Science Laboratory
+</h3>
+
+
+<p>
+
+<strong>Research Areas:</strong>
+
+Data Analytics, Data Mining, Statistics and Visualization.
+
+</p>
+
+
+<p>
+
+<strong>Facilities:</strong>
+
+Data servers, analytics software and visualization tools.
+
+</p>
+
+
+<p>
+
+<strong>Staff:</strong>
+
+Data Analytics Team
+
+</p>
+
+
+<a href="#" class="btn">
+View Laboratory
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Robotics Laboratory
+</h3>
+
+
+<p>
+
+<strong>Research Areas:</strong>
+
+Robotics, Automation and Intelligent Machines.
+
+</p>
+
+
+<p>
+
+<strong>Facilities:</strong>
+
+Robotics kits, sensors and embedded systems.
+
+</p>
+
+
+<p>
+
+<strong>Staff:</strong>
+
+Robotics Research Group
+
+</p>
+
+
+<a href="#" class="btn">
+View Laboratory
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Networking Laboratory
+</h3>
+
+
+<p>
+
+<strong>Research Areas:</strong>
+
+Network systems, cybersecurity and communication
+technologies.
+
+</p>
+
+
+<p>
+
+<strong>Facilities:</strong>
+
+Network equipment and security testing tools.
+
+</p>
+
+
+<p>
+
+<strong>Staff:</strong>
+
+Networking Research Team
+
+</p>
+
+
+<a href="#" class="btn">
+View Laboratory
+</a>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     RESEARCH GRANTS
+===================================== -->
+
+<section id="grants">
+
+<h2 class="title">
+Research Grants & Funding
+</h2>
+
+
+<p style="margin-bottom:25px;">
+
+The Department collaborates with government agencies,
+industries and research organizations to support innovative
+research projects through grants and funding opportunities.
+
+</p>
+
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+<h3>
+Artificial Intelligence Innovation Grant
+</h3>
+
+<p>
+
+<strong>Funding Partner:</strong>
+Technology Research Foundation
+
+</p>
+
+<p>
+
+<strong>Research Area:</strong>
+Artificial Intelligence & Machine Learning
+
+</p>
+
+<p>
+
+<strong>Status:</strong>
+Active
+
+</p>
+
+<a href="#" class="btn">
+View Grant Details
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+Big Data Analytics Research Grant
+</h3>
+
+<p>
+
+<strong>Funding Partner:</strong>
+Computing Research Council
+
+</p>
+
+<p>
+
+<strong>Research Area:</strong>
+Big Data & Cloud Computing
+
+</p>
+
+<p>
+
+<strong>Status:</strong>
+Completed
+
+</p>
+
+<a href="#" class="btn">
+View Grant Details
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+Health Data Science Project Funding
+</h3>
+
+<p>
+
+<strong>Funding Partner:</strong>
+Health Innovation Partners
+
+</p>
+
+<p>
+
+<strong>Research Area:</strong>
+Healthcare Analytics
+
+</p>
+
+<p>
+
+<strong>Status:</strong>
+Ongoing
+
+</p>
+
+<a href="#" class="btn">
+View Grant Details
+</a>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================
+     PATENTS & INNOVATIONS
+===================================== -->
+
+
+<section id="innovation">
+
+
+<h2 class="title">
+Patents & Innovation Projects
+</h2>
+
+
+<p style="margin-bottom:25px;">
+
+The Department encourages the transformation of research
+ideas into practical solutions, technologies and industry
+applications.
+
+</p>
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+<h3>
+Smart Data Prediction Platform
+</h3>
+
+
+<p>
+
+<strong>Category:</strong>
+Artificial Intelligence
+
+</p>
+
+
+<p>
+
+<strong>Description:</strong>
+
+An intelligent platform designed to analyze datasets and
+generate predictive insights for decision making.
+
+</p>
+
+
+<p>
+
+<strong>Status:</strong>
+Prototype Development
+
+</p>
+
+
+<a href="#" class="btn">
+Learn More
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<h3>
+Automated Analytics System
+</h3>
+
+
+<p>
+
+<strong>Category:</strong>
+Data Analytics
+
+</p>
+
+
+<p>
+
+<strong>Description:</strong>
+
+A system that automates data processing, visualization and
+report generation.
+
+</p>
+
+
+<p>
+
+<strong>Status:</strong>
+Innovation Project
+
+</p>
+
+
+<a href="#" class="btn">
+Learn More
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<h3>
+Intelligent Learning Assistant
+</h3>
+
+
+<p>
+
+<strong>Category:</strong>
+Educational Technology
+
+</p>
+
+
+<p>
+
+<strong>Description:</strong>
+
+An AI-powered assistant designed to support student learning
+and academic resources.
+
+</p>
+
+
+<p>
+
+<strong>Status:</strong>
+Research Prototype
+
+</p>
+
+
+<a href="#" class="btn">
+Learn More
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH RESOURCES
+===================================== -->
+
+
+<section id="resources">
+
+
+<h2 class="title">
+Research Resources
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+<h3>
+Research Guidelines
+</h3>
+
+<p>
+
+Guidelines for research proposal preparation,
+methodology and documentation.
+
+</p>
+
+<a href="#" class="btn">
+Download
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<h3>
+Publication Guidelines
+</h3>
+
+<p>
+
+Information on journal submission, citation standards and
+academic publishing procedures.
+
+</p>
+
+<a href="#" class="btn">
+Download
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<h3>
+Research Proposal Template
+</h3>
+
+<p>
+
+Standard template for undergraduate and postgraduate
+research proposals.
+
+</p>
+
+<a href="#" class="btn">
+Download
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<h3>
+Dataset Resources
+</h3>
+
+<p>
+
+Access useful datasets and research databases for
+Data Science projects.
+
+</p>
+
+<a href="#" class="btn">
+Access Resources
+</a>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH CONTACT
+===================================== -->
+
+
+<section id="research-contact">
+
+
+<h2 class="title">
+Research Office Contact
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+<h3>
+Research Coordinator
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+<p>
+
+<strong>Email:</strong>
+
+research.datascience@uniuyo.edu.ng
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+<h3>
+Office Hours
+</h3>
+
+
+<p>
+
+Monday - Friday
+
+</p>
+
+
+<p>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+<p>
+
+Research consultations available by appointment.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+<h3>
+Follow Research Updates
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+ResearchGate
+</p>
+
+
+<p>
+Google Scholar
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+<div class="grid">
+
+
+
+<div>
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+<p>
+
+Advancing innovation through data-driven research,
+technology and collaboration.
+
+</p>
+
+
+</div>
+
+<div>
+
+<h3 style="color:#00C2B8;">
+Quick Links
+</h3>
+
+
+<p>
+<a href="index.html" style="color:white;">
+Home
+</a>
+</p>
+
+
+<p>
+<a href="about.html" style="color:white;">
+About
+</a>
+</p>
+
+
+<p>
+<a href="courses.html" style="color:white;">
+Courses
+</a>
+</p>
+
+
+<p>
+<a href="publications.html" style="color:white;">
+Publications
+</a>
+</p>
+
+
+<p>
+<a href="contact.html" style="color:white;">
+Contact
+</a>
+</p>
+
+
+</div>
+
+<div>
+
+<h3 style="color:#00C2B8;">
+Research Links
+</h3>
+
+
+<p>
+Research Projects
+</p>
+
+
+<p>
+Laboratories
+</p>
+
+
+<p>
+Publications
+</p>
+
+
+<p>
+Innovation Hub
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+</footer>
+
+
+
+
+</body>
+
+</html>

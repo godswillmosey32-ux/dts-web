@@ -1,0 +1,2920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+
+}
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+color:white;
+text-align:center;
+padding:10px;
+font-weight:bold;
+
+}
+
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+position:sticky;
+
+top:1000;
+
+z-index:1000;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+
+url("images/gallery-banner.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   SEARCH
+===================================== */
+
+
+.search-box{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.search-box input{
+
+width:320px;
+
+padding:14px;
+
+border:none;
+
+border-radius:6px;
+
+}
+
+
+
+.search-box select{
+
+padding:14px;
+
+border:none;
+
+border-radius:6px;
+
+}
+
+
+
+.search-box button{
+
+padding:14px 25px;
+
+background:#00C2B8;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+.search-box button:hover{
+
+background:white;
+
+color:#4B0082;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Department Gallery |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+
+<li>
+<a href="research.html">
+Research
+</a>
+</li>
+
+
+
+<li>
+<a href="events.html">
+Events
+</a>
+</li>
+
+
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+
+
+<li>
+<a href="students.html">
+Students
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO SECTION
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Department Gallery
+</h2>
+
+
+
+<p>
+
+Explore moments from our campus activities, research
+laboratories, conferences, student achievements and
+innovation projects.
+
+</p>
+
+
+
+
+
+
+
+<div class="search-box">
+
+
+<input type="text"
+
+placeholder="Search gallery...">
+
+
+
+
+
+<select>
+
+
+<option>
+All Categories
+</option>
+
+
+<option>
+Campus
+</option>
+
+
+<option>
+Laboratories
+</option>
+
+
+<option>
+Graduation
+</option>
+
+
+<option>
+Conferences
+</option>
+
+
+<option>
+Student Activities
+</option>
+
+
+<option>
+Competitions
+</option>
+
+
+</select>
+
+
+
+
+
+
+<select>
+
+
+<option>
+All Years
+</option>
+
+
+<option>
+2026
+</option>
+
+
+<option>
+2025
+</option>
+
+
+<option>
+2024
+</option>
+
+
+</select>
+
+
+
+
+
+<button>
+
+Search
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     GALLERY STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+Gallery Statistics
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+500+
+</h1>
+
+
+<h3>
+Photos
+</h3>
+
+
+<p>
+Department memories captured.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+100+
+</h1>
+
+
+<h3>
+Videos
+</h3>
+
+
+<p>
+Event and activity recordings.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+50+
+</h1>
+
+
+<h3>
+Events Covered
+</h3>
+
+
+<p>
+Academic and social activities.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+15+
+</h1>
+
+
+<h3>
+Research Facilities
+</h3>
+
+
+<p>
+Modern laboratory environments.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     CAMPUS GALLERY
+===================================== -->
+
+
+<section id="campus-gallery">
+
+
+<h2 class="title">
+Campus Gallery
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Explore images showcasing the Department environment,
+learning spaces and university facilities.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/department-building.jpg"
+
+alt="Department Building"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Department Building
+</h3>
+
+
+<p>
+
+Modern facilities designed for teaching, learning and
+research activities.
+
+</p>
+
+
+<a href="#" class="btn">
+View Image
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/lecture-hall.jpg"
+
+alt="Lecture Hall"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Lecture Halls
+</h3>
+
+
+<p>
+
+Comfortable learning spaces equipped for technology-based
+education.
+
+</p>
+
+
+<a href="#" class="btn">
+View Image
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/student-space.jpg"
+
+alt="Student Space"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Student Learning Spaces
+</h3>
+
+
+<p>
+
+Collaborative areas where students learn, discuss and
+develop projects.
+
+</p>
+
+
+<a href="#" class="btn">
+View Image
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LABORATORY GALLERY
+===================================== -->
+
+
+<section id="laboratory-gallery">
+
+
+<h2 class="title">
+Laboratory Gallery
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Images showing our modern research laboratories,
+equipment and innovation environments.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/ai-lab.jpg"
+
+alt="AI Laboratory"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Artificial Intelligence Laboratory
+</h3>
+
+
+<p>
+
+Research environment for machine learning, deep learning
+and intelligent systems.
+
+</p>
+
+
+<a href="#" class="btn">
+View Gallery
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/data-lab.jpg"
+
+alt="Data Science Laboratory"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Data Science Laboratory
+</h3>
+
+
+<p>
+
+Facility for data analytics, visualization and research
+experiments.
+
+</p>
+
+
+<a href="#" class="btn">
+View Gallery
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/robotics-lab.jpg"
+
+alt="Robotics Laboratory"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Robotics Laboratory
+</h3>
+
+
+<p>
+
+Innovation space for robotics, automation and embedded
+technology.
+
+</p>
+
+
+<a href="#" class="btn">
+View Gallery
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/network-lab.jpg"
+
+alt="Networking Laboratory"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Networking Laboratory
+</h3>
+
+
+<p>
+
+Practical networking, cybersecurity and communication
+training environment.
+
+</p>
+
+
+<a href="#" class="btn">
+View Gallery
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     GRADUATION GALLERY
+===================================== -->
+
+
+<section id="graduation-gallery">
+
+
+<h2 class="title">
+Graduation Gallery
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/convocation.jpg"
+
+alt="Convocation Ceremony"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Convocation Ceremony
+</h3>
+
+
+<p>
+
+Celebrating the success of graduating Data Science
+students.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/award-day.jpg"
+
+alt="Award Ceremony"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Award Presentation
+</h3>
+
+
+<p>
+
+Recognizing outstanding academic and research
+achievements.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/graduates.jpg"
+
+alt="Graduates"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Graduate Celebration
+</h3>
+
+
+<p>
+
+Memorable moments from graduation celebrations.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONFERENCE GALLERY
+===================================== -->
+
+
+<section id="conference-gallery">
+
+
+<h2 class="title">
+Conference Gallery
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/seminar-event.jpg"
+
+alt="Research Seminar"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Research Seminars
+</h3>
+
+
+<p>
+
+Academic presentations and knowledge-sharing sessions.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/workshop-event.jpg"
+
+alt="Workshop Event"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Technology Workshops
+</h3>
+
+
+<p>
+
+Hands-on training sessions and practical demonstrations.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/conference-event.jpg"
+
+alt="Conference"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Research Conferences
+</h3>
+
+
+<p>
+
+Researchers presenting innovative solutions and findings.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     STUDENT ACTIVITIES GALLERY
+===================================== -->
+
+
+<section id="student-gallery">
+
+
+<h2 class="title">
+Student Activities Gallery
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Explore student experiences, collaborations, clubs,
+projects and departmental activities.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/student-project.jpg"
+
+alt="Student Projects"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Student Projects
+</h3>
+
+
+<p>
+
+Students working on innovative Data Science and technology
+projects.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/student-club.jpg"
+
+alt="Student Club"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Student Clubs & Associations
+</h3>
+
+
+<p>
+
+Academic groups promoting collaboration, learning and
+innovation.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/student-event.jpg"
+
+alt="Student Event"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Student Events
+</h3>
+
+
+<p>
+
+Social, academic and professional development activities.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     COMPETITION GALLERY
+===================================== -->
+
+
+<section id="competition-gallery">
+
+
+<h2 class="title">
+Competition Gallery
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/hackathon.jpg"
+
+alt="Hackathon"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Data Science Hackathon
+</h3>
+
+
+<p>
+
+Students developing creative solutions using data and
+technology.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/coding-contest.jpg"
+
+alt="Coding Competition"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Coding Competition
+</h3>
+
+
+<p>
+
+Programming challenges designed to improve technical
+skills.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/innovation-challenge.jpg"
+
+alt="Innovation Challenge"
+
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Innovation Challenge
+</h3>
+
+
+<p>
+
+Showcasing student ideas and technology solutions.
+
+</p>
+
+
+<a href="#" class="btn">
+View Photos
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     PHOTO VIEWER
+===================================== -->
+
+
+<section id="photo-viewer">
+
+
+<h2 class="title">
+Photo Viewer
+</h2>
+
+
+
+
+<div class="card">
+
+
+
+<p>
+
+Click on images to explore department memories in a larger
+view.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<img src="images/photo1.jpg"
+
+onclick="openImage(this.src)"
+
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+cursor:pointer;
+">
+
+
+</div>
+
+
+
+
+
+<div>
+
+
+<img src="images/photo2.jpg"
+
+onclick="openImage(this.src)"
+
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+cursor:pointer;
+">
+
+
+</div>
+
+
+
+
+
+<div>
+
+
+<img src="images/photo3.jpg"
+
+onclick="openImage(this.src)"
+
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+cursor:pointer;
+">
+
+
+</div>
+
+
+
+
+
+<div>
+
+
+<img src="images/photo4.jpg"
+
+onclick="openImage(this.src)"
+
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+cursor:pointer;
+">
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LIGHTBOX
+===================================== -->
+
+
+<div id="lightbox"
+
+style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+z-index:2000;
+justify-content:center;
+align-items:center;
+">
+
+
+
+<img id="lightbox-image"
+
+style="
+max-width:90%;
+max-height:85%;
+border-radius:10px;
+">
+
+
+
+
+
+<span onclick="closeImage()"
+
+style="
+position:absolute;
+top:30px;
+right:40px;
+font-size:45px;
+color:white;
+cursor:pointer;
+">
+
+&times;
+
+</span>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function openImage(image){
+
+document.getElementById("lightbox").style.display="flex";
+
+document.getElementById("lightbox-image").src=image;
+
+}
+
+
+
+function closeImage(){
+
+document.getElementById("lightbox").style.display="none";
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     VIDEO GALLERY
+===================================== -->
+
+
+<section id="video-gallery">
+
+
+<h2 class="title">
+Video Gallery
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<video controls
+
+style="
+width:100%;
+height:220px;
+border-radius:8px;
+">
+
+
+<source src="videos/campus-tour.mp4"
+
+type="video/mp4">
+
+
+</video>
+
+
+
+<h3>
+Campus Tour
+</h3>
+
+
+<p>
+
+Explore the Department of Data Science facilities.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<video controls
+
+style="
+width:100%;
+height:220px;
+border-radius:8px;
+">
+
+
+<source src="videos/research-highlight.mp4"
+
+type="video/mp4">
+
+
+</video>
+
+
+
+<h3>
+Research Highlights
+</h3>
+
+
+<p>
+
+Discover departmental research activities.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<video controls
+
+style="
+width:100%;
+height:220px;
+border-radius:8px;
+">
+
+
+<source src="videos/student-life.mp4"
+
+type="video/mp4">
+
+
+</video>
+
+
+
+<h3>
+Student Life
+</h3>
+
+
+<p>
+
+Moments from student activities and events.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     GALLERY ANNOUNCEMENTS
+===================================== -->
+
+
+<section id="gallery-announcements">
+
+
+<h2 class="title">
+Gallery Announcements
+</h2>
+
+
+
+
+<div class="card">
+
+
+<ul>
+
+
+<li>
+New laboratory images have been uploaded.
+</li>
+
+
+<li>
+Students can submit photos of departmental activities.
+</li>
+
+
+<li>
+Research project images will be updated regularly.
+</li>
+
+
+<li>
+Video highlights from events are now available.
+</li>
+
+
+<li>
+Gallery contributions are welcome from staff and students.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FEATURED COLLECTIONS
+===================================== -->
+
+
+<section id="featured-collections">
+
+
+<h2 class="title">
+Featured Collections
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Innovation & Research Collection
+</h3>
+
+
+<p>
+
+A collection highlighting artificial intelligence projects,
+research activities and technology innovations.
+
+</p>
+
+
+<a href="#" class="btn">
+Explore Collection
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Experience Collection
+</h3>
+
+
+<p>
+
+Capturing student learning experiences, teamwork and
+academic achievements.
+
+</p>
+
+
+<a href="#" class="btn">
+Explore Collection
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Department History Collection
+</h3>
+
+
+<p>
+
+A visual journey through the growth and achievements of
+the Department of Data Science.
+
+</p>
+
+
+<a href="#" class="btn">
+Explore Collection
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     NEWSLETTER SUBSCRIPTION
+===================================== -->
+
+
+<section id="newsletter">
+
+
+<h2 class="title">
+Gallery Newsletter
+</h2>
+
+
+
+
+<div class="card">
+
+
+<p>
+
+Subscribe to receive updates about new photos, videos,
+events and departmental activities.
+
+</p>
+
+
+
+
+<br>
+
+
+
+
+<input type="email"
+
+placeholder="Enter your email address"
+
+style="
+width:70%;
+padding:14px;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+
+
+
+<button class="btn">
+
+Subscribe
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONTACT SECTION
+===================================== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Gallery Office Contact
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Department Media & Gallery Office
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Contact Information
+</h3>
+
+
+
+<p>
+
+<strong>Email:</strong>
+
+gallery.datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+<p>
+
+<strong>Office Hours:</strong>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Social Media Links
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+<p>
+Instagram
+</p>
+
+
+<p>
+X (Twitter)
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer
+
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+
+<p>
+
+Preserving memories of innovation,
+research and academic excellence.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Quick Links
+</h3>
+
+
+<p>
+
+<a href="index.html"
+
+style="color:white;">
+
+Home
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="about.html"
+
+style="color:white;">
+
+About
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="events.html"
+
+style="color:white;">
+
+Events
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="research.html"
+
+style="color:white;">
+
+Research
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="contact.html"
+
+style="color:white;">
+
+Contact
+
+</a>
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Gallery Categories
+</h3>
+
+
+<p>
+Campus Photos
+</p>
+
+
+<p>
+Laboratories
+</p>
+
+
+<p>
+Graduation
+</p>
+
+
+<p>
+Conferences
+</p>
+
+
+<p>
+Student Activities
+</p>
+
+
+<p>
+Competitions
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+
+</footer>
+
+
+
+
+
+
+</body>
+
+</html>

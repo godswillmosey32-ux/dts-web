@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Publications | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLES
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+
+}
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+color:white;
+text-align:center;
+padding:10px;
+font-weight:bold;
+
+}
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 8%;
+
+flex-wrap:wrap;
+
+position:sticky;
+
+top:1000;
+
+z-index:1000;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero{
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+
+url("images/publication-banner.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+/* =====================================
+   SEARCH
+===================================== */
+
+
+.search-box{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+}
+
+
+
+.search-box input{
+
+width:320px;
+
+padding:14px;
+
+border:none;
+
+border-radius:6px;
+
+outline:none;
+
+}
+
+
+
+.search-box select{
+
+padding:14px;
+
+width:200px;
+
+border:none;
+
+border-radius:6px;
+
+}
+
+
+
+.search-box button{
+
+padding:14px 25px;
+
+background:#00C2B8;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+.search-box button:hover{
+
+background:white;
+
+color:#4B0082;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+border-top:5px solid #00C2B8;
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:12px 25px;
+
+background:#00C2B8;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Research Publications Portal |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="courses.html">Courses</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="publications.html">Publications</a></li>
+
+<li><a href="students.html">Students</a></li>
+
+<li><a href="staff.html">Staff</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO SECTION
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Research Publications
+</h2>
+
+
+
+<p>
+
+Explore scholarly articles, conference papers, books,
+technical reports and student research publications from
+the Department of Data Science.
+
+</p>
+
+
+
+
+
+<div class="search-box">
+
+
+<input type="text"
+placeholder="Search publications...">
+
+
+
+<select>
+
+<option>
+All Categories
+</option>
+
+
+<option>
+Journal Articles
+</option>
+
+
+<option>
+Conference Papers
+</option>
+
+
+<option>
+Books
+</option>
+
+
+<option>
+Book Chapters
+</option>
+
+
+<option>
+Technical Reports
+</option>
+
+
+<option>
+Student Publications
+</option>
+
+
+</select>
+
+
+
+
+
+<select>
+
+
+<option>
+All Years
+</option>
+
+
+<option>
+2026
+</option>
+
+
+<option>
+2025
+</option>
+
+
+<option>
+2024
+</option>
+
+
+<option>
+2023
+</option>
+
+
+</select>
+
+
+
+
+
+<button>
+Search
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     PUBLICATION STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+Publication Statistics
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+120+
+</h1>
+
+
+<h3>
+Total Publications
+</h3>
+
+
+<p>
+Research outputs from the department.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+70+
+</h1>
+
+
+<h3>
+Journal Articles
+</h3>
+
+
+<p>
+Peer-reviewed research papers.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+35+
+</h1>
+
+
+<h3>
+Conference Papers
+</h3>
+
+
+<p>
+Academic conference contributions.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+15+
+</h1>
+
+
+<h3>
+Books & Chapters
+</h3>
+
+
+<p>
+Academic books and contributions.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     TECHNICAL REPORTS
+===================================== -->
+
+<section id="technical-reports">
+
+
+<h2 class="title">
+Technical Reports
+</h2>
+
+
+<p style="margin-bottom:25px;">
+
+Technical documents, project reports and research
+documentation produced by departmental research teams.
+
+</p>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+AI-Based Healthcare Prediction System Report
+</h3>
+
+
+<p>
+
+<strong>Research Group:</strong>
+Artificial Intelligence Laboratory
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2026
+
+</p>
+
+
+<p>
+
+<strong>Description:</strong>
+
+Technical documentation of a machine learning system
+developed for healthcare data prediction.
+
+</p>
+
+
+<a href="#" class="btn">
+Download Report
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Big Data Processing Framework Report
+</h3>
+
+
+<p>
+
+<strong>Research Group:</strong>
+Big Data & Cloud Computing Group
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2025
+
+</p>
+
+
+<p>
+
+<strong>Description:</strong>
+
+Report covering the design and implementation of a
+large-scale data processing framework.
+
+</p>
+
+
+<a href="#" class="btn">
+Download Report
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Cybersecurity Data Protection Analysis
+</h3>
+
+
+<p>
+
+<strong>Research Group:</strong>
+Cybersecurity Research Team
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2024
+
+</p>
+
+
+<p>
+
+<strong>Description:</strong>
+
+Analysis of modern approaches for protecting digital
+information systems.
+
+</p>
+
+
+<a href="#" class="btn">
+Download Report
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STUDENT PUBLICATIONS
+===================================== -->
+
+
+<section id="student-publications">
+
+
+<h2 class="title">
+Student Publications
+</h2>
+
+
+
+<p style="margin-bottom:25px;">
+
+Outstanding research publications from undergraduate and
+postgraduate students.
+
+</p>
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Predicting Student Academic Performance Using Machine Learning
+</h3>
+
+
+<p>
+
+<strong>Student:</strong>
+Data Science Final Year Student
+
+</p>
+
+
+<p>
+
+<strong>Supervisor:</strong>
+Department Research Supervisor
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2026
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong>
+Final Year Project Publication
+
+</p>
+
+
+<a href="#" class="btn">
+View Publication
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Sentiment Analysis Using Natural Language Processing
+</h3>
+
+
+<p>
+
+<strong>Student:</strong>
+M.Sc Data Science Student
+
+</p>
+
+
+<p>
+
+<strong>Supervisor:</strong>
+AI Research Coordinator
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2025
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong>
+Postgraduate Research
+
+</p>
+
+
+<a href="#" class="btn">
+View Publication
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+IoT Data Analytics for Smart Systems
+</h3>
+
+
+<p>
+
+<strong>Student:</strong>
+Data Science Research Student
+
+</p>
+
+
+<p>
+
+<strong>Supervisor:</strong>
+Computing Research Team
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2025
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong>
+Innovation Project
+
+</p>
+
+
+<a href="#" class="btn">
+View Publication
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FEATURED PUBLICATIONS
+===================================== -->
+
+
+<section id="featured">
+
+
+<h2 class="title">
+Featured Publications
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Top Research Contribution 2026
+</h3>
+
+
+<p>
+
+A highly cited publication focusing on innovative
+Artificial Intelligence methods and real-world applications.
+
+</p>
+
+
+<p>
+
+<strong>Impact:</strong>
+High Research Visibility
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Industry Impact Research Paper
+</h3>
+
+
+<p>
+
+Research work demonstrating the application of Data Science
+solutions in solving industry challenges.
+
+</p>
+
+
+<p>
+
+<strong>Impact:</strong>
+Industry Collaboration
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Innovation Publication
+</h3>
+
+
+<p>
+
+Recognized student research contribution showcasing
+creativity and technical excellence.
+
+</p>
+
+
+<p>
+
+<strong>Impact:</strong>
+Student Research Excellence
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH PROFILES
+===================================== -->
+
+
+<section id="profiles">
+
+
+<h2 class="title">
+Researcher Profiles
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Academic Staff Profile
+</h3>
+
+
+<p>
+
+<strong>Research Areas:</strong>
+
+Artificial Intelligence, Machine Learning and Data Analytics.
+
+</p>
+
+
+<p>
+
+<strong>Profiles:</strong>
+
+</p>
+
+
+<ul>
+
+<li>
+Google Scholar
+</li>
+
+
+<li>
+ORCID
+</li>
+
+
+<li>
+ResearchGate
+</li>
+
+
+<li>
+LinkedIn Research Profile
+</li>
+
+
+</ul>
+
+
+
+<a href="#" class="btn">
+View Profile
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Collaboration Portal
+</h3>
+
+
+<p>
+
+Connect with departmental researchers and explore
+opportunities for academic collaboration.
+
+</p>
+
+
+<ul>
+
+<li>
+Research Partnerships
+</li>
+
+<li>
+Joint Publications
+</li>
+
+<li>
+Research Projects
+</li>
+
+<li>
+Academic Networking
+</li>
+
+</ul>
+
+
+<a href="#" class="btn">
+Collaborate
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Publication Archive
+</h3>
+
+
+<p>
+
+Access previous publications, research papers and
+departmental academic outputs.
+
+</p>
+
+
+<ul>
+
+<li>
+Search Archive
+</li>
+
+<li>
+Download Papers
+</li>
+
+<li>
+Citation Information
+</li>
+
+</ul>
+
+
+<a href="#" class="btn">
+Access Archive
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     PUBLICATION RESOURCES
+===================================== -->
+
+<section id="publication-resources">
+
+
+<h2 class="title">
+Publication Resources
+</h2>
+
+
+
+<p style="margin-bottom:25px;">
+
+Helpful materials and guidelines to support researchers,
+students and academic writers in preparing quality
+publications.
+
+</p>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Author Guidelines
+</h3>
+
+
+<p>
+
+Guidelines for preparing manuscripts, formatting papers
+and submitting research articles to academic journals.
+
+</p>
+
+
+<a href="#" class="btn">
+Download Guide
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Writing Guide
+</h3>
+
+
+<p>
+
+A complete guide covering research structure, academic
+writing style and documentation standards.
+
+</p>
+
+
+<a href="#" class="btn">
+Download Guide
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Citation & Referencing Guide
+</h3>
+
+
+<p>
+
+Learn proper citation methods including APA, IEEE and
+other academic referencing styles.
+
+</p>
+
+
+<a href="#" class="btn">
+View Guide
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Journal Submission Guide
+</h3>
+
+
+<p>
+
+Step-by-step information on selecting journals,
+submitting manuscripts and responding to reviews.
+
+</p>
+
+
+<a href="#" class="btn">
+View Guide
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     PUBLICATION SEARCH HELP
+===================================== -->
+
+
+<section id="search-help">
+
+
+<h2 class="title">
+Publication Search Assistance
+</h2>
+
+
+
+<div class="card">
+
+
+<h3>
+How to Find Publications
+</h3>
+
+
+<ul>
+
+<li>
+Search using author names or keywords.
+</li>
+
+
+<li>
+Filter publications by category and year.
+</li>
+
+
+<li>
+Use DOI links for verified research papers.
+</li>
+
+
+<li>
+Download available research documents.
+</li>
+
+
+<li>
+Contact the department research office for assistance.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     NEWSLETTER
+===================================== -->
+
+
+<section id="newsletter">
+
+
+<h2 class="title">
+Research Newsletter
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Subscribe to receive updates about new publications,
+research achievements, conferences and innovation
+activities.
+
+</p>
+
+
+
+<br>
+
+
+<input type="email"
+placeholder="Enter your email address"
+style="
+width:70%;
+padding:14px;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+
+<button class="btn">
+
+Subscribe
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONTACT INFORMATION
+===================================== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Publication Office Contact
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Publication Office
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Contact Details
+</h3>
+
+
+<p>
+
+<strong>Email:</strong>
+
+publications.datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+<p>
+
+<strong>Office Hours:</strong>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Social Media & Research Links
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+ResearchGate
+</p>
+
+
+<p>
+Google Scholar
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+<p>
+
+Advancing knowledge through research,
+innovation and data-driven solutions.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Quick Links
+</h3>
+
+
+<p>
+<a href="index.html" style="color:white;">
+Home
+</a>
+</p>
+
+
+<p>
+<a href="research.html" style="color:white;">
+Research
+</a>
+</p>
+
+
+<p>
+<a href="publications.html" style="color:white;">
+Publications
+</a>
+</p>
+
+
+<p>
+<a href="courses.html" style="color:white;">
+Courses
+</a>
+</p>
+
+
+<p>
+<a href="contact.html" style="color:white;">
+Contact
+</a>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Research Services
+</h3>
+
+
+<p>
+Publication Archive
+</p>
+
+
+<p>
+Research Profiles
+</p>
+
+
+<p>
+Academic Resources
+</p>
+
+
+<p>
+Research Collaboration
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+</footer>
+
+
+
+
+
+
+</body>
+
+</html>

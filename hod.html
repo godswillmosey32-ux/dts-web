@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Head of Department | Department of Data Science | University of Uyo</title>
+
+<style>
+
+/* ==========================
+   GENERAL STYLES
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+line-height:1.7;
+}
+
+/* ==========================
+   TOP BAR
+========================== */
+
+.topbar{
+background:#00C2B8;
+color:white;
+padding:10px;
+text-align:center;
+font-weight:bold;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+background:#4B0082;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+flex-wrap:wrap;
+position:sticky;
+top:1000;
+z-index:999;
+}
+
+.logo h1{
+color:#00C2B8;
+font-size:32px;
+}
+
+.logo p{
+font-size:14px;
+margin-top:5px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00C2B8;
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+.search{
+display:flex;
+margin-top:10px;
+}
+
+.search input{
+padding:10px;
+border:none;
+outline:none;
+width:220px;
+}
+
+.search button{
+background:#00C2B8;
+border:none;
+padding:10px 18px;
+color:white;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+background:
+linear-gradient(rgba(75,0,130,.90),
+rgba(75,0,130,.90)),
+url("images/hod-banner.jpg");
+
+background-size:cover;
+background-position:center;
+
+padding:90px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+max-width:850px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+/* ==========================
+   SECTION
+========================== */
+
+section{
+
+padding:70px 8%;
+
+}
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+margin-bottom:25px;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+1fr 2fr;
+
+gap:35px;
+
+align-items:center;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+border-top:5px solid #00C2B8;
+
+}
+
+/* ==========================
+   IMAGE
+========================== */
+
+.profile-image{
+
+width:100%;
+
+border-radius:12px;
+
+border:5px solid #00C2B8;
+
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:20px;
+
+}
+
+table td{
+
+padding:12px;
+
+border-bottom:1px solid #ddd;
+
+}
+
+table td:first-child{
+
+font-weight:bold;
+
+color:#4B0082;
+
+width:35%;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.button{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 28px;
+
+background:#00C2B8;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#4B0082;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+.search{
+
+margin-top:15px;
+
+}
+
+.hero h2{
+
+font-size:34px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+
+Department of Data Science • Faculty of Computing • University of Uyo
+
+</div>
+
+<header>
+
+<div class="logo">
+
+<h1>Department of Data Science</h1>
+
+<p>University of Uyo</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="hod.html">HOD</a></li>
+
+<li><a href="programmes.html">Programmes</a></li>
+
+<li><a href="staff.html">Staff</a></li>
+
+<li><a href="research.html">Research</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="search">
+
+<input type="text" placeholder="Search">
+
+<button>Search</button>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h2>Head of Department</h2>
+
+<p>
+
+Meet the academic leader of the Department of Data Science,
+whose vision, leadership and dedication continue to inspire
+academic excellence, impactful research and innovation.
+
+</p>
+
+</section>
+
+<!-- ==========================
+     HOD PROFILE
+========================== -->
+
+<section>
+
+<h2 class="title">Profile</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="images/hod.jpg"
+alt="Head of Department"
+class="profile-image">
+
+</div>
+
+<div class="card">
+
+<h2 style="color:#4B0082;">
+Dr. Uduak George
+</h2>
+
+<p style="margin:15px 0;">
+
+<strong>Position:</strong>
+Head of Department,
+Department of Data Science
+
+</p>
+
+<table>
+
+<tr>
+
+<td>Faculty</td>
+
+<td>Faculty of Computing</td>
+
+</tr>
+
+<tr>
+
+<td>Department</td>
+
+<td>Data Science</td>
+
+</tr>
+
+<tr>
+
+<td>Office</td>
+
+<td>Administrative Building, Room DS-201</td>
+
+</tr>
+
+<tr>
+
+<td>Email</td>
+
+<td>hod.datascience@uniuyo.edu.ng</td>
+
+</tr>
+
+<tr>
+
+<td>Phone</td>
+
+<td>+234 (0) 800 123 4567</td>
+
+</tr>
+
+<tr>
+
+<td>Status</td>
+
+<td>Full-Time Academic Staff</td>
+
+</tr>
+
+</table>
+
+<a href="#" class="button">
+
+Download Profile
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================
+     BIOGRAPHY
+========================== -->
+
+<section>
+
+<h2 class="title">Biography</h2>
+
+<div class="card">
+
+<p>
+
+Dr. Uduak George is an accomplished scholar, researcher and
+academic administrator with extensive experience in Data
+Science, Artificial Intelligence and Machine Learning.
+
+He has contributed significantly to teaching, research,
+curriculum development and academic leadership within the
+University of Uyo and the wider academic community.
+
+His passion for innovation and student mentorship has helped
+produce graduates who excel in academia, industry and
+entrepreneurship.
+
+He actively collaborates with national and international
+research institutions, supervising undergraduate and
+postgraduate research projects while promoting excellence in
+teaching and community engagement.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     ACADEMIC QUALIFICATIONS
+========================== -->
+
+<section>
+
+<h2 class="title">Academic Qualifications</h2>
+
+<div class="card">
+
+<table>
+
+<tr>
+<td>B.Sc.</td>
+<td>Computer Science</td>
+<td>University of Uyo</td>
+</tr>
+
+<tr>
+<td>M.Sc.</td>
+<td>Computer Science (Data Analytics)</td>
+<td>University of Lagos</td>
+</tr>
+
+<tr>
+<td>Ph.D.</td>
+<td>Data Science & Artificial Intelligence</td>
+<td>University of Ibadan</td>
+</tr>
+
+<tr>
+<td>Postdoctoral Research</td>
+<td>Machine Learning & Big Data Analytics</td>
+<td>International Research Collaboration</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     PROFESSIONAL MEMBERSHIPS
+========================== -->
+
+<section>
+
+<h2 class="title">Professional Memberships</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Nigeria Computer Society (NCS)</h3>
+
+<p>
+Professional member actively supporting computing education,
+research and innovation.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Computer Professionals Registration Council of Nigeria (CPN)</h3>
+
+<p>
+Registered Computer Professional committed to ethical
+practice and professional development.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>IEEE Computer Society</h3>
+
+<p>
+Member contributing to international computing research and
+technology advancement.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Association for Computing Machinery (ACM)</h3>
+
+<p>
+Supports global collaboration in computer science and Data
+Science research.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     RESEARCH INTERESTS
+========================== -->
+
+<section>
+
+<h2 class="title">Research Interests</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Artificial Intelligence</h3>
+<p>Design of intelligent systems for healthcare, education and public services.</p>
+</div>
+
+<div class="card">
+<h3>Machine Learning</h3>
+<p>Predictive modelling, classification algorithms and deep learning applications.</p>
+</div>
+
+<div class="card">
+<h3>Data Analytics</h3>
+<p>Business intelligence, visualization and decision-support systems.</p>
+</div>
+
+<div class="card">
+<h3>Big Data</h3>
+<p>Large-scale data processing, storage architectures and analytics.</p>
+</div>
+
+<div class="card">
+<h3>Cloud Computing</h3>
+<p>Scalable computing infrastructure and cloud-based data platforms.</p>
+</div>
+
+<div class="card">
+<h3>Data Mining</h3>
+<p>Knowledge discovery, pattern recognition and intelligent data processing.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     TEACHING AREAS
+========================== -->
+
+<section>
+
+<h2 class="title">Teaching Areas</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Artificial Intelligence</h3>
+</div>
+
+<div class="card">
+<h3>Machine Learning</h3>
+</div>
+
+<div class="card">
+<h3>Data Structures & Algorithms</h3>
+</div>
+
+<div class="card">
+<h3>Database Systems</h3>
+</div>
+
+<div class="card">
+<h3>Big Data Analytics</h3>
+</div>
+
+<div class="card">
+<h3>Research Methodology</h3>
+</div>
+
+</div>
+
+</section>
+<!-- ==========================
+     PUBLICATIONS
+========================== -->
+
+<section>
+
+<h2 class="title">Selected Publications</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Artificial Intelligence for Smart Healthcare</h3>
+
+<p><strong>Journal:</strong> International Journal of Data Science</p>
+
+<p><strong>Year:</strong> 2025</p>
+
+</div>
+
+<div class="card">
+
+<h3>Machine Learning Models for Financial Fraud Detection</h3>
+
+<p><strong>Conference:</strong> IEEE International Conference</p>
+
+<p><strong>Year:</strong> 2024</p>
+
+</div>
+
+<div class="card">
+
+<h3>Big Data Analytics in Higher Education</h3>
+
+<p><strong>Publisher:</strong> Springer</p>
+
+<p><strong>Year:</strong> 2023</p>
+
+</div>
+
+<div class="card">
+
+<h3>Cloud-Based Predictive Analytics</h3>
+
+<p><strong>Journal:</strong> Journal of Computing Research</p>
+
+<p><strong>Year:</strong> 2022</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     AWARDS
+========================== -->
+
+<section>
+
+<h2 class="title">Awards & Recognition</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Best Researcher Award</h3>
+<p>Faculty of Computing Excellence Award (2025).</p>
+</div>
+
+<div class="card">
+<h3>Outstanding Academic Leadership</h3>
+<p>Recognized for excellence in departmental administration and mentorship.</p>
+</div>
+
+<div class="card">
+<h3>Innovation Award</h3>
+<p>For outstanding contributions to Artificial Intelligence research.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     MESSAGE FROM THE HOD
+========================== -->
+
+<section>
+
+<h2 class="title">Message from the Head of Department</h2>
+
+<div class="card">
+
+<p>
+
+Welcome to the Department of Data Science, University of Uyo.
+
+Our department is committed to academic excellence, innovative
+research and the development of graduates equipped with the
+knowledge and practical skills needed to thrive in today's
+data-driven world.
+
+We encourage our students to embrace curiosity, creativity,
+integrity and lifelong learning while making meaningful
+contributions to society through technology and innovation.
+
+Together, we will continue to build a department that is
+recognized nationally and internationally for excellence in
+teaching, research and community service.
+
+</p>
+
+<p style="margin-top:20px;">
+
+<strong>
+Dr. Uduak George<br>
+Head of Department
+</strong>
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     OFFICE HOURS
+========================== -->
+
+<section>
+
+<h2 class="title">Office Hours</h2>
+
+<div class="card">
+
+<table>
+
+<tr>
+<td>Monday</td>
+<td>9:00 AM – 3:00 PM</td>
+</tr>
+
+<tr>
+<td>Tuesday</td>
+<td>9:00 AM – 3:00 PM</td>
+</tr>
+
+<tr>
+<td>Wednesday</td>
+<td>9:00 AM – 3:00 PM</td>
+</tr>
+
+<tr>
+<td>Thursday</td>
+<td>9:00 AM – 3:00 PM</td>
+</tr>
+
+<tr>
+<td>Friday</td>
+<td>9:00 AM – 2:00 PM</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     CONTACT INFORMATION
+========================== -->
+
+<section>
+
+<h2 class="title">Contact Information</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Office Address</h3>
+
+<p>
+
+Department of Data Science<br>
+Faculty of Computing<br>
+University of Uyo<br>
+PMB 1017, Uyo,<br>
+Akwa Ibom State, Nigeria
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Contact Details</h3>
+
+<p><strong>Email:</strong> hod.datascience@uniuyo.edu.ng</p>
+
+<p><strong>Phone:</strong> +234 (0) 800 123 4567</p>
+
+<p><strong>Office:</strong> Room DS-201</p>
+
+</div>
+
+<div class="card">
+
+<h3>Academic Profiles</h3>
+
+<p><a href="#">Google Scholar</a></p>
+
+<p><a href="#">ORCID</a></p>
+
+<p><a href="#">ResearchGate</a></p>
+
+<p><a href="#">LinkedIn</a></p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     FOOTER
+========================== -->
+
+<footer style="background:#4B0082;color:white;padding:40px 8%;text-align:center;">
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+<p>
+Faculty of Computing<br>
+University of Uyo
+</p>
+
+<br>
+
+<p>
+
+<a href="index.html" style="color:#00C2B8;text-decoration:none;">Home</a> |
+
+<a href="about.html" style="color:#00C2B8;text-decoration:none;">About</a> |
+
+<a href="programmes.html" style="color:#00C2B8;text-decoration:none;">Programmes</a> |
+
+<a href="staff.html" style="color:#00C2B8;text-decoration:none;">Staff</a> |
+
+<a href="research.html" style="color:#00C2B8;text-decoration:none;">Research</a> |
+
+<a href="contact.html" style="color:#00C2B8;text-decoration:none;">Contact</a>
+
+</p>
+
+<br>
+
+<p>
+
+Follow Us:
+Facebook |
+Instagram |
+LinkedIn |
+YouTube |
+X (Twitter)
+
+</p>
+
+<br>
+
+<hr style="border:1px solid #00C2B8;">
+
+<br>
+
+<p>
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+All Rights Reserved.
+
+</p>
+
+<p>
+
+Designed with HTML5 • Deep Violet & Cyber Teal Theme
+
+</p>
+
+</footer>
+
+</body>
+</html>

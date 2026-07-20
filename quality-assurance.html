@@ -1,0 +1,2676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quality Assurance | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+
+background:#f4f7fb;
+
+color:#333;
+
+line-height:1.7;
+
+}
+
+
+
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+
+color:white;
+
+text-align:center;
+
+padding:12px;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero{
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.94),
+rgba(75,0,130,.94)
+),
+
+url("images/quality-banner.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+font-size:18px;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   GRID AND CARDS
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Quality Assurance Unit |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+
+<li>
+<a href="students-portal.html">
+Students
+</a>
+</li>
+
+
+
+<li>
+<a href="research.html">
+Research
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+
+Quality Assurance
+
+</h2>
+
+
+
+
+<p>
+
+Ensuring excellence in teaching, learning, research and
+academic services through continuous improvement.
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     INTRODUCTION
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+
+About Quality Assurance
+
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Commitment To Academic Excellence
+
+</h3>
+
+
+
+<p>
+
+The Department of Data Science is committed to maintaining
+high academic standards through effective quality
+monitoring, evaluation and continuous improvement
+processes.
+
+</p>
+
+
+
+
+<p>
+
+Our quality assurance framework supports excellent
+teaching, innovative research and a positive learning
+environment for students and staff.
+
+</p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     QA STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+
+Quality Assurance Overview
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+font-size:45px;
+color:#00C2B8;">
+
+100%
+
+</h1>
+
+
+<h3>
+
+Academic Review
+
+</h3>
+
+
+<p>
+
+Continuous monitoring of academic activities.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+font-size:45px;
+color:#00C2B8;">
+
+24/7
+
+</h1>
+
+
+<h3>
+
+Quality Monitoring
+
+</h3>
+
+
+<p>
+
+Support for maintaining educational standards.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+font-size:45px;
+color:#00C2B8;">
+
+5+
+
+</h1>
+
+
+<h3>
+
+Quality Areas
+
+</h3>
+
+
+<p>
+
+Teaching, research, curriculum and services.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+font-size:45px;
+color:#00C2B8;">
+
+A+
+
+</h1>
+
+
+<h3>
+
+Excellence Goal
+
+</h3>
+
+
+<p>
+
+Commitment to continuous improvement.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     ACADEMIC QUALITY MONITORING
+===================================== -->
+
+
+<section id="academic-monitoring">
+
+
+<h2 class="title">
+
+Academic Quality Monitoring
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Programme Evaluation
+
+</h3>
+
+
+<p>
+
+Regular assessment of academic programmes to ensure they
+meet institutional and industry standards.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Evaluation
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Course Quality Review
+
+</h3>
+
+
+<p>
+
+Continuous review of course content, learning outcomes
+and delivery methods.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Review Courses
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Academic Performance Tracking
+
+</h3>
+
+
+<p>
+
+Monitoring student performance and academic progress to
+improve learning outcomes.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Reports
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CURRICULUM REVIEW
+===================================== -->
+
+
+<section id="curriculum">
+
+
+<h2 class="title">
+
+Curriculum Development & Review
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Curriculum Assessment
+
+</h3>
+
+
+<p>
+
+Evaluate curriculum structure and ensure alignment with
+modern Data Science requirements.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Assess Curriculum
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Industry Alignment
+
+</h3>
+
+
+<p>
+
+Ensure programmes reflect current technology trends and
+professional expectations.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Industry Review
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Curriculum Improvement
+
+</h3>
+
+
+<p>
+
+Identify areas for enhancement through feedback,
+research and academic reviews.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Improve Curriculum
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     TEACHING AND LEARNING EVALUATION
+===================================== -->
+
+
+<section id="teaching-evaluation">
+
+
+<h2 class="title">
+
+Teaching & Learning Evaluation
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Lecturer Evaluation
+
+</h3>
+
+
+<p>
+
+Assess teaching effectiveness through feedback and
+academic performance reviews.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Evaluate Teaching
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Learning Environment
+
+</h3>
+
+
+<p>
+
+Monitor classrooms, laboratories and digital learning
+facilities for quality improvement.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Facilities
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Teaching Standards
+
+</h3>
+
+
+<p>
+
+Promote effective teaching methods and innovative
+learning approaches.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Standards
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STUDENT FEEDBACK SYSTEM
+===================================== -->
+
+
+<section id="feedback">
+
+
+<h2 class="title">
+
+Student Feedback System
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Student Surveys
+
+</h3>
+
+
+<p>
+
+Collect student opinions about courses, teaching quality
+and academic services.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Submit Feedback
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Feedback Analysis
+
+</h3>
+
+
+<p>
+
+Review student feedback and identify opportunities for
+academic improvement.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Analysis
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Improvement Actions
+
+</h3>
+
+
+<p>
+
+Implement solutions based on feedback received from
+students and stakeholders.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Actions
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     QUALITY ASSURANCE PROCESS
+===================================== -->
+
+
+<section id="process">
+
+
+<h2 class="title">
+
+Quality Assurance Process
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+1. Planning
+
+</h3>
+
+
+<p>
+
+Identify quality objectives and establish improvement
+strategies.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+2. Monitoring
+
+</h3>
+
+
+<p>
+
+Track academic activities and evaluate performance
+standards.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+3. Improvement
+
+</h3>
+
+
+<p>
+
+Apply findings to improve teaching, research and
+department services.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     ACCREDITATION INFORMATION
+===================================== -->
+
+
+<section id="accreditation">
+
+
+<h2 class="title">
+
+Accreditation & Academic Standards
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Accreditation Compliance
+
+</h3>
+
+
+<p>
+
+The Department maintains academic standards through
+compliance with institutional and professional
+accreditation requirements.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Accreditation
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Academic Benchmarking
+
+</h3>
+
+
+<p>
+
+Programmes are reviewed against national and global
+academic standards to ensure quality delivery.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Benchmarks
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Quality Documentation
+
+</h3>
+
+
+<p>
+
+Maintain records of academic reviews, assessments,
+reports and improvement activities.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Documents
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH QUALITY STANDARDS
+===================================== -->
+
+
+<section id="research-quality">
+
+
+<h2 class="title">
+
+Research Quality Standards
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Research Ethics
+
+</h3>
+
+
+<p>
+
+Promote responsible research practices, integrity and
+ethical standards among researchers.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Research Ethics
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Publication Quality
+
+</h3>
+
+
+<p>
+
+Encourage publication of high-quality research in
+recognized academic journals.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Publication Standards
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Research Evaluation
+
+</h3>
+
+
+<p>
+
+Assess research projects based on impact, originality
+and academic contribution.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Evaluate Research
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     COMPLIANCE AND POLICIES
+===================================== -->
+
+
+<section id="policies">
+
+
+<h2 class="title">
+
+Quality Policies & Compliance
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Academic Integrity
+
+</h3>
+
+
+<p>
+
+Promote honesty, fairness and responsible academic
+practices.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Policy
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Assessment Policy
+
+</h3>
+
+
+<p>
+
+Ensure fair and transparent methods for evaluating
+student performance.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Assessment Guide
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Data Protection
+
+</h3>
+
+
+<p>
+
+Protect academic records and personal information through
+secure data management practices.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Security Policy
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONTINUOUS IMPROVEMENT FRAMEWORK
+===================================== -->
+
+
+<section id="improvement">
+
+
+<h2 class="title">
+
+Continuous Improvement Framework
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Identify Challenges
+
+</h3>
+
+
+<p>
+
+Analyze feedback, reports and evaluations to discover
+areas requiring improvement.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Develop Solutions
+
+</h3>
+
+
+<p>
+
+Create improvement plans and implement effective
+strategies.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Measure Results
+
+</h3>
+
+
+<p>
+
+Review outcomes and ensure improvements achieve the
+desired quality objectives.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     QUALITY ASSURANCE REPORTS
+===================================== -->
+
+
+<section id="reports">
+
+
+<h2 class="title">
+
+Quality Assurance Reports
+
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Annual Quality Review Reports
+
+</h3>
+
+
+
+<p>
+
+Access reports covering academic performance, programme
+evaluation, student feedback and continuous improvement
+activities.
+
+</p>
+
+
+
+<a href="downloads.html"
+
+class="btn">
+
+Download Reports
+
+</a>
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     QUALITY ASSURANCE TEAM
+===================================== -->
+
+
+<section id="qa-team">
+
+
+<h2 class="title">
+
+Quality Assurance Team
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Quality Assurance Coordinator
+
+</h3>
+
+
+<p>
+
+Responsible for coordinating quality improvement
+activities, academic reviews and compliance processes.
+
+</p>
+
+
+<p>
+
+<strong>Department:</strong><br>
+
+Quality Assurance Unit
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Academic Review Committee
+
+</h3>
+
+
+<p>
+
+A team of academic professionals responsible for
+monitoring teaching quality, curriculum standards and
+programme improvement.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Quality Support Team
+
+</h3>
+
+
+<p>
+
+Provides assistance with documentation, evaluation
+processes and quality assurance reporting.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     QA CONTACT SECTION
+===================================== -->
+
+
+<section id="qa-contact">
+
+
+<h2 class="title">
+
+Contact Quality Assurance Unit
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Office Address
+
+</h3>
+
+
+<p>
+
+Quality Assurance Unit<br>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Contact Information
+
+</h3>
+
+
+
+<p>
+
+<strong>Email:</strong>
+
+qualityassurance.datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+
+<p>
+
+<strong>Office Hours:</strong><br>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Need Assistance?
+
+</h3>
+
+
+
+<p>
+
+For enquiries, suggestions or quality improvement
+feedback, contact the Quality Assurance Unit.
+
+</p>
+
+
+
+<a href="contact.html"
+
+class="btn">
+
+Contact Us
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     QUALITY ASSURANCE SUPPORT
+===================================== -->
+
+
+<section id="support">
+
+
+<h2 class="title">
+
+Quality Support Services
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Feedback Submission
+
+</h3>
+
+
+<p>
+
+Students and staff can submit suggestions to improve
+academic and departmental services.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Submit Feedback
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Document Requests
+
+</h3>
+
+
+<p>
+
+Request quality reports, policies and academic
+documentation.
+
+</p>
+
+
+<a href="downloads.html"
+
+class="btn">
+
+Request Documents
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+General Enquiries
+
+</h3>
+
+
+<p>
+
+Get answers to questions about quality assurance
+procedures and standards.
+
+</p>
+
+
+<a href="faq.html"
+
+class="btn">
+
+Visit FAQ
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="
+color:#00C2B8;">
+
+Department of Data Science
+
+</h2>
+
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+
+<p>
+
+Committed to academic excellence, innovation and
+continuous improvement.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Quick Links
+
+</h3>
+
+
+
+<p>
+
+<a href="index.html"
+
+style="color:white;">
+
+Home
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="about.html"
+
+style="color:white;">
+
+About
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="research.html"
+
+style="color:white;">
+
+Research
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="students-portal.html"
+
+style="color:white;">
+
+Students Portal
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="contact.html"
+
+style="color:white;">
+
+Contact
+
+</a>
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Quality Services
+
+</h3>
+
+
+
+<p>
+Academic Review
+</p>
+
+
+<p>
+Accreditation
+</p>
+
+
+<p>
+Research Standards
+</p>
+
+
+<p>
+Feedback System
+</p>
+
+
+<p>
+Quality Reports
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
