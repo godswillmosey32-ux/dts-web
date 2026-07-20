@@ -1,0 +1,2971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Students Portal | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+
+}
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+color:white;
+text-align:center;
+padding:10px;
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+position:sticky;
+
+top:1000;
+
+z-index:1000;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+
+url("images/student-portal-banner.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   FORM INPUTS
+===================================== */
+
+
+input,
+select{
+
+width:100%;
+
+padding:14px;
+
+margin:10px 0;
+
+border:1px solid #ccc;
+
+border-radius:6px;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Students Portal |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+
+<li>
+<a href="research.html">
+Research
+</a>
+</li>
+
+
+
+<li>
+<a href="events.html">
+Events
+</a>
+</li>
+
+
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+
+
+<li>
+<a href="downloads.html">
+Downloads
+</a>
+</li>
+
+
+
+<li>
+<a href="students-portal.html">
+Students Portal
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO SECTION
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Students Portal
+</h2>
+
+
+
+<p>
+
+A central platform for students to access academic
+services, resources, information and departmental support.
+
+</p>
+
+
+
+
+<a href="#login"
+class="btn">
+
+Access Portal
+
+</a>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     PORTAL STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+Student Portal Overview
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+1000+
+</h1>
+
+
+<h3>
+Students
+</h3>
+
+
+<p>
+Registered Data Science students.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+50+
+</h1>
+
+
+<h3>
+Courses
+</h3>
+
+
+<p>
+Academic courses available.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+100+
+</h1>
+
+
+<h3>
+Projects
+</h3>
+
+
+<p>
+Student research projects.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+20+
+</h1>
+
+
+<h3>
+Opportunities
+</h3>
+
+
+<p>
+Career and scholarship opportunities.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STUDENT LOGIN
+===================================== -->
+
+
+<section id="login">
+
+
+<h2 class="title">
+Student Login
+</h2>
+
+
+
+
+<div class="card">
+
+
+<h3>
+Access Your Student Account
+</h3>
+
+
+
+<form>
+
+
+<label>
+Student ID
+</label>
+
+
+<input type="text"
+placeholder="Enter Student ID">
+
+
+
+
+
+<label>
+Password
+</label>
+
+
+<input type="password"
+placeholder="Enter Password">
+
+
+
+
+
+<button class="btn">
+
+Login
+
+</button>
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     STUDENT DASHBOARD
+===================================== -->
+
+
+<section id="dashboard">
+
+
+<h2 class="title">
+Student Dashboard
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Quick access to important academic services and student
+activities.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+My Profile
+</h3>
+
+
+<p>
+
+View and update personal information, contact details and
+academic status.
+
+</p>
+
+
+<a href="#" class="btn">
+Open Profile
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Course Management
+</h3>
+
+
+<p>
+
+Register courses, view enrolled courses and manage
+semester activities.
+
+</p>
+
+
+<a href="#" class="btn">
+Manage Courses
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Academic Records
+</h3>
+
+
+<p>
+
+Access results, transcripts and academic performance
+information.
+
+</p>
+
+
+<a href="#" class="btn">
+View Records
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Messages
+</h3>
+
+
+<p>
+
+Receive important announcements and departmental updates.
+
+</p>
+
+
+<a href="#" class="btn">
+View Messages
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     COURSE REGISTRATION
+===================================== -->
+
+
+<section id="course-registration">
+
+
+<h2 class="title">
+Course Registration
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Semester Course Registration
+</h3>
+
+
+
+
+<p>
+
+Select and submit your courses for the current academic
+session.
+
+</p>
+
+
+
+
+
+<form>
+
+
+
+<label>
+Academic Session
+</label>
+
+
+<select>
+
+
+<option>
+2026/2027
+</option>
+
+
+<option>
+2025/2026
+</option>
+
+
+<option>
+2024/2025
+</option>
+
+
+</select>
+
+
+
+
+
+
+<label>
+Semester
+</label>
+
+
+<select>
+
+
+<option>
+First Semester
+</option>
+
+
+<option>
+Second Semester
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<label>
+Select Level
+</label>
+
+
+<select>
+
+
+<option>
+100 Level
+</option>
+
+
+<option>
+200 Level
+</option>
+
+
+<option>
+300 Level
+</option>
+
+
+<option>
+400 Level
+</option>
+
+
+</select>
+
+
+
+
+
+
+<label>
+Course Code</label>
+
+
+<input type="text"
+
+placeholder="Enter Course Code">
+
+
+
+
+
+<label>
+Course Title
+</label>
+
+
+<input type="text"
+
+placeholder="Enter Course Title">
+
+
+
+
+
+<button class="btn">
+
+Submit Registration
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     REGISTERED COURSES
+===================================== -->
+
+
+<section id="registered-courses">
+
+
+<h2 class="title">
+Registered Courses
+</h2>
+
+
+
+
+<div class="card">
+
+
+
+<table style="
+width:100%;
+border-collapse:collapse;
+">
+
+
+
+<tr style="
+background:#4B0082;
+color:white;
+">
+
+
+<th style="padding:15px;">
+Course Code
+</th>
+
+
+<th style="padding:15px;">
+Course Title
+</th>
+
+
+<th style="padding:15px;">
+Units
+</th>
+
+
+<th style="padding:15px;">
+Status
+</th>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+CSC401
+
+</td>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+Machine Learning
+
+</td>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+3
+
+</td>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+color:#00C2B8;
+">
+
+Registered
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+DSC402
+
+</td>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+Data Analytics
+
+</td>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+3
+
+</td>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+color:#00C2B8;
+">
+
+Registered
+
+</td>
+
+
+</tr>
+
+
+
+
+
+</table>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESULTS & ACADEMIC RECORDS
+===================================== -->
+
+
+<section id="results">
+
+
+<h2 class="title">
+Results & Academic Records
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Semester Results
+</h3>
+
+
+<p>
+
+View your examination scores and semester performance.
+
+</p>
+
+
+<a href="#" class="btn">
+Check Results
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+CGPA Calculator
+</h3>
+
+
+<p>
+
+Calculate your cumulative grade point average and monitor
+academic progress.
+
+</p>
+
+
+<a href="#" class="btn">
+Calculate CGPA
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Academic Transcript
+</h3>
+
+
+<p>
+
+Request and access official academic records.
+
+</p>
+
+
+<a href="#" class="btn">
+Request Transcript
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ACADEMIC CALENDAR
+===================================== -->
+
+
+<section id="academic-calendar">
+
+
+<h2 class="title">
+Academic Calendar
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<ul>
+
+
+<li>
+Registration Period - January 2026
+</li>
+
+
+<li>
+First Semester Lectures - February to May 2026
+</li>
+
+
+<li>
+First Semester Examination - June 2026
+</li>
+
+
+<li>
+Second Semester Lectures - July to October 2026
+</li>
+
+
+<li>
+Second Semester Examination - November 2026
+</li>
+
+
+</ul>
+
+
+<a href="downloads.html"
+class="btn">
+
+Download Calendar
+
+</a>
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     SIWES / INTERNSHIP SECTION
+===================================== -->
+
+
+<section id="siwes">
+
+
+<h2 class="title">
+SIWES & Internship Portal
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Manage industrial training activities, internship records
+and workplace experiences.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+SIWES Registration
+</h3>
+
+
+<p>
+
+Register your industrial training placement and submit
+required documentation.
+
+</p>
+
+
+<a href="#" class="btn">
+Register SIWES
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Internship Opportunities
+</h3>
+
+
+<p>
+
+Explore available internship opportunities from industry
+partners.
+
+</p>
+
+
+<a href="#" class="btn">
+View Opportunities
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+SIWES Report Submission
+</h3>
+
+
+<p>
+
+Upload and submit your industrial training report for
+assessment.
+
+</p>
+
+
+<a href="#" class="btn">
+Submit Report
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Internship Records
+</h3>
+
+
+<p>
+
+Track your placement details, supervisor feedback and
+completion status.
+
+</p>
+
+
+<a href="#" class="btn">
+View Records
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FINAL YEAR PROJECT MANAGEMENT
+===================================== -->
+
+
+<section id="projects">
+
+
+<h2 class="title">
+Final Year Project Management
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Project Registration
+</h3>
+
+
+<p>
+
+Register your final year project topic and select a
+supervisor.
+
+</p>
+
+
+<a href="#" class="btn">
+Register Project
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Project Guidelines
+</h3>
+
+
+<p>
+
+Access project writing guidelines, templates and research
+requirements.
+
+</p>
+
+
+<a href="downloads.html"
+class="btn">
+
+Download Guide
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Project Progress Tracking
+</h3>
+
+
+<p>
+
+Monitor project milestones, submissions and supervisor
+comments.
+
+</p>
+
+
+<a href="#" class="btn">
+Track Progress
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Project Showcase
+</h3>
+
+
+<p>
+
+View outstanding student projects and innovative solutions.
+
+</p>
+
+
+<a href="gallery.html"
+class="btn">
+
+View Projects
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STUDENT ORGANIZATIONS
+===================================== -->
+
+
+<section id="organizations">
+
+
+<h2 class="title">
+Student Organizations
+</h2>
+
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Student communities that encourage collaboration,
+leadership and professional development.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Data Science Students Association
+</h3>
+
+
+<p>
+
+A community focused on learning, networking and
+professional growth.
+
+</p>
+
+
+<a href="#" class="btn">
+Join Association
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Coding Club
+</h3>
+
+
+<p>
+
+A platform for improving programming skills through
+projects and challenges.
+
+</p>
+
+
+<a href="#" class="btn">
+Join Club
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+AI & Innovation Club
+</h3>
+
+
+<p>
+
+Students exploring artificial intelligence, research and
+technology solutions.
+
+</p>
+
+
+<a href="#" class="btn">
+Join Club
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     SCHOLARSHIPS & OPPORTUNITIES
+===================================== -->
+
+
+<section id="scholarships">
+
+
+<h2 class="title">
+Scholarships & Opportunities
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Academic Scholarships
+</h3>
+
+
+<p>
+
+Information about scholarships available for outstanding
+students.
+
+</p>
+
+
+<a href="#" class="btn">
+View Scholarships
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Opportunities
+</h3>
+
+
+<p>
+
+Discover research programmes, competitions and innovation
+grants.
+
+</p>
+
+
+<a href="#" class="btn">
+Explore Opportunities
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Technology Challenges
+</h3>
+
+
+<p>
+
+Participate in hackathons, coding competitions and
+innovation programmes.
+
+</p>
+
+
+<a href="gallery.html"
+class="btn">
+
+View Activities
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CAREER SUPPORT
+===================================== -->
+
+
+<section id="career-support">
+
+
+<h2 class="title">
+Career Support Center
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Job Opportunities
+</h3>
+
+
+<p>
+
+Find available jobs and graduate opportunities in the
+technology industry.
+
+</p>
+
+
+<a href="#" class="btn">
+Find Jobs
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+CV & Interview Guidance
+</h3>
+
+
+<p>
+
+Learn how to prepare professional CVs and succeed in
+interviews.
+
+</p>
+
+
+<a href="#" class="btn">
+Career Guide
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Industry Partnerships
+</h3>
+
+
+<p>
+
+Connect with organizations offering training, internships
+and employment opportunities.
+
+</p>
+
+
+<a href="#" class="btn">
+View Partners
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     STUDENT RESOURCES
+===================================== -->
+
+
+<section id="student-resources">
+
+
+<h2 class="title">
+Student Resources
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Access useful academic materials and tools designed to
+support your learning journey.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Lecture Materials
+</h3>
+
+
+<p>
+
+Access course notes, tutorials, slides and learning
+materials.
+
+</p>
+
+
+<a href="downloads.html"
+class="btn">
+
+Access Materials
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Academic Calendar
+</h3>
+
+
+<p>
+
+View important dates including lectures, examinations and
+academic activities.
+
+</p>
+
+
+<a href="downloads.html"
+class="btn">
+
+View Calendar
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Department Downloads
+</h3>
+
+
+<p>
+
+Download forms, guidelines and official departmental
+documents.
+
+</p>
+
+
+<a href="downloads.html"
+class="btn">
+
+Open Downloads
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Help Center
+</h3>
+
+
+<p>
+
+Get support for academic, technical and administrative
+issues.
+
+</p>
+
+
+<a href="contact.html"
+class="btn">
+
+Get Support
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STUDENT ANNOUNCEMENTS
+===================================== -->
+
+
+<section id="announcements">
+
+
+<h2 class="title">
+Student Announcements
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<ul>
+
+
+<li>
+Course registration for the new semester is now open.
+</li>
+
+
+<li>
+Students should check the academic calendar for important
+dates.
+</li>
+
+
+<li>
+SIWES registration portal is available for eligible
+students.
+</li>
+
+
+<li>
+Final year students should submit project proposals before
+the deadline.
+</li>
+
+
+<li>
+New internship and scholarship opportunities are updated
+regularly.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STUDENT FEEDBACK
+===================================== -->
+
+
+<section id="feedback">
+
+
+<h2 class="title">
+Student Feedback
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Share Your Experience
+</h3>
+
+
+
+<p>
+
+Help us improve the student portal by providing feedback
+and suggestions.
+
+</p>
+
+
+
+
+
+<textarea
+
+placeholder="Write your feedback here..."
+
+style="
+width:100%;
+height:150px;
+padding:15px;
+margin-top:15px;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+</textarea>
+
+
+
+
+
+<br>
+
+
+
+<button class="btn">
+
+Submit Feedback
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     NEWSLETTER
+===================================== -->
+
+
+<section id="newsletter">
+
+
+<h2 class="title">
+Student Newsletter
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<p>
+
+Subscribe to receive academic updates, announcements,
+events and opportunities.
+
+</p>
+
+
+
+
+<br>
+
+
+
+
+<input type="email"
+
+placeholder="Enter your email address">
+
+
+
+
+
+<button class="btn">
+
+Subscribe
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONTACT SECTION
+===================================== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Student Support Contact
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Students Affairs Office
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Contact Information
+</h3>
+
+
+<p>
+
+<strong>Email:</strong>
+
+students.datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+<p>
+
+<strong>Office Hours:</strong>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Social Media
+
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+<p>
+Instagram
+</p>
+
+
+<p>
+X (Twitter)
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer
+
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="color:#00C2B8;">
+
+Department of Data Science
+
+</h2>
+
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+
+<p>
+
+Empowering students through innovation,
+technology and academic excellence.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Quick Links
+</h3>
+
+
+
+<p>
+<a href="index.html"
+style="color:white;">
+Home
+</a>
+</p>
+
+
+
+<p>
+<a href="about.html"
+style="color:white;">
+About
+</a>
+</p>
+
+
+
+<p>
+<a href="research.html"
+style="color:white;">
+Research
+</a>
+</p>
+
+
+
+<p>
+<a href="events.html"
+style="color:white;">
+Events
+</a>
+</p>
+
+
+
+<p>
+<a href="gallery.html"
+style="color:white;">
+Gallery
+</a>
+</p>
+
+
+
+<p>
+<a href="downloads.html"
+style="color:white;">
+Downloads
+</a>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Student Portal Links
+</h3>
+
+
+<p>
+Course Registration
+</p>
+
+
+<p>
+Results
+</p>
+
+
+<p>
+SIWES
+</p>
+
+
+<p>
+Projects
+</p>
+
+
+<p>
+Career Support
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

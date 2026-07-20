@@ -1,0 +1,2750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>News | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+
+}
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+color:white;
+text-align:center;
+padding:10px;
+font-weight:bold;
+
+}
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+position:sticky;
+
+top:1000;
+
+z-index:1000;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   HERO
+===================================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+
+url("images/news-banner.jpg");
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   SEARCH
+===================================== */
+
+
+.search-box{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+
+.search-box input{
+
+width:320px;
+
+padding:14px;
+
+border:none;
+
+border-radius:6px;
+
+outline:none;
+
+}
+
+
+
+
+
+.search-box select{
+
+padding:14px;
+
+border:none;
+
+border-radius:6px;
+
+}
+
+
+
+
+
+.search-box button{
+
+padding:14px 25px;
+
+background:#00C2B8;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+.search-box button:hover{
+
+background:white;
+
+color:#4B0082;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   SECTION
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Department News & Updates |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+<li>
+<a href="research.html">
+Research
+</a>
+</li>
+
+
+<li>
+<a href="publications.html">
+Publications
+</a>
+</li>
+
+
+<li>
+<a href="news.html">
+News
+</a>
+</li>
+
+
+<li>
+<a href="students.html">
+Students
+</a>
+</li>
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO SECTION
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Department News & Updates
+</h2>
+
+
+
+<p>
+
+Stay informed about departmental activities,
+student achievements, staff recognition, research
+breakthroughs and important announcements.
+
+</p>
+
+
+
+
+
+<div class="search-box">
+
+
+<input type="text"
+placeholder="Search news...">
+
+
+
+
+<select>
+
+<option>
+All Categories
+</option>
+
+
+<option>
+Department News
+</option>
+
+
+<option>
+Student Achievements
+</option>
+
+
+<option>
+Staff Promotions
+</option>
+
+
+<option>
+Awards
+</option>
+
+
+<option>
+Research Updates
+</option>
+
+
+</select>
+
+
+
+
+
+<select>
+
+<option>
+All Years
+</option>
+
+
+<option>
+2026
+</option>
+
+
+<option>
+2025
+</option>
+
+
+<option>
+2024
+</option>
+
+
+</select>
+
+
+
+
+
+<button>
+Search
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     NEWS STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+News Statistics
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+200+
+</h1>
+
+
+<h3>
+News Posts
+</h3>
+
+
+<p>
+Department updates and announcements.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+50+
+</h1>
+
+
+<h3>
+Research Updates
+</h3>
+
+
+<p>
+Latest research achievements.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+100+
+</h1>
+
+
+<h3>
+Student Stories
+</h3>
+
+
+<p>
+Achievements and activities.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+30+
+</h1>
+
+
+<h3>
+Awards & Recognition
+</h3>
+
+
+<p>
+Staff and student awards.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     FEATURED NEWS
+===================================== -->
+
+
+<section id="featured-news">
+
+
+<h2 class="title">
+Featured News
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/research-award.jpg"
+alt="Research Award"
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Department Researchers Receive International Recognition
+</h3>
+
+
+<p>
+
+<strong>Date:</strong>
+July 2026
+
+</p>
+
+
+<p>
+
+The Department of Data Science celebrates outstanding
+research achievements following international recognition
+for innovative data-driven solutions.
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/student-project.jpg"
+alt="Student Project"
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Students Develop Innovative AI Solution
+</h3>
+
+
+<p>
+
+<strong>Date:</strong>
+June 2026
+
+</p>
+
+
+<p>
+
+Data Science students showcase a machine learning project
+designed to solve real-world challenges.
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/workshop.jpg"
+alt="Workshop"
+style="
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+
+<h3>
+Department Hosts Data Science Workshop
+</h3>
+
+
+<p>
+
+<strong>Date:</strong>
+May 2026
+
+</p>
+
+
+<p>
+
+Experts and students participated in a workshop focused on
+Artificial Intelligence and emerging technologies.
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     DEPARTMENT NEWS
+===================================== -->
+
+
+<section id="department-news">
+
+
+<h2 class="title">
+Department News
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+New Academic Session Begins
+</h3>
+
+
+<p>
+
+<strong>Category:</strong>
+Department Announcement
+
+</p>
+
+
+<p>
+
+The department welcomes new and returning students for the
+new academic session.
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+September 2026
+
+</p>
+
+
+<a href="#" class="btn">
+View Details
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+New Data Science Curriculum Released
+</h3>
+
+
+<p>
+
+<strong>Category:</strong>
+Academic Update
+
+</p>
+
+
+<p>
+
+Updated courses and learning materials introduced to improve
+students' technical skills.
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+August 2026
+
+</p>
+
+
+<a href="#" class="btn">
+View Details
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Department Partners With Technology Companies
+</h3>
+
+
+<p>
+
+<strong>Category:</strong>
+Industry Collaboration
+
+</p>
+
+
+<p>
+
+The department establishes partnerships to provide students
+with practical technology experience.
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+July 2026
+
+</p>
+
+
+<a href="#" class="btn">
+View Details
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STUDENT ACHIEVEMENTS
+===================================== -->
+
+
+<section id="student-achievements">
+
+
+<h2 class="title">
+Student Achievements
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Students Win Data Science Competition
+</h3>
+
+
+<p>
+
+Our students achieved outstanding results in a national
+data analytics competition.
+
+</p>
+
+
+<p>
+
+<strong>Achievement:</strong>
+
+1st Place Award
+
+</p>
+
+
+<a href="#" class="btn">
+Read Story
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Research Published Internationally
+</h3>
+
+
+<p>
+
+A postgraduate student's research work has been accepted
+for publication in an international journal.
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong>
+
+Research Excellence
+
+</p>
+
+
+<a href="#" class="btn">
+Read Story
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Innovation Project Recognition
+</h3>
+
+
+<p>
+
+A student technology project received recognition for
+creative problem-solving using Artificial Intelligence.
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong>
+
+Innovation Award
+
+</p>
+
+
+<a href="#" class="btn">
+Read Story
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STAFF PROMOTIONS
+===================================== -->
+
+
+<section id="staff-promotions">
+
+
+<h2 class="title">
+Staff Promotions & Recognition
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Academic Staff Promotion
+</h3>
+
+
+<p>
+
+A member of the department has been promoted in recognition
+of academic contributions, teaching excellence and research
+impact.
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2026
+
+</p>
+
+
+<a href="#" class="btn">
+View Profile
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Outstanding Research Award
+</h3>
+
+
+<p>
+
+A departmental researcher receives an award for outstanding
+contributions in Data Science and Artificial Intelligence.
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong>
+
+Research Excellence
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Teaching Excellence Recognition
+</h3>
+
+
+<p>
+
+Lecturers recognized for commitment to quality education
+and student development.
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2026
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     AWARDS & RECOGNITION
+===================================== -->
+
+
+<section id="awards">
+
+
+<h2 class="title">
+Awards & Recognition
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Excellence Award
+</h3>
+
+
+<p>
+
+A departmental researcher received recognition for
+outstanding contributions in Artificial Intelligence,
+Machine Learning and Data Analytics.
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2026
+
+</p>
+
+
+<a href="#" class="btn">
+View Award
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Academic Excellence Award
+</h3>
+
+
+<p>
+
+Outstanding students recognized for exceptional academic
+performance and innovation.
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong>
+Student Achievement
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Industry Innovation Recognition
+</h3>
+
+
+<p>
+
+Department projects recognized for developing practical
+technology solutions for industry challenges.
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2025
+
+</p>
+
+
+<a href="#" class="btn">
+View Details
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     COMPETITIONS
+===================================== -->
+
+
+<section id="competitions">
+
+
+<h2 class="title">
+Competitions & Challenges
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Data Science Hackathon
+</h3>
+
+
+<p>
+
+Students participated in a competitive challenge involving
+data analysis, machine learning and problem solving.
+
+</p>
+
+
+<p>
+
+<strong>Participants:</strong>
+Undergraduate Students
+
+</p>
+
+
+<a href="#" class="btn">
+Competition Details
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Artificial Intelligence Challenge
+</h3>
+
+
+<p>
+
+Student teams developed intelligent systems using modern
+AI technologies.
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong>
+Innovation Competition
+
+</p>
+
+
+<a href="#" class="btn">
+View Results
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Coding & Programming Contest
+</h3>
+
+
+<p>
+
+Students competed in programming challenges designed to
+improve computational thinking and coding skills.
+
+</p>
+
+
+<p>
+
+<strong>Year:</strong>
+2026
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH BREAKTHROUGHS
+===================================== -->
+
+
+<section id="research-breakthroughs">
+
+
+<h2 class="title">
+Research Breakthroughs
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Advanced Machine Learning Model Developed
+</h3>
+
+
+<p>
+
+Researchers developed an improved machine learning approach
+for solving complex prediction problems.
+
+</p>
+
+
+<p>
+
+<strong>Research Area:</strong>
+
+Artificial Intelligence
+
+</p>
+
+
+<a href="#" class="btn">
+Explore Research
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Big Data Innovation Project Completed
+</h3>
+
+
+<p>
+
+A research team completed a large-scale data analytics
+project focused on extracting valuable insights from data.
+
+</p>
+
+
+<p>
+
+<strong>Research Area:</strong>
+
+Big Data Analytics
+
+</p>
+
+
+<a href="#" class="btn">
+Explore Research
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+New Technology Partnership Established
+</h3>
+
+
+<p>
+
+The department collaborates with technology organizations
+to advance research and innovation.
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong>
+
+Research Collaboration
+
+</p>
+
+
+<a href="#" class="btn">
+Read More
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     NEWS ARCHIVE & FILTER
+===================================== -->
+
+
+<section id="news-archive">
+
+
+<h2 class="title">
+News Archive
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+
+<h3>
+Search Previous News
+</h3>
+
+
+<br>
+
+
+
+<div class="search-box">
+
+
+<input type="text"
+placeholder="Search archived news...">
+
+
+
+<select>
+
+
+<option>
+All Categories
+</option>
+
+
+<option>
+Announcements
+</option>
+
+
+<option>
+Student News
+</option>
+
+
+<option>
+Research News
+</option>
+
+
+<option>
+Awards
+</option>
+
+
+<option>
+Events
+</option>
+
+
+</select>
+
+
+
+
+
+<select>
+
+
+<option>
+Select Year
+</option>
+
+
+<option>
+2026
+</option>
+
+
+<option>
+2025
+</option>
+
+
+<option>
+2024
+</option>
+
+
+<option>
+2023
+</option>
+
+
+</select>
+
+
+
+
+<button>
+Filter
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+<br>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+2026 News Archive
+</h3>
+
+
+<p>
+
+Access all departmental updates, announcements and
+achievements published in 2026.
+
+</p>
+
+
+<a href="#" class="btn">
+Open Archive
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+2025 News Archive
+</h3>
+
+
+<p>
+
+Browse previous department activities and research updates
+from 2025.
+
+</p>
+
+
+<a href="#" class="btn">
+Open Archive
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+2024 News Archive
+</h3>
+
+
+<p>
+
+View historical department news, achievements and events.
+
+</p>
+
+
+<a href="#" class="btn">
+Open Archive
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LATEST NOTICE BOARD
+===================================== -->
+
+
+<section id="notice-board">
+
+
+<h2 class="title">
+Live Notice Board
+</h2>
+
+
+
+
+<div class="card">
+
+
+<ul>
+
+
+<li>
+Admission application updates available.
+</li>
+
+
+<li>
+New research opportunities announced.
+</li>
+
+
+<li>
+Student competition registration open.
+</li>
+
+
+<li>
+Upcoming departmental seminars available.
+</li>
+
+
+<li>
+Laboratory booking schedule updated.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     NEWSLETTER SUBSCRIPTION
+===================================== -->
+
+
+<section id="newsletter">
+
+
+<h2 class="title">
+Subscribe To News Updates
+</h2>
+
+
+
+
+<div class="card">
+
+
+<p>
+
+Stay updated with the latest departmental announcements,
+research breakthroughs, student achievements and upcoming
+events.
+
+</p>
+
+
+
+<br>
+
+
+
+<input type="email"
+placeholder="Enter your email address"
+
+style="
+width:70%;
+padding:14px;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+
+<button class="btn">
+
+Subscribe
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     UPCOMING NEWS EVENTS
+===================================== -->
+
+
+<section id="upcoming">
+
+
+<h2 class="title">
+Upcoming Activities
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Seminar Series
+</h3>
+
+
+<p>
+
+Experts and researchers will present recent developments
+in Data Science and Artificial Intelligence.
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+August 2026
+
+</p>
+
+
+<a href="#" class="btn">
+Learn More
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Innovation Showcase
+</h3>
+
+
+<p>
+
+Students will demonstrate projects, applications and
+technology solutions.
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+September 2026
+
+</p>
+
+
+<a href="#" class="btn">
+View Event
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Industry Technology Forum
+</h3>
+
+
+<p>
+
+A platform connecting students, researchers and industry
+partners.
+
+</p>
+
+
+<p>
+
+<strong>Date:</strong>
+October 2026
+
+</p>
+
+
+<a href="#" class="btn">
+View Details
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONTACT INFORMATION
+===================================== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+News Department Contact
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Department Media Office
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Contact Details
+</h3>
+
+
+<p>
+
+<strong>Email:</strong>
+
+news.datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+<p>
+
+<strong>Office Hours:</strong>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Social Media
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+<p>
+Instagram
+</p>
+
+
+<p>
+X (Twitter)
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div>
+
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+
+<p>
+
+Sharing knowledge, innovation and achievements
+through technology.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Quick Links
+</h3>
+
+
+<p>
+
+<a href="index.html"
+style="color:white;">
+Home
+</a>
+
+</p>
+
+
+<p>
+
+<a href="about.html"
+style="color:white;">
+About
+</a>
+
+</p>
+
+
+<p>
+
+<a href="research.html"
+style="color:white;">
+Research
+</a>
+
+</p>
+
+
+<p>
+
+<a href="publications.html"
+style="color:white;">
+Publications
+</a>
+
+</p>
+
+
+<p>
+
+<a href="contact.html"
+style="color:white;">
+Contact
+</a>
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+News Categories
+</h3>
+
+
+<p>
+Department Updates
+</p>
+
+
+<p>
+Student Achievements
+</p>
+
+
+<p>
+Research News
+</p>
+
+
+<p>
+Awards
+</p>
+
+
+<p>
+Competitions
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+</footer>
+
+
+
+
+
+
+</body>
+
+</html>

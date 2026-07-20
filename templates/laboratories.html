@@ -1,0 +1,2821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Laboratories | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+
+}
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+color:white;
+padding:10px;
+text-align:center;
+font-weight:bold;
+
+}
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+position:sticky;
+top:1000;
+z-index:1000;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+font-size:14px;
+
+}
+
+
+
+
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:20px;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+
+url("images/laboratory-banner.jpg");
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+
+}
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   SECTION
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+Data Science Research Laboratories |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+<li>
+<a href="research.html">
+Research
+</a>
+</li>
+
+
+<li>
+<a href="publications.html">
+Publications
+</a>
+</li>
+
+
+<li>
+<a href="laboratories.html">
+Laboratories
+</a>
+</li>
+
+
+<li>
+<a href="students.html">
+Students
+</a>
+</li>
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO SECTION
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Research Laboratories
+</h2>
+
+
+
+<p>
+
+The Department of Data Science provides modern research
+laboratories equipped with advanced technologies for
+Artificial Intelligence, Data Analytics, Robotics,
+Cybersecurity and emerging computing innovations.
+
+</p>
+
+
+
+<a href="#labs" class="btn">
+Explore Laboratories
+</a>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LABORATORY OVERVIEW
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+Laboratory Overview
+</h2>
+
+
+
+
+<div class="card">
+
+
+<p>
+
+The Data Science laboratories serve as innovation centres
+where students, researchers and industry partners develop
+solutions using modern computational technologies.
+
+<br><br>
+
+
+Our facilities support teaching, practical training,
+research experimentation, software development,
+data analysis and technology innovation.
+
+</p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LAB STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+Laboratory Statistics
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+4+
+</h1>
+
+
+<h3>
+Research Laboratories
+</h3>
+
+
+<p>
+Specialized computing facilities.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+100+
+</h1>
+
+
+<h3>
+Computing Systems
+</h3>
+
+
+<p>
+Modern research equipment.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+20+
+</h1>
+
+
+<h3>
+Research Projects
+</h3>
+
+
+<p>
+Laboratory-based innovations.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card" style="text-align:center;">
+
+
+<h1 style="color:#00C2B8;font-size:45px;">
+50+
+</h1>
+
+
+<h3>
+Student Researchers
+</h3>
+
+
+<p>
+Active laboratory users.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     ARTIFICIAL INTELLIGENCE LABORATORY
+===================================== -->
+
+
+<section id="ai-lab">
+
+
+<h2 class="title">
+Artificial Intelligence Laboratory
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Laboratory Description
+</h3>
+
+
+<p>
+
+The Artificial Intelligence Laboratory focuses on developing
+intelligent systems using machine learning, deep learning,
+computer vision and natural language processing technologies.
+
+</p>
+
+
+<a href="#" class="btn">
+View Gallery
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Areas
+</h3>
+
+
+<ul>
+
+<li>
+Machine Learning
+</li>
+
+<li>
+Deep Learning
+</li>
+
+<li>
+Computer Vision
+</li>
+
+<li>
+Natural Language Processing
+</li>
+
+<li>
+Intelligent Systems
+</li>
+
+<li>
+AI Automation
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Equipment & Facilities
+</h3>
+
+
+<ul>
+
+<li>
+High-performance computing systems
+</li>
+
+<li>
+GPU workstations
+</li>
+
+<li>
+AI development software
+</li>
+
+<li>
+Data processing servers
+</li>
+
+<li>
+Machine learning platforms
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Laboratory Staff
+</h3>
+
+
+<p>
+
+<strong>Lab Director:</strong>
+
+AI Research Coordinator
+
+</p>
+
+
+<p>
+
+<strong>Researchers:</strong>
+
+Academic staff and postgraduate researchers.
+
+</p>
+
+
+<p>
+
+<strong>Students:</strong>
+
+Undergraduate and postgraduate project teams.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     DATA SCIENCE LABORATORY
+===================================== -->
+
+
+<section id="data-lab">
+
+
+<h2 class="title">
+Data Science Laboratory
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Laboratory Description
+</h3>
+
+
+<p>
+
+The Data Science Laboratory provides facilities for
+data collection, processing, analysis and visualization
+using modern analytical tools.
+
+</p>
+
+
+<a href="#" class="btn">
+View Gallery
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Areas
+</h3>
+
+
+<ul>
+
+<li>
+Data Analytics
+</li>
+
+<li>
+Data Mining
+</li>
+
+<li>
+Statistical Modelling
+</li>
+
+<li>
+Data Visualization
+</li>
+
+<li>
+Predictive Analytics
+</li>
+
+<li>
+Business Intelligence
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Equipment & Facilities
+</h3>
+
+
+<ul>
+
+<li>
+Data analysis workstations
+</li>
+
+<li>
+Visualization systems
+</li>
+
+<li>
+Database servers
+</li>
+
+<li>
+Analytics software tools
+</li>
+
+<li>
+Cloud computing resources
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Laboratory Staff
+</h3>
+
+
+<p>
+
+<strong>Lab Coordinator:</strong>
+
+Data Analytics Lead
+
+</p>
+
+
+<p>
+
+<strong>Researchers:</strong>
+
+Data Science academic team.
+
+</p>
+
+
+<p>
+
+<strong>Users:</strong>
+
+Students, lecturers and research collaborators.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ROBOTICS LABORATORY
+===================================== -->
+
+
+<section id="robotics-lab">
+
+
+<h2 class="title">
+Robotics Laboratory
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Laboratory Description
+</h3>
+
+
+<p>
+
+The Robotics Laboratory supports research and development
+in automation, intelligent machines and embedded systems.
+
+</p>
+
+
+<a href="#" class="btn">
+View Gallery
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Areas
+</h3>
+
+
+<ul>
+
+<li>
+Robotics Engineering
+</li>
+
+<li>
+Automation Systems
+</li>
+
+<li>
+Embedded Computing
+</li>
+
+<li>
+Internet of Things (IoT)
+</li>
+
+<li>
+Robot Intelligence
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Equipment & Facilities
+</h3>
+
+
+<ul>
+
+<li>
+Robotic kits
+</li>
+
+<li>
+Sensors and controllers
+</li>
+
+<li>
+Embedded systems
+</li>
+
+<li>
+Electronic testing tools
+</li>
+
+<li>
+Simulation software
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Laboratory Staff
+</h3>
+
+
+<p>
+
+<strong>Lab Director:</strong>
+
+Robotics Research Coordinator
+
+</p>
+
+
+<p>
+
+<strong>Research Team:</strong>
+
+Robotics and Innovation Group
+
+</p>
+
+
+<p>
+
+<strong>Activities:</strong>
+
+Student projects and prototype development.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     NETWORKING LABORATORY
+===================================== -->
+
+
+<section id="networking-lab">
+
+
+<h2 class="title">
+Networking Laboratory
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Laboratory Description
+</h3>
+
+
+<p>
+
+The Networking Laboratory provides an environment for
+network design, cybersecurity research and communication
+technology experiments.
+
+</p>
+
+
+<a href="#" class="btn">
+View Gallery
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Areas
+</h3>
+
+
+<ul>
+
+<li>
+Network Security
+</li>
+
+<li>
+Cybersecurity
+</li>
+
+<li>
+Cloud Networking
+</li>
+
+<li>
+Wireless Communication
+</li>
+
+<li>
+Network Administration
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Equipment & Facilities
+</h3>
+
+
+<ul>
+
+<li>
+Network routers
+</li>
+
+<li>
+Switches
+</li>
+
+<li>
+Security testing tools
+</li>
+
+<li>
+Network simulation software
+</li>
+
+<li>
+Server systems
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Laboratory Staff
+</h3>
+
+
+<p>
+
+<strong>Lab Coordinator:</strong>
+
+Networking Research Lead
+
+</p>
+
+
+<p>
+
+<strong>Research Areas:</strong>
+
+Cybersecurity and communication systems.
+
+</p>
+
+
+<p>
+
+<strong>Users:</strong>
+
+Students and research teams.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     LABORATORY PHOTO GALLERY
+===================================== -->
+
+
+<section id="gallery">
+
+
+<h2 class="title">
+Laboratory Gallery
+</h2>
+
+
+
+<p style="margin-bottom:25px;">
+
+Explore images showing our modern research facilities,
+equipment and innovation spaces.
+
+</p>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/ai-lab.jpg"
+alt="Artificial Intelligence Laboratory"
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+<h3>
+Artificial Intelligence Lab
+</h3>
+
+
+<p>
+
+AI workstations, GPU systems and intelligent computing
+facilities.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/data-lab.jpg"
+alt="Data Science Laboratory"
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+<h3>
+Data Science Laboratory
+</h3>
+
+
+<p>
+
+Data analytics environment equipped for research and
+practical learning.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/robotics-lab.jpg"
+alt="Robotics Laboratory"
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+<h3>
+Robotics Laboratory
+</h3>
+
+
+<p>
+
+Innovation space for robotics, automation and embedded
+systems.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="images/network-lab.jpg"
+alt="Networking Laboratory"
+style="
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+">
+
+
+<h3>
+Networking Laboratory
+</h3>
+
+
+<p>
+
+Network testing environment for cybersecurity and
+communication research.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     EQUIPMENT SHOWCASE
+===================================== -->
+
+
+<section id="equipment">
+
+
+<h2 class="title">
+Laboratory Equipment Showcase
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+High Performance Computing Systems
+</h3>
+
+
+<p>
+
+Advanced computing machines used for Artificial Intelligence,
+Machine Learning and large-scale data processing.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Data Storage Servers
+</h3>
+
+
+<p>
+
+Secure storage infrastructure for research datasets,
+experiments and computational projects.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Networking Devices
+</h3>
+
+
+<p>
+
+Routers, switches and security devices used for networking
+and cybersecurity practical sessions.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Robotics Equipment
+</h3>
+
+
+<p>
+
+Sensors, robotic kits and embedded systems for innovation
+and automation research.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LABORATORY SAFETY GUIDELINES
+===================================== -->
+
+
+<section id="safety">
+
+
+<h2 class="title">
+Laboratory Safety Guidelines
+</h2>
+
+
+
+
+<div class="card">
+
+
+<ul>
+
+
+<li>
+Students must obtain authorization before using laboratory
+equipment.
+</li>
+
+
+<li>
+Follow all instructions provided by laboratory supervisors.
+</li>
+
+
+<li>
+Handle computing devices and electronic equipment carefully.
+</li>
+
+
+<li>
+Food and drinks are not allowed inside laboratories.
+</li>
+
+
+<li>
+Report damaged equipment immediately.
+</li>
+
+
+<li>
+Maintain a clean and organized working environment.
+</li>
+
+
+<li>
+Follow cybersecurity and data protection policies.
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LAB BOOKING SYSTEM
+===================================== -->
+
+
+<section id="booking">
+
+
+<h2 class="title">
+Laboratory Booking Information
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Laboratory Access
+</h3>
+
+
+<p>
+
+Students can access laboratories for approved academic
+projects, practical sessions and research activities.
+
+</p>
+
+
+<a href="#" class="btn">
+Request Access
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Equipment Booking
+</h3>
+
+
+<p>
+
+Researchers can reserve laboratory equipment and facilities
+for approved research activities.
+
+</p>
+
+
+<a href="#" class="btn">
+Book Equipment
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Laboratory Schedule
+</h3>
+
+
+<p>
+
+View available laboratory periods, practical sessions and
+research activities.
+
+</p>
+
+
+<a href="#" class="btn">
+View Schedule
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LAB RESOURCES
+===================================== -->
+
+
+<section id="lab-resources">
+
+
+<h2 class="title">
+Laboratory Resources
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Software Resources
+</h3>
+
+
+<ul>
+
+<li>
+Python Development Environment
+</li>
+
+<li>
+Machine Learning Libraries
+</li>
+
+<li>
+Data Visualization Tools
+</li>
+
+<li>
+Database Management Systems
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Materials
+</h3>
+
+
+<ul>
+
+<li>
+Laboratory Manuals
+</li>
+
+<li>
+Research Guidelines
+</li>
+
+<li>
+Project Documentation
+</li>
+
+<li>
+Technical Reports
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Support
+</h3>
+
+
+<ul>
+
+<li>
+Practical Guides
+</li>
+
+<li>
+Coding Resources
+</li>
+
+<li>
+Project Support
+</li>
+
+<li>
+Technical Assistance
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     LABORATORY POLICIES
+===================================== -->
+
+
+<section id="policies">
+
+
+<h2 class="title">
+Laboratory Policies
+</h2>
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Equipment Usage Policy
+</h3>
+
+
+<p>
+
+All laboratory equipment must be used responsibly and only
+for approved academic, teaching and research activities.
+
+</p>
+
+
+<ul>
+
+<li>
+Users must log equipment usage.
+</li>
+
+<li>
+Unauthorized modification of equipment is prohibited.
+</li>
+
+<li>
+Damaged equipment must be reported immediately.
+</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Ethics Policy
+</h3>
+
+
+<p>
+
+All research activities conducted within the laboratories
+must follow ethical standards and institutional guidelines.
+
+</p>
+
+
+<ul>
+
+<li>
+Respect data privacy.
+</li>
+
+<li>
+Maintain research integrity.
+</li>
+
+<li>
+Properly acknowledge research contributions.
+</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Access Policy
+</h3>
+
+
+<p>
+
+Laboratory access is controlled to ensure safety, security
+and effective use of resources.
+
+</p>
+
+
+<ul>
+
+<li>
+Valid identification required.
+</li>
+
+<li>
+Supervisor approval may be required.
+</li>
+
+<li>
+Visitors must be accompanied.
+</li>
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH COLLABORATION
+===================================== -->
+
+
+<section id="collaboration">
+
+
+<h2 class="title">
+Research Collaboration
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+The Department of Data Science welcomes collaboration with
+universities, industries, government organizations and
+technology partners.
+
+<br><br>
+
+
+Collaborative opportunities include:
+
+</p>
+
+
+
+
+<div class="grid">
+
+
+
+<div>
+
+<h3>
+Industry Partnerships
+</h3>
+
+<p>
+
+Development of practical data-driven solutions for
+organizations and businesses.
+
+</p>
+
+</div>
+
+
+
+
+
+<div>
+
+<h3>
+Academic Collaboration
+</h3>
+
+<p>
+
+Joint research projects, publications, conferences and
+knowledge exchange.
+
+</p>
+
+</div>
+
+
+
+
+
+<div>
+
+<h3>
+Student Innovation
+</h3>
+
+<p>
+
+Support for student projects, internships and technology
+development.
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     EMERGENCY CONTACT
+===================================== -->
+
+
+<section id="emergency">
+
+
+<h2 class="title">
+Emergency Information
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Laboratory Supervisor
+</h3>
+
+
+<p>
+
+For equipment issues, safety concerns or laboratory
+assistance.
+
+</p>
+
+
+<p>
+
+<strong>Email:</strong>
+
+labs.datascience@uniuyo.edu.ng
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+ICT Support Unit
+</h3>
+
+
+<p>
+
+Technical support for computing systems, networks and
+software issues.
+
+</p>
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Emergency Services
+</h3>
+
+
+<p>
+
+Report urgent safety issues immediately to the appropriate
+university emergency channels.
+
+</p>
+
+
+<p>
+
+<strong>Available:</strong>
+
+24 Hours
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONTACT INFORMATION
+===================================== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Laboratory Contact
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Department Laboratory Office
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Contact Details
+</h3>
+
+
+<p>
+
+<strong>Email:</strong>
+
+datascience@uniuyo.edu.ng
+
+</p>
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+<p>
+
+<strong>Office Hours:</strong>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Social Media Links
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+<p>
+Instagram
+</p>
+
+
+<p>
+X (Twitter)
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div>
+
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+<p>
+
+Building innovation through research,
+technology and practical learning.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Quick Links
+</h3>
+
+
+<p>
+
+<a href="index.html"
+style="color:white;">
+Home
+</a>
+
+</p>
+
+
+<p>
+
+<a href="research.html"
+style="color:white;">
+Research
+</a>
+
+</p>
+
+
+<p>
+
+<a href="publications.html"
+style="color:white;">
+Publications
+</a>
+
+</p>
+
+
+<p>
+
+<a href="laboratories.html"
+style="color:white;">
+Laboratories
+</a>
+
+</p>
+
+
+<p>
+
+<a href="contact.html"
+style="color:white;">
+Contact
+</a>
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Laboratory Services
+</h3>
+
+
+<p>
+Equipment Booking
+</p>
+
+
+<p>
+Research Support
+</p>
+
+
+<p>
+Student Access
+</p>
+
+
+<p>
+Technical Assistance
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+</footer>
+
+
+
+
+</body>
+
+</html>

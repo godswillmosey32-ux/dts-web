@@ -1,0 +1,2890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Downloads | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+
+}
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+color:white;
+text-align:center;
+padding:10px;
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+position:sticky;
+
+top:1000;
+
+z-index:1000;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   HERO
+===================================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+
+url("images/download-banner.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   SEARCH BOX
+===================================== */
+
+
+.search-box{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.search-box input{
+
+width:320px;
+
+padding:14px;
+
+border:none;
+
+border-radius:6px;
+
+}
+
+
+
+.search-box select{
+
+padding:14px;
+
+border:none;
+
+border-radius:6px;
+
+}
+
+
+
+.search-box button{
+
+padding:14px 25px;
+
+background:#00C2B8;
+
+color:white;
+
+border:none;
+
+border-radius:6px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+.search-box button:hover{
+
+background:white;
+
+color:#4B0082;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Department Download Center |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+
+<li>
+<a href="research.html">
+Research
+</a>
+</li>
+
+
+
+<li>
+<a href="events.html">
+Events
+</a>
+</li>
+
+
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+
+
+<li>
+<a href="downloads.html">
+Downloads
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO SECTION
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Download Center
+</h2>
+
+
+
+<p>
+
+Access important academic documents, student forms,
+research materials and departmental resources.
+
+</p>
+
+
+
+
+
+
+
+<div class="search-box">
+
+
+
+<input type="text"
+
+placeholder="Search downloads...">
+
+
+
+
+
+
+<select>
+
+
+<option>
+All Categories
+</option>
+
+
+<option>
+Academic Documents
+</option>
+
+
+<option>
+Student Forms
+</option>
+
+
+<option>
+Research Resources
+</option>
+
+
+<option>
+Examination
+</option>
+
+
+</select>
+
+
+
+
+
+
+<select>
+
+
+<option>
+All File Types
+</option>
+
+
+<option>
+PDF
+</option>
+
+
+<option>
+DOC
+</option>
+
+
+<option>
+XLS
+</option>
+
+
+<option>
+PPT
+</option>
+
+
+</select>
+
+
+
+
+
+
+<button>
+
+Search
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     DOWNLOAD STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+Download Statistics
+</h2>
+
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+250+
+</h1>
+
+
+<h3>
+Documents
+</h3>
+
+
+<p>
+Available academic resources.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+50+
+</h1>
+
+
+<h3>
+Student Forms
+</h3>
+
+
+<p>
+Official department forms.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+100+
+</h1>
+
+
+<h3>
+Research Materials
+</h3>
+
+
+<p>
+Guides and research resources.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+color:#00C2B8;
+font-size:45px;">
+75+
+</h1>
+
+
+<h3>
+Academic Resources
+</h3>
+
+
+<p>
+Learning materials and guides.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     ACADEMIC DOCUMENTS
+===================================== -->
+
+
+<section id="academic-documents">
+
+
+<h2 class="title">
+Academic Documents
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Important academic materials to guide students and staff
+through departmental programmes and activities.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Handbook
+</h3>
+
+
+<p>
+
+Complete guide containing academic regulations,
+department policies, student responsibilities and available
+services.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+PDF
+
+</p>
+
+
+<a href="files/student-handbook.pdf"
+class="btn"
+download>
+
+Download PDF
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Academic Calendar
+</h3>
+
+
+<p>
+
+Official schedule containing semester dates, examinations,
+holidays and important academic activities.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+PDF
+
+</p>
+
+
+<a href="files/academic-calendar.pdf"
+class="btn"
+download>
+
+Download Calendar
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Department Brochure
+</h3>
+
+
+<p>
+
+Information about programmes, facilities, research areas
+and departmental achievements.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+PDF
+
+</p>
+
+
+<a href="files/brochure.pdf"
+class="btn"
+download>
+
+Download Brochure
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Programme Structure
+</h3>
+
+
+<p>
+
+Detailed course structure and requirements for Data Science
+programmes.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+PDF
+
+</p>
+
+
+<a href="files/programme-structure.pdf"
+class="btn"
+download>
+
+Download Structure
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STUDENT FORMS
+===================================== -->
+
+
+<section id="student-forms">
+
+
+<h2 class="title">
+Student Forms
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Official forms required for academic activities,
+registration and departmental processes.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Course Registration Form
+</h3>
+
+
+<p>
+
+Form used by students for selecting and submitting courses
+for each semester.
+
+</p>
+
+
+<p>
+
+<strong>Format:</strong>
+DOC
+
+</p>
+
+
+<a href="files/course-registration.docx"
+
+class="btn"
+
+download>
+
+Download Form
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+SIWES Registration Form
+</h3>
+
+
+<p>
+
+Industrial training documentation form for students
+participating in SIWES programmes.
+
+</p>
+
+
+<p>
+
+<strong>Format:</strong>
+PDF
+
+</p>
+
+
+<a href="files/siwes-form.pdf"
+
+class="btn"
+
+download>
+
+Download Form
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Project Proposal Form
+</h3>
+
+
+<p>
+
+Template for submitting final year project ideas,
+objectives and research plans.
+
+</p>
+
+
+<p>
+
+<strong>Format:</strong>
+DOC
+
+</p>
+
+
+<a href="files/project-proposal.docx"
+
+class="btn"
+
+download>
+
+Download Template
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Clearance Form
+</h3>
+
+
+<p>
+
+Departmental clearance document required before graduation
+and completion of studies.
+
+</p>
+
+
+<p>
+
+<strong>Format:</strong>
+PDF
+
+</p>
+
+
+<a href="files/clearance-form.pdf"
+
+class="btn"
+
+download>
+
+Download Form
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH RESOURCES
+===================================== -->
+
+
+<section id="research-resources">
+
+
+<h2 class="title">
+Research Resources
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Resources supporting students and researchers in
+conducting quality academic research.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Guidelines
+</h3>
+
+
+<p>
+
+Guidelines for selecting topics, conducting research and
+preparing academic reports.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+PDF
+
+</p>
+
+
+<a href="files/research-guidelines.pdf"
+
+class="btn"
+
+download>
+
+Download Guide
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Project Writing Guide
+</h3>
+
+
+<p>
+
+Step-by-step guide for writing undergraduate and
+postgraduate research projects.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+PDF
+
+</p>
+
+
+<a href="files/project-guide.pdf"
+
+class="btn"
+
+download>
+
+Download Guide
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Thesis Format Template
+</h3>
+
+
+<p>
+
+Official formatting structure for academic research
+documents.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+DOC
+
+</p>
+
+
+<a href="files/thesis-template.docx"
+
+class="btn"
+
+download>
+
+Download Template
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Publication Template
+</h3>
+
+
+<p>
+
+Research paper template for conference and journal
+submissions.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+DOC
+
+</p>
+
+
+<a href="files/publication-template.docx"
+
+class="btn"
+
+download>
+
+Download Template
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     EXAMINATION RESOURCES
+===================================== -->
+
+
+<section id="examination-resources">
+
+
+<h2 class="title">
+Examination Resources
+</h2>
+
+
+
+
+<p style="margin-bottom:25px;">
+
+Access examination materials, academic guidelines and
+resources to support successful preparation.
+
+</p>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Examination Guidelines
+</h3>
+
+
+<p>
+
+Official rules and regulations guiding departmental
+examinations.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+PDF
+
+</p>
+
+
+<a href="files/examination-guidelines.pdf"
+
+class="btn"
+
+download>
+
+Download Guide
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Past Examination Questions
+</h3>
+
+
+<p>
+
+Previous examination questions to help students prepare
+effectively.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+PDF
+
+</p>
+
+
+<a href="files/past-questions.pdf"
+
+class="btn"
+
+download>
+
+Download Questions
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Semester Timetable
+</h3>
+
+
+<p>
+
+Current semester lecture and examination timetable.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+PDF
+
+</p>
+
+
+<a href="files/timetable.pdf"
+
+class="btn"
+
+download>
+
+Download Timetable
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Grading System Guide
+</h3>
+
+
+<p>
+
+Information about grading policies, CGPA calculation and
+academic evaluation.
+
+</p>
+
+
+<p>
+
+<strong>File Type:</strong>
+PDF
+
+</p>
+
+
+<a href="files/grading-system.pdf"
+
+class="btn"
+
+download>
+
+Download Guide
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     DIGITAL RESOURCES
+===================================== -->
+
+
+<section id="digital-resources">
+
+
+<h2 class="title">
+Digital Learning Resources
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Programming Materials
+</h3>
+
+
+<p>
+
+Tutorials, examples and learning materials for Python,
+Java, SQL and other programming languages.
+
+</p>
+
+
+<a href="#" class="btn">
+Access Resources
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Data Science Materials
+</h3>
+
+
+<p>
+
+Learning resources covering statistics, machine learning,
+data analysis and visualization.
+
+</p>
+
+
+<a href="#" class="btn">
+Access Resources
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Artificial Intelligence Materials
+</h3>
+
+
+<p>
+
+Resources covering AI concepts, algorithms and practical
+applications.
+
+</p>
+
+
+<a href="#" class="btn">
+Access Resources
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     DOWNLOAD MANAGER
+===================================== -->
+
+
+<section id="download-manager">
+
+
+<h2 class="title">
+Download Manager
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+
+<h3>
+Browse Available Files
+</h3>
+
+
+
+<br>
+
+
+
+
+<table style="
+width:100%;
+border-collapse:collapse;
+">
+
+
+
+<tr style="
+background:#4B0082;
+color:white;
+">
+
+
+<th style="padding:15px;">
+File Name
+</th>
+
+
+<th style="padding:15px;">
+Category
+</th>
+
+
+<th style="padding:15px;">
+Format
+</th>
+
+
+<th style="padding:15px;">
+Action
+</th>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+Student Handbook
+
+</td>
+
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+Academic
+
+</td>
+
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+PDF
+
+</td>
+
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+<a href="#"
+class="btn">
+
+Download
+
+</a>
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+Course Registration Form
+
+</td>
+
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+Forms
+
+</td>
+
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+DOC
+
+</td>
+
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+<a href="#"
+class="btn">
+
+Download
+
+</a>
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+Research Guide
+
+</td>
+
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+Research
+
+</td>
+
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+PDF
+
+</td>
+
+
+
+<td style="
+padding:15px;
+border-bottom:1px solid #ddd;
+">
+
+<a href="#"
+class="btn">
+
+Download
+
+</a>
+
+</td>
+
+
+</tr>
+
+
+
+
+
+</table>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ADVANCED FILTER SYSTEM
+===================================== -->
+
+
+<section id="filter-system">
+
+
+<h2 class="title">
+Find Resources Quickly
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+
+<div class="search-box">
+
+
+
+<input type="text"
+
+placeholder="Search files by name...">
+
+
+
+
+
+<select>
+
+
+<option>
+All Categories
+</option>
+
+
+<option>
+Academic
+</option>
+
+
+<option>
+Forms
+</option>
+
+
+<option>
+Research
+</option>
+
+
+<option>
+Examination
+</option>
+
+
+</select>
+
+
+
+
+
+
+<select>
+
+
+<option>
+Select Year
+</option>
+
+
+<option>
+2026
+</option>
+
+
+<option>
+2025
+</option>
+
+
+<option>
+2024
+</option>
+
+
+</select>
+
+
+
+
+
+
+<select>
+
+
+<option>
+File Type
+</option>
+
+
+<option>
+PDF
+</option>
+
+
+<option>
+DOC
+</option>
+
+
+<option>
+PPT
+</option>
+
+
+<option>
+XLS
+</option>
+
+
+</select>
+
+
+
+
+
+
+<button>
+
+Filter
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     DOWNLOAD ANNOUNCEMENTS
+===================================== -->
+
+
+<section id="download-announcements">
+
+
+<h2 class="title">
+Download Announcements
+</h2>
+
+
+
+
+<div class="card">
+
+
+<ul>
+
+
+<li>
+New academic resources have been uploaded for students.
+</li>
+
+
+<li>
+Updated course materials are now available.
+</li>
+
+
+<li>
+Students should download the latest academic calendar.
+</li>
+
+
+<li>
+Research templates have been updated for project work.
+</li>
+
+
+<li>
+More departmental resources will be added regularly.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FEATURED RESOURCES
+===================================== -->
+
+
+<section id="featured-resources">
+
+
+<h2 class="title">
+Featured Resources
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Complete Student Resource Pack
+</h3>
+
+
+<p>
+
+A collection of important documents including handbook,
+forms, guides and academic materials.
+
+</p>
+
+
+<a href="#" class="btn">
+Download Pack
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research Starter Kit
+</h3>
+
+
+<p>
+
+Essential materials for students beginning research
+projects and academic writing.
+
+</p>
+
+
+<a href="#" class="btn">
+Download Kit
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Final Year Project Package
+</h3>
+
+
+<p>
+
+Project templates, guidelines and documentation resources
+for graduating students.
+
+</p>
+
+
+<a href="#" class="btn">
+Download Package
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     NEWSLETTER
+===================================== -->
+
+
+<section id="newsletter">
+
+
+<h2 class="title">
+Download Updates Newsletter
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<p>
+
+Subscribe to receive notifications when new documents,
+forms and learning resources are uploaded.
+
+</p>
+
+
+
+<br>
+
+
+
+
+<input type="email"
+
+placeholder="Enter your email address"
+
+style="
+width:70%;
+padding:14px;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+
+
+
+<button class="btn">
+
+Subscribe
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CONTACT SECTION
+===================================== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Download Support Contact
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Department Resource Office
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Support Information
+</h3>
+
+
+<p>
+
+<strong>Email:</strong>
+
+downloads.datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+<p>
+
+<strong>Office Hours:</strong>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Follow Us
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+<p>
+Instagram
+</p>
+
+
+<p>
+X (Twitter)
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer
+
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+
+<p>
+
+Providing easy access to academic documents,
+resources and learning materials.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Quick Links
+</h3>
+
+
+
+<p>
+<a href="index.html"
+style="color:white;">
+Home
+</a>
+</p>
+
+
+
+<p>
+<a href="about.html"
+style="color:white;">
+About
+</a>
+</p>
+
+
+
+<p>
+<a href="events.html"
+style="color:white;">
+Events
+</a>
+</p>
+
+
+
+<p>
+<a href="gallery.html"
+style="color:white;">
+Gallery
+</a>
+</p>
+
+
+
+<p>
+<a href="contact.html"
+style="color:white;">
+Contact
+</a>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="color:#00C2B8;">
+Resource Categories
+</h3>
+
+
+<p>
+Academic Documents
+</p>
+
+
+<p>
+Student Forms
+</p>
+
+
+<p>
+Research Materials
+</p>
+
+
+<p>
+Examination Resources
+</p>
+
+
+<p>
+Learning Resources
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

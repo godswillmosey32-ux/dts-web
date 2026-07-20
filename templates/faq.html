@@ -1,0 +1,2674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+
+}
+
+
+
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+
+color:white;
+
+text-align:center;
+
+padding:10px;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:18px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+position: relative;
+
+top:0;
+
+z-index:1000;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+
+url("images/faq-banner.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   SECTION
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   CARD
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   FAQ BOX
+===================================== */
+
+
+.faq-box{
+
+background:white;
+
+padding:20px;
+
+margin-bottom:15px;
+
+border-radius:8px;
+
+border-left:5px solid #00C2B8;
+
+}
+
+
+
+.faq-box h3{
+
+color:#4B0082;
+
+margin-bottom:10px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Frequently Asked Questions |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+
+<li>
+<a href="students-portal.html">
+Students
+</a>
+</li>
+
+
+
+<li>
+<a href="downloads.html">
+Downloads
+</a>
+</li>
+
+
+
+<li>
+<a href="alumni.html">
+Alumni
+</a>
+</li>
+
+
+
+<li>
+<a href="careers.html">
+Careers
+</a>
+</li>
+
+
+
+<li>
+<a href="faq.html">
+FAQ
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO SECTION
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+
+
+
+<p>
+
+Find answers to common questions about admissions,
+academics, student services, research and departmental
+activities.
+
+</p>
+
+
+
+
+
+<a href="#general-faq"
+
+class="btn">
+
+Explore FAQs
+
+</a>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FAQ CATEGORIES
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+FAQ Categories
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Admissions
+</h3>
+
+
+<p>
+
+Questions about entry requirements, applications and
+admission processes.
+
+</p>
+
+
+<a href="#admission"
+class="btn">
+
+View FAQs
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Academics
+</h3>
+
+
+<p>
+
+Information about courses, programmes, examinations and
+academic procedures.
+
+</p>
+
+
+<a href="#academic"
+class="btn">
+
+View FAQs
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Services
+</h3>
+
+
+<p>
+
+Answers about student portals, registration, resources and
+support.
+
+</p>
+
+
+<a href="#student"
+class="btn">
+
+View FAQs
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Research & Career
+</h3>
+
+
+<p>
+
+Information about research activities, internships and
+career opportunities.
+
+</p>
+
+
+<a href="#research"
+class="btn">
+
+View FAQs
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     GENERAL FAQ
+===================================== -->
+
+
+<section id="general-faq">
+
+
+<h2 class="title">
+General Questions
+</h2>
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+What is the Department of Data Science?
+</h3>
+
+
+<p>
+
+The department focuses on data analysis, artificial
+intelligence, machine learning and technology-driven
+solutions.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Where is the department located?
+</h3>
+
+
+<p>
+
+The Department of Data Science is located at the Faculty
+of Computing, University of Uyo.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+What programmes does the department offer?
+</h3>
+
+
+<p>
+
+The department offers programmes focused on data science,
+computing, analytics and emerging technologies.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+<!-- =====================================
+     ADMISSION FAQ
+===================================== -->
+
+
+<section id="admission">
+
+
+<h2 class="title">
+Admission FAQs
+</h2>
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+What are the admission requirements for Data Science?
+</h3>
+
+
+<p>
+
+Applicants must meet the university admission requirements
+and possess the required qualifications for the Data
+Science programme.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+How can I apply for admission?
+</h3>
+
+
+<p>
+
+Applications are submitted through the approved University
+of Uyo admission process and official admission portal.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Can students from other science backgrounds apply?
+</h3>
+
+
+<p>
+
+Yes. Students with relevant science, technology and
+mathematics backgrounds may apply if they meet the
+requirements.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Is there a postgraduate programme?
+</h3>
+
+
+<p>
+
+Information about postgraduate programmes is provided by
+the department and university graduate school.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ACADEMIC FAQ
+===================================== -->
+
+
+<section id="academic">
+
+
+<h2 class="title">
+Academic FAQs
+</h2>
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+What courses are studied in Data Science?
+</h3>
+
+
+<p>
+
+Students study programming, statistics, databases,
+machine learning, artificial intelligence, analytics and
+data visualization.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+How long is the Data Science programme?
+</h3>
+
+
+<p>
+
+The programme duration follows the approved university
+academic structure and regulations.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+How are examinations conducted?
+</h3>
+
+
+<p>
+
+Examinations are conducted according to university
+academic policies and departmental guidelines.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Where can students access course materials?
+</h3>
+
+
+<p>
+
+Students can access learning materials through the student
+portal and departmental download resources.
+
+</p>
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STUDENT PORTAL FAQ
+===================================== -->
+
+
+<section id="student">
+
+
+<h2 class="title">
+Student Portal FAQs
+</h2>
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+How do I access the student portal?
+</h3>
+
+
+<p>
+
+Students can access the portal using their registered
+student login details.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+What services are available on the student portal?
+</h3>
+
+
+<p>
+
+The portal provides access to course registration,
+academic records, announcements, resources and student
+support services.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+I forgot my portal password. What should I do?
+</h3>
+
+
+<p>
+
+Contact the department support office or portal
+administrator for password recovery assistance.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Can I access the portal on mobile devices?
+</h3>
+
+
+<p>
+
+Yes. The portal is designed to work on computers,
+tablets and mobile devices.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     REGISTRATION FAQ
+===================================== -->
+
+
+<section id="registration">
+
+
+<h2 class="title">
+Course Registration FAQs
+</h2>
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+When does course registration begin?
+</h3>
+
+
+<p>
+
+Course registration dates are announced through official
+departmental and university channels.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Can I edit my registered courses?
+</h3>
+
+
+<p>
+
+Course changes may be allowed within the approved
+registration period based on university regulations.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+What happens if I miss course registration?
+</h3>
+
+
+<p>
+
+Students should contact the appropriate academic office
+immediately for guidance.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Where can I download registration forms?
+</h3>
+
+
+<p>
+
+Registration forms and related documents are available
+through the departmental downloads page.
+
+</p>
+
+
+<a href="downloads.html"
+class="btn">
+
+Download Resources
+
+</a>
+
+
+</div>
+
+
+
+</section>
+<!-- =====================================
+     RESEARCH FAQ
+===================================== -->
+
+
+<section id="research">
+
+
+<h2 class="title">
+Research FAQs
+</h2>
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+What research areas are available in Data Science?
+</h3>
+
+
+<p>
+
+Research areas include artificial intelligence, machine
+learning, big data analytics, data mining, cybersecurity
+and intelligent systems.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+How can students participate in research projects?
+</h3>
+
+
+<p>
+
+Students can participate by working with lecturers,
+joining research groups and contributing to departmental
+projects.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Where can I find research guidelines?
+</h3>
+
+
+<p>
+
+Research guidelines, templates and academic resources are
+available on the department downloads page.
+
+</p>
+
+
+<a href="downloads.html"
+class="btn">
+
+Research Resources
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Can students publish research papers?
+</h3>
+
+
+<p>
+
+Yes. Students can publish research with proper guidance
+from supervisors and research coordinators.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     SIWES & INTERNSHIP FAQ
+===================================== -->
+
+
+<section id="siwes">
+
+
+<h2 class="title">
+SIWES & Internship FAQs
+</h2>
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+What is SIWES?
+</h3>
+
+
+<p>
+
+SIWES is an industrial training programme that allows
+students to gain practical experience in their field.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Who is eligible for SIWES?
+</h3>
+
+
+<p>
+
+Students who meet the approved academic requirements for
+industrial training are eligible to participate.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+How do I register for internship placement?
+</h3>
+
+
+<p>
+
+Students should complete the required forms and follow the
+department's internship registration process.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Where do I submit my SIWES report?
+</h3>
+
+
+<p>
+
+SIWES reports are submitted according to departmental
+guidelines and deadlines.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     CAREER FAQ
+===================================== -->
+
+
+<section id="career">
+
+
+<h2 class="title">
+Career FAQs
+</h2>
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+What career opportunities are available for Data Science
+graduates?
+</h3>
+
+
+<p>
+
+Graduates can work as data scientists, data analysts,
+machine learning engineers, software developers,
+researchers and technology consultants.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Does the department provide career support?
+</h3>
+
+
+<p>
+
+Yes. Career support includes mentorship, internship
+opportunities, professional guidance and industry
+connections.
+
+</p>
+
+
+<a href="careers.html"
+class="btn">
+
+Career Centre
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Can students get help preparing CVs and interviews?
+</h3>
+
+
+<p>
+
+Students can access career resources and professional
+development support.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Are there opportunities for professional certifications?
+</h3>
+
+
+<p>
+
+Students are encouraged to pursue relevant technology
+certifications that improve their professional skills.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ALUMNI FAQ
+===================================== -->
+
+
+<section id="alumni">
+
+
+<h2 class="title">
+Alumni FAQs
+</h2>
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+How can graduates join the alumni network?
+</h3>
+
+
+<p>
+
+Graduates can register through the alumni portal and
+create their alumni profile.
+
+</p>
+
+
+<a href="alumni.html"
+class="btn">
+
+Join Alumni
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+What benefits do alumni receive?
+</h3>
+
+
+<p>
+
+Alumni can participate in networking events, mentorship
+programmes, career opportunities and departmental
+activities.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+Can alumni support current students?
+</h3>
+
+
+<p>
+
+Yes. Alumni can support students through mentorship,
+scholarships, career guidance and knowledge sharing.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h3>
+How can alumni update their information?
+</h3>
+
+
+<p>
+
+Alumni can update their profiles through the alumni
+registration platform.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+<!-- =====================================
+     FAQ SEARCH SYSTEM
+===================================== -->
+
+
+<section id="faq-search">
+
+
+<h2 class="title">
+Search Frequently Asked Questions
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Find Quick Answers
+</h3>
+
+
+
+<p>
+
+Search for answers about admissions, academics, students,
+research and career support.
+
+</p>
+
+
+
+
+<br>
+
+
+
+
+
+<input type="text"
+
+placeholder="Search your question..."
+
+style="
+width:100%;
+padding:15px;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+
+
+
+
+<button class="btn">
+
+Search FAQ
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ASK A QUESTION
+===================================== -->
+
+
+<section id="ask-question">
+
+
+<h2 class="title">
+Ask A Question
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Can't Find Your Answer?
+</h3>
+
+
+
+<p>
+
+Send your question to the department support team and we
+will provide assistance.
+
+</p>
+
+
+
+
+
+<form>
+
+
+
+<label>
+Your Name
+</label>
+
+
+<input type="text"
+
+placeholder="Enter your name">
+
+
+
+
+
+<label>
+Email Address
+</label>
+
+
+<input type="email"
+
+placeholder="Enter your email">
+
+
+
+
+
+<label>
+Category
+</label>
+
+
+<select>
+
+
+<option>
+Select Category
+</option>
+
+
+<option>
+Admission
+</option>
+
+
+<option>
+Academic
+</option>
+
+
+<option>
+Student Portal
+</option>
+
+
+<option>
+Research
+</option>
+
+
+<option>
+Career
+</option>
+
+
+<option>
+Alumni
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<label>
+Your Question
+</label>
+
+
+
+<textarea
+
+placeholder="Write your question here..."
+
+style="
+width:100%;
+height:150px;
+padding:15px;
+border:1px solid #ccc;
+border-radius:6px;
+">
+
+</textarea>
+
+
+
+
+
+
+<br>
+
+
+
+<button class="btn">
+
+Submit Question
+
+</button>
+
+
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FAQ SUPPORT
+===================================== -->
+
+
+<section id="support">
+
+
+<h2 class="title">
+FAQ Support Centre
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Student Support
+</h3>
+
+
+<p>
+
+Need help with registration, portal access or academic
+issues?
+
+</p>
+
+
+<a href="students-portal.html"
+
+class="btn">
+
+Student Portal
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Download Centre
+</h3>
+
+
+<p>
+
+Access forms, guides and official departmental documents.
+
+</p>
+
+
+<a href="downloads.html"
+
+class="btn">
+
+Open Downloads
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Contact Department
+</h3>
+
+
+<p>
+
+Reach out to the department for additional assistance.
+
+</p>
+
+
+<a href="contact.html"
+
+class="btn">
+
+Contact Us
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     NEWSLETTER
+===================================== -->
+
+
+<section id="newsletter">
+
+
+<h2 class="title">
+FAQ Updates Newsletter
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<p>
+
+Subscribe to receive updates about new FAQs,
+departmental announcements and student information.
+
+</p>
+
+
+
+
+<br>
+
+
+
+
+
+<input type="email"
+
+placeholder="Enter your email address">
+
+
+
+
+
+<button class="btn">
+
+Subscribe
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER CONTACT
+===================================== -->
+
+
+<section id="contact">
+
+
+<h2 class="title">
+FAQ Contact Information
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Department Office
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Support Contact
+</h3>
+
+
+<p>
+
+<strong>Email:</strong>
+
+datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+<p>
+
+<strong>Office Hours:</strong>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Follow Us
+</h3>
+
+
+<p>
+Facebook
+</p>
+
+
+<p>
+LinkedIn
+</p>
+
+
+<p>
+YouTube
+</p>
+
+
+<p>
+Instagram
+</p>
+
+
+<p>
+X (Twitter)
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer
+
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="
+color:#00C2B8;">
+
+Department of Data Science
+
+</h2>
+
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+
+<p>
+
+Providing answers, guidance and support to students,
+staff and visitors.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Quick Links
+
+</h3>
+
+
+
+<p>
+<a href="index.html"
+style="color:white;">
+Home
+</a>
+</p>
+
+
+
+<p>
+<a href="students-portal.html"
+style="color:white;">
+Students Portal
+</a>
+</p>
+
+
+
+<p>
+<a href="downloads.html"
+style="color:white;">
+Downloads
+</a>
+</p>
+
+
+
+<p>
+<a href="alumni.html"
+style="color:white;">
+Alumni
+</a>
+</p>
+
+
+
+<p>
+<a href="careers.html"
+style="color:white;">
+Careers
+</a>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+FAQ Categories
+
+</h3>
+
+
+<p>
+Admissions
+</p>
+
+
+<p>
+Academics
+</p>
+
+
+<p>
+Research
+</p>
+
+
+<p>
+Career
+</p>
+
+
+<p>
+Alumni
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,2876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+
+background:#f4f7fb;
+
+color:#333;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px;
+
+text-align:center;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   ADMIN HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+}
+
+
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   DASHBOARD HERO
+===================================== */
+
+
+.hero{
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.95),
+rgba(75,0,130,.95)
+),
+
+url("images/admin-banner.jpg");
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:80px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.hero h2{
+
+font-size:45px;
+
+color:#00C2B8;
+
+margin-bottom:15px;
+
+}
+
+
+
+.hero p{
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+
+section{
+
+padding:60px 8%;
+
+}
+
+
+
+.title{
+
+font-size:32px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   GRID
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   CARDS
+===================================== */
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   STATISTICS
+===================================== */
+
+
+.number{
+
+font-size:45px;
+
+font-weight:bold;
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Administrator Dashboard |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+
+<div class="logo">
+
+
+<h1>
+Admin Control Centre
+</h1>
+
+
+<p>
+Department Management System
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Website
+</a>
+</li>
+
+
+
+<li>
+<a href="portal-login.html">
+Portal
+</a>
+</li>
+
+
+
+<li>
+<a href="students-portal.html">
+Students
+</a>
+</li>
+
+
+
+<li>
+<a href="alumni.html">
+Alumni
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Support
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO SECTION
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+
+Welcome Administrator
+
+</h2>
+
+
+
+
+<p>
+
+Manage department operations, users, content, academic
+information and digital services.
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     DASHBOARD OVERVIEW
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+
+Dashboard Overview
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<div class="number">
+
+1,250+
+
+</div>
+
+
+<h3>
+
+Students
+
+</h3>
+
+
+<p>
+
+Registered students across programmes.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<div class="number">
+
+85+
+
+</div>
+
+
+<h3>
+
+Staff Members
+
+</h3>
+
+
+<p>
+
+Academic and administrative staff.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<div class="number">
+
+120+
+
+</div>
+
+
+<h3>
+
+Courses
+
+</h3>
+
+
+<p>
+
+Available academic courses.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<div class="number">
+
+500+
+
+</div>
+
+
+<h3>
+
+Documents
+
+</h3>
+
+
+<p>
+
+Uploaded departmental resources.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     QUICK MANAGEMENT
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+
+Quick Management
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Student Management
+
+</h3>
+
+
+<p>
+
+Manage student records, registrations, profiles and
+academic information.
+
+</p>
+
+
+<a href="#students"
+
+class="btn">
+
+Manage Students
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+    <h3>👨‍🎓 Add Student</h3>
+
+    <p>Register a new student.</p>
+
+    <a href="/add_student">Open</a>
+
+</div>
+
+<h3>
+
+Staff Management
+
+</h3>
+
+
+<p>
+
+Manage staff profiles, responsibilities and department
+activities.
+
+</p>
+
+
+<a href="#staff"
+
+class="btn">
+
+Manage Staff
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Content Management
+
+</h3>
+
+
+<p>
+
+Update website pages, announcements and departmental
+information.
+
+</p>
+
+
+<a href="#content"
+
+class="btn">
+
+Manage Content
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+System Settings
+
+</h3>
+
+
+<p>
+
+Control portal settings, security and administrative
+functions.
+
+</p>
+
+
+<a href="#settings"
+
+class="btn">
+
+System Settings
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     STUDENT MANAGEMENT
+===================================== -->
+
+
+<section id="students">
+
+
+<h2 class="title">
+
+Student Management
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Student Records
+
+</h3>
+
+
+<p>
+
+View, update and manage student profiles, academic
+information and registration details.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Students
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Admission Management
+
+</h3>
+
+
+<p>
+
+Manage new student applications, admission records and
+enrollment information.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Admissions
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Academic Records
+
+</h3>
+
+
+<p>
+
+Manage student results, transcripts and academic progress
+information.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Records
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     STAFF MANAGEMENT
+===================================== -->
+
+
+<section id="staff">
+
+
+<h2 class="title">
+
+Staff Management
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Staff Profiles
+
+</h3>
+
+
+<p>
+
+Create, edit and manage academic and administrative staff
+profiles.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Profiles
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Department Roles
+
+</h3>
+
+
+<p>
+
+Assign responsibilities, roles and permissions to staff
+members.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Roles
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Staff Activities
+
+</h3>
+
+
+<p>
+
+Monitor teaching schedules, research activities and
+department duties.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Activities
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     COURSE MANAGEMENT
+===================================== -->
+
+
+<section id="courses">
+
+
+<h2 class="title">
+
+Course Management
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Course Catalogue
+
+</h3>
+
+
+<p>
+
+Add, update and remove courses offered by the Department
+of Data Science.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Courses
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Course Registration
+
+</h3>
+
+
+<p>
+
+Monitor student course registration and approval
+processes.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Registration Control
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Academic Schedule
+
+</h3>
+
+
+<p>
+
+Manage lectures, examinations and academic calendar
+information.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Schedule
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     USER ACCOUNT MANAGEMENT
+===================================== -->
+
+
+<section id="users">
+
+
+<h2 class="title">
+
+User Account Management
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Create User Accounts
+
+</h3>
+
+
+<p>
+
+Create accounts for students, staff, alumni and system
+users.
+
+</p>
+
+
+<a href="portal-login.html"
+
+class="btn">
+
+Create Account
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Account Permissions
+
+</h3>
+
+
+<p>
+
+Manage user access levels and assign appropriate system
+permissions.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Access
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Account Security
+
+</h3>
+
+
+<p>
+
+Reset passwords, verify accounts and monitor login
+activities.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Security Control
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     WEBSITE CONTENT MANAGEMENT
+===================================== -->
+
+
+<section id="content">
+
+
+<h2 class="title">
+
+Website Content Management
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Page Management
+
+</h3>
+
+
+<p>
+
+Create, edit and update department website pages,
+information and announcements.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Pages
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Media Library
+
+</h3>
+
+
+<p>
+
+Upload and manage images, videos, banners and other media
+resources.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Media
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Navigation Control
+
+</h3>
+
+
+<p>
+
+Update website menus, links and page visibility settings.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Edit Navigation
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ANNOUNCEMENT SYSTEM
+===================================== -->
+
+
+<section id="announcements">
+
+
+<h2 class="title">
+
+Announcement Management
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Create Announcement
+
+</h3>
+
+
+<p>
+
+Publish academic notices, events, deadlines and important
+department updates.
+
+</p>
+
+
+<a href="#" class="btn">
+
+New Announcement
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Manage Events
+
+</h3>
+
+
+<p>
+
+Create and update departmental seminars, workshops,
+meetings and conferences.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Events
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Notification Centre
+
+</h3>
+
+
+<p>
+
+Send updates and alerts to students, staff and alumni.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Send Notification
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     DOCUMENT UPLOAD CENTRE
+===================================== -->
+
+
+<section id="documents">
+
+
+<h2 class="title">
+
+Document Upload Centre
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Academic Documents
+
+</h3>
+
+
+<p>
+
+Upload course materials, academic guides, forms and
+department resources.
+
+</p>
+
+
+<a href="downloads.html"
+
+class="btn">
+
+Upload Documents
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Research Publications
+
+</h3>
+
+
+<p>
+
+Manage research papers, journals and academic
+publications.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Research
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Student Resources
+
+</h3>
+
+
+<p>
+
+Provide students with access to important files,
+templates and learning materials.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Student Resources
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH MANAGEMENT
+===================================== -->
+
+
+<section id="research">
+
+
+<h2 class="title">
+
+Research Management
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Research Projects
+
+</h3>
+
+
+<p>
+
+Monitor ongoing research projects, teams and project
+progress.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Projects
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Research Groups
+
+</h3>
+
+
+<p>
+
+Manage research teams and collaboration activities.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Groups
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Publication Records
+
+</h3>
+
+
+<p>
+
+Maintain records of publications, conferences and
+academic achievements.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Publications
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ALUMNI MANAGEMENT
+===================================== -->
+
+
+<section id="alumni">
+
+
+<h2 class="title">
+
+Alumni Management
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Alumni Profiles
+
+</h3>
+
+
+<p>
+
+Manage graduate profiles and alumni information.
+
+</p>
+
+
+<a href="alumni.html"
+
+class="btn">
+
+Manage Alumni
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Alumni Events
+
+</h3>
+
+
+<p>
+
+Create alumni meetings, networking events and mentorship
+programmes.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Manage Events
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Alumni Communication
+
+</h3>
+
+
+<p>
+
+Send updates and maintain communication with graduates.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Contact Alumni
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     SYSTEM SETTINGS
+===================================== -->
+
+
+<section id="settings">
+
+
+<h2 class="title">
+
+System Settings
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+General Settings
+
+</h3>
+
+
+<p>
+
+Configure website information, portal preferences and
+department settings.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Update Settings
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Email Configuration
+
+</h3>
+
+
+<p>
+
+Manage system emails, notifications and communication
+settings.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Email Settings
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Database Management
+
+</h3>
+
+
+<p>
+
+Monitor system data, backups and database operations.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Database Control
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+<!-- =====================================
+     SECURITY CONTROL
+===================================== -->
+
+
+<section id="security">
+
+
+<h2 class="title">
+
+Security Control
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+<div class="card">
+
+
+<h3>
+
+User Authentication
+
+</h3>
+
+
+<p>
+
+Manage login security, account verification and user
+access permissions.
+
+</p>
+
+
+<a href="portal-login.html"
+
+class="btn">
+
+Manage Access
+
+</a>
+
+
+</div>
+
+<div class="card">
+
+
+<h3>
+
+Security Monitoring
+
+</h3>
+
+
+<p>
+
+Monitor suspicious activities, failed logins and system
+security alerts.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Security Logs
+
+</a>
+
+
+</div>
+
+<div class="card">
+
+
+<h3>
+
+Backup & Recovery
+
+</h3>
+
+
+<p>
+
+Create backups and restore important departmental data.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Backup System
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ACTIVITY LOGS
+===================================== -->
+
+
+<section id="logs">
+
+
+<h2 class="title">
+
+System Activity Logs
+
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+
+<h3>
+
+Recent Activities
+
+</h3>
+
+
+
+
+
+<table style="
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+">
+
+
+
+<tr style="
+background:#4B0082;
+color:white;
+">
+
+
+<th style="padding:12px;">
+User
+</th>
+
+
+<th style="padding:12px;">
+Activity
+</th>
+
+
+<th style="padding:12px;">
+Date
+</th>
+
+
+<th style="padding:12px;">
+Status
+</th>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<td style="padding:12px;">
+Admin
+</td>
+
+
+<td style="padding:12px;">
+Updated website content
+</td>
+
+
+<td style="padding:12px;">
+15 July 2026
+</td>
+
+
+<td style="padding:12px;">
+Completed
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<td style="padding:12px;">
+Staff User
+</td>
+
+
+<td style="padding:12px;">
+Uploaded course material
+</td>
+
+
+<td style="padding:12px;">
+14 July 2026
+</td>
+
+
+<td style="padding:12px;">
+Completed
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<td style="padding:12px;">
+Administrator
+</td>
+
+
+<td style="padding:12px;">
+Created user account
+</td>
+
+
+<td style="padding:12px;">
+13 July 2026
+</td>
+
+
+<td style="padding:12px;">
+Completed
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     ADMIN SUPPORT
+===================================== -->
+
+
+<section id="support">
+
+
+<h2 class="title">
+
+Administrator Support
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Technical Assistance
+
+</h3>
+
+
+<p>
+
+Get help with system errors, portal problems and
+maintenance issues.
+
+</p>
+
+
+<a href="contact.html"
+
+class="btn">
+
+Contact Support
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Admin Documentation
+
+</h3>
+
+
+<p>
+
+Access user guides, system manuals and management
+resources.
+
+</p>
+
+
+<a href="downloads.html"
+
+class="btn">
+
+View Documents
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Logout
+
+</h3>
+
+
+<p>
+
+Securely exit the administrator dashboard.
+
+</p>
+
+
+<a href="portal-login.html"
+
+class="btn">
+
+Logout
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+</footer>
+<footer style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="
+color:#00C2B8;">
+
+Department of Data Science
+
+</h2>
+
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+
+<p>
+
+Administrative control system for managing department
+operations and digital services.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Quick Links
+
+</h3>
+
+
+
+<p>
+<a href="index.html"
+style="color:white;">
+Home
+</a>
+</p>
+
+
+
+<p>
+<a href="portal-login.html"
+style="color:white;">
+Portal Login
+</a>
+</p>
+
+
+
+<p>
+<a href="students-portal.html"
+style="color:white;">
+Students
+</a>
+</p>
+
+
+
+<p>
+<a href="careers.html"
+style="color:white;">
+Careers
+</a>
+</p>
+
+
+
+<p>
+<a href="contact.html"
+style="color:white;">
+Contact
+</a>
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Admin Tools
+
+</h3>
+
+
+<p>
+User Management
+</p>
+
+
+<p>
+Content Control
+</p>
+
+
+<p>
+Security
+</p>
+
+
+<p>
+Backups
+</p>
+
+
+<p>
+Reports
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

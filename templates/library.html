@@ -1,0 +1,2945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Digital Library | Department of Data Science | University of Uyo</title>
+
+
+<style>
+
+/* =====================================
+   GLOBAL STYLE
+===================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+
+background:#f4f7fb;
+
+color:#333;
+
+line-height:1.7;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+   TOP BAR
+===================================== */
+
+
+.topbar{
+
+background:#00C2B8;
+
+color:white;
+
+text-align:center;
+
+padding:12px;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+
+header{
+
+background:#4B0082;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.logo h1{
+
+color:#00C2B8;
+
+font-size:30px;
+
+}
+
+
+
+.logo p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+
+
+nav ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav ul li a:hover{
+
+color:#00C2B8;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero{
+
+
+background:
+
+linear-gradient(
+rgba(75,0,130,.92),
+rgba(75,0,130,.92)
+),
+
+url("images/library-banner.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+padding:100px 20px;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+
+.hero h2{
+
+font-size:48px;
+
+color:#00C2B8;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+font-size:18px;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+
+
+
+.title{
+
+font-size:34px;
+
+color:#4B0082;
+
+border-left:6px solid #00C2B8;
+
+padding-left:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   GRID & CARDS
+===================================== */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+border-top:5px solid #00C2B8;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.card h3{
+
+color:#4B0082;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+
+.btn{
+
+display:inline-block;
+
+background:#00C2B8;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:6px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
+
+
+
+.btn:hover{
+
+background:#4B0082;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   SEARCH BOX
+===================================== */
+
+
+.search-box{
+
+background:white;
+
+padding:35px;
+
+border-radius:12px;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+
+input,
+select{
+
+width:100%;
+
+padding:14px;
+
+margin:10px 0;
+
+border:1px solid #ccc;
+
+border-radius:6px;
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+margin-top:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:35px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+
+<!-- TOP BAR -->
+
+
+<div class="topbar">
+
+Digital Library & Knowledge Centre |
+Department of Data Science |
+University of Uyo
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+<header>
+
+
+
+<div class="logo">
+
+
+<h1>
+Department of Data Science
+</h1>
+
+
+<p>
+Faculty of Computing | University of Uyo
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<nav>
+
+
+<ul>
+
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="students-portal.html">
+Students
+</a>
+</li>
+
+
+
+<li>
+<a href="research.html">
+Research
+</a>
+</li>
+
+
+
+<li>
+<a href="downloads.html">
+Downloads
+</a>
+</li>
+
+
+
+<li>
+<a href="careers.html">
+Careers
+</a>
+</li>
+
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+
+<section class="hero">
+
+
+<h2>
+
+Digital Library
+
+</h2>
+
+
+
+
+<p>
+
+Access academic resources, research materials, journals,
+ebooks and learning content for Data Science education.
+
+</p>
+
+
+
+<a href="#search"
+
+class="btn">
+
+Explore Library
+
+</a>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LIBRARY STATISTICS
+===================================== -->
+
+
+<section>
+
+
+<h2 class="title">
+
+Library Overview
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+font-size:45px;
+color:#00C2B8;">
+
+5,000+
+
+</h1>
+
+
+<h3>
+
+Digital Books
+
+</h3>
+
+
+<p>
+
+Technology and academic ebooks.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+font-size:45px;
+color:#00C2B8;">
+
+1,000+
+
+</h1>
+
+
+<h3>
+
+Research Papers
+
+</h3>
+
+
+<p>
+
+Academic publications and studies.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+font-size:45px;
+color:#00C2B8;">
+
+500+
+
+</h1>
+
+
+<h3>
+
+Course Materials
+
+</h3>
+
+
+<p>
+
+Learning resources for students.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card"
+style="text-align:center;">
+
+
+<h1 style="
+font-size:45px;
+color:#00C2B8;">
+
+24/7
+
+</h1>
+
+
+<h3>
+
+Online Access
+
+</h3>
+
+
+<p>
+
+Resources available anytime.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     SEARCH LIBRARY
+===================================== -->
+
+
+<section id="search">
+
+
+<h2 class="title">
+
+Search Digital Resources
+
+</h2>
+
+
+
+
+
+<div class="search-box">
+
+
+<h3>
+
+Find Books, Journals & Research Materials
+
+</h3>
+
+
+
+
+
+<input type="text"
+
+placeholder="Search by title, author or keyword">
+
+
+
+
+
+<select>
+
+
+<option>
+
+Select Resource Type
+
+</option>
+
+
+<option>
+
+E-Books
+
+</option>
+
+
+<option>
+
+Research Papers
+
+</option>
+
+
+<option>
+
+Journals
+
+</option>
+
+
+<option>
+
+Course Materials
+
+</option>
+
+
+</select>
+
+
+
+
+
+
+<select>
+
+
+<option>
+
+Select Category
+
+</option>
+
+
+<option>
+
+Data Science
+
+</option>
+
+
+<option>
+
+Artificial Intelligence
+
+</option>
+
+
+<option>
+
+Machine Learning
+
+</option>
+
+
+<option>
+
+Data Analytics
+
+</option>
+
+
+</select>
+
+
+
+
+
+
+<button class="btn">
+
+Search Library
+
+</button>
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     E-BOOKS SECTION
+===================================== -->
+
+
+<section id="ebooks">
+
+
+<h2 class="title">
+
+Digital E-Books Collection
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Data Science Fundamentals
+
+</h3>
+
+
+<p>
+
+Introduction to data science concepts, techniques and
+industry applications.
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong> Data Science
+
+</p>
+
+
+<a href="#" class="btn">
+
+Read Online
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Python Programming Guide
+
+</h3>
+
+
+<p>
+
+Learn Python programming for data analysis, automation
+and machine learning.
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong> Programming
+
+</p>
+
+
+<a href="#" class="btn">
+
+Read Online
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Artificial Intelligence Handbook
+
+</h3>
+
+
+<p>
+
+A resource covering AI concepts, algorithms and modern
+applications.
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong> Artificial Intelligence
+
+</p>
+
+
+<a href="#" class="btn">
+
+Read Online
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Database Systems
+
+</h3>
+
+
+<p>
+
+Learn database design, management and data storage
+technologies.
+
+</p>
+
+
+<p>
+
+<strong>Category:</strong> Database
+
+</p>
+
+
+<a href="#" class="btn">
+
+Read Online
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH PAPERS
+===================================== -->
+
+
+<section id="research-papers">
+
+
+<h2 class="title">
+
+Research Papers Repository
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Machine Learning Research
+
+</h3>
+
+
+<p>
+
+Academic research materials covering machine learning
+models and applications.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Paper
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Big Data Analytics Studies
+
+</h3>
+
+
+<p>
+
+Research publications focused on large-scale data
+processing and analytics.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Paper
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Data Visualization Research
+
+</h3>
+
+
+<p>
+
+Studies on effective methods of presenting and analyzing
+complex data.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Paper
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Cybersecurity Research
+
+</h3>
+
+
+<p>
+
+Research works related to data protection, privacy and
+security systems.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Paper
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     JOURNALS & PUBLICATIONS
+===================================== -->
+
+
+<section id="journals">
+
+
+<h2 class="title">
+
+Academic Journals & Publications
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Data Science Journal
+
+</h3>
+
+
+<p>
+
+Latest academic articles and discoveries in data science
+and analytics.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Browse Journal
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Computing Research Journal
+
+</h3>
+
+
+<p>
+
+Publications covering computing technologies and
+innovations.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Browse Journal
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Artificial Intelligence Review
+
+</h3>
+
+
+<p>
+
+Research updates and publications in artificial
+intelligence.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Browse Journal
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     COURSE MATERIALS
+===================================== -->
+
+
+<section id="course-materials">
+
+
+<h2 class="title">
+
+Course Materials Library
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Lecture Notes
+
+</h3>
+
+
+<p>
+
+Access lecture slides, class notes and academic
+resources for different courses.
+
+</p>
+
+
+<a href="downloads.html"
+
+class="btn">
+
+Download Notes
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Programming Resources
+
+</h3>
+
+
+<p>
+
+Tutorials, coding examples and practical programming
+materials.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Access Resources
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Practical Projects
+
+</h3>
+
+
+<p>
+
+Sample projects and practical exercises for improving
+technical skills.
+
+</p>
+
+
+<a href="#" class="btn">
+
+View Projects
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FEATURED RESOURCES
+===================================== -->
+
+
+<section id="featured">
+
+
+<h2 class="title">
+
+Featured Library Resources
+
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Recommended Learning Materials
+
+</h3>
+
+
+<p>
+
+Explore selected books, research papers and learning
+materials recommended for Data Science students and
+researchers.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Explore Collection
+
+</a>
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     STUDENT LEARNING RESOURCES
+===================================== -->
+
+
+<section id="student-resources">
+
+
+<h2 class="title">
+
+Student Learning Resources
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Study Materials
+
+</h3>
+
+
+<p>
+
+Access revision materials, tutorials, study guides and
+academic support resources.
+
+</p>
+
+
+<a href="downloads.html"
+
+class="btn">
+
+Access Materials
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Programming Practice
+
+</h3>
+
+
+<p>
+
+Improve coding skills through programming exercises,
+examples and practical challenges.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Practice Coding
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Data Science Tutorials
+
+</h3>
+
+
+<p>
+
+Learn analytics, machine learning and data technologies
+through guided tutorials.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Start Learning
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Academic Support
+
+</h3>
+
+
+<p>
+
+Find resources that support assignments, projects and
+research activities.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Get Support
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     RESEARCH DATABASE
+===================================== -->
+
+
+<section id="database">
+
+
+<h2 class="title">
+
+Research Database Access
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Academic Database
+
+</h3>
+
+
+<p>
+
+Access scientific articles, journals and research
+publications from trusted academic sources.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Open Database
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Data Science Repository
+
+</h3>
+
+
+<p>
+
+Explore datasets, research projects and technical
+resources for data analysis.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Explore Repository
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Open Source Resources
+
+</h3>
+
+
+<p>
+
+Discover open-source tools, software and learning
+materials for technology development.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Browse Resources
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     DOWNLOAD CENTRE
+===================================== -->
+
+
+<section id="download-centre">
+
+
+<h2 class="title">
+
+Library Download Centre
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Books & Documents
+
+</h3>
+
+
+<p>
+
+Download available ebooks, guides and educational
+documents.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Download Files
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Research Reports
+
+</h3>
+
+
+<p>
+
+Access research reports, project documents and academic
+publications.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Download Reports
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Learning Templates
+
+</h3>
+
+
+<p>
+
+Download project templates, research formats and study
+resources.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Download Templates
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LIBRARY SERVICES
+===================================== -->
+
+
+<section id="services">
+
+
+<h2 class="title">
+
+Digital Library Services
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Online Reading
+
+</h3>
+
+
+<p>
+
+Read academic materials online anytime using digital
+library services.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Start Reading
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Research Assistance
+
+</h3>
+
+
+<p>
+
+Receive guidance on finding resources, references and
+research materials.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Request Assistance
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Citation Support
+
+</h3>
+
+
+<p>
+
+Learn proper citation methods and academic referencing
+techniques.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Learn Citation
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Digital Literacy Training
+
+</h3>
+
+
+<p>
+
+Develop skills for effective use of digital tools and
+online academic resources.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Join Training
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LIBRARY MEMBERSHIP
+===================================== -->
+
+
+<section id="membership">
+
+
+<h2 class="title">
+
+Library Membership
+
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Become a Digital Library Member
+
+</h3>
+
+
+<p>
+
+Students, staff and researchers can register for access
+to digital resources, academic materials and online
+services.
+
+</p>
+
+
+<a href="portal-login.html"
+
+class="btn">
+
+Register Access
+
+</a>
+
+
+
+</div>
+
+
+</section>
+<!-- =====================================
+     LIBRARIAN CONTACT
+===================================== -->
+
+
+<section id="librarian">
+
+
+<h2 class="title">
+
+Library Contact Information
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Digital Library Office
+
+</h3>
+
+
+<p>
+
+Department of Data Science<br>
+
+Faculty of Computing<br>
+
+University of Uyo<br>
+
+Uyo, Akwa Ibom State<br>
+
+Nigeria
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Librarian Contact
+
+</h3>
+
+
+<p>
+
+<strong>Email:</strong>
+
+library.datascience@uniuyo.edu.ng
+
+</p>
+
+
+
+<p>
+
+<strong>Phone:</strong>
+
++234 800 123 4567
+
+</p>
+
+
+
+<p>
+
+<strong>Office Hours:</strong><br>
+
+Monday - Friday<br>
+
+8:00 AM - 4:00 PM
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Online Support
+
+</h3>
+
+
+<p>
+
+Need help finding resources or accessing materials?
+
+Our library team is available to assist students and
+researchers.
+
+</p>
+
+
+<a href="contact.html"
+
+class="btn">
+
+Contact Support
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     LIBRARY GUIDELINES
+===================================== -->
+
+
+<section id="guidelines">
+
+
+<h2 class="title">
+
+Digital Library Guidelines
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Responsible Usage
+
+</h3>
+
+
+<p>
+
+Use digital resources responsibly and respect copyright
+and academic policies.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Research Ethics
+
+</h3>
+
+
+<p>
+
+Maintain academic honesty when using research materials
+and publications.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Account Security
+
+</h3>
+
+
+<p>
+
+Keep your library and portal login details secure.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FAQ QUICK HELP
+===================================== -->
+
+
+<section id="library-help">
+
+
+<h2 class="title">
+
+Frequently Asked Library Questions
+
+</h2>
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+How do I access ebooks?
+
+</h3>
+
+
+<p>
+
+Login through the digital library portal and search for
+available resources.
+
+</p>
+
+
+<a href="faq.html"
+
+class="btn">
+
+More Answers
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+Can I download materials?
+
+</h3>
+
+
+<p>
+
+Yes. Approved resources can be downloaded through the
+download centre.
+
+</p>
+
+
+<a href="downloads.html"
+
+class="btn">
+
+Download Centre
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+
+How do I get research help?
+
+</h3>
+
+
+<p>
+
+Contact the library support team for assistance with
+academic research.
+
+</p>
+
+
+<a href="contact.html"
+
+class="btn">
+
+Get Help
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+
+<footer style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+
+
+<div class="grid">
+
+
+
+
+
+<div>
+
+
+<h2 style="
+color:#00C2B8;">
+
+Department of Data Science
+
+</h2>
+
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+
+<p>
+
+Digital Library providing academic resources,
+research support and learning materials.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Quick Links
+
+</h3>
+
+
+
+<p>
+
+<a href="index.html"
+
+style="color:white;">
+
+Home
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="students-portal.html"
+
+style="color:white;">
+
+Students Portal
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="research.html"
+
+style="color:white;">
+
+Research
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="downloads.html"
+
+style="color:white;">
+
+Downloads
+
+</a>
+
+</p>
+
+
+
+<p>
+
+<a href="contact.html"
+
+style="color:white;">
+
+Contact
+
+</a>
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div>
+
+
+<h3 style="
+color:#00C2B8;">
+
+Library Services
+
+</h3>
+
+
+
+<p>
+E-Books
+</p>
+
+
+<p>
+Research Papers
+</p>
+
+
+<p>
+Journals
+</p>
+
+
+<p>
+Course Materials
+</p>
+
+
+<p>
+Online Support
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+
+
+
+<p style="text-align:center;">
+
+Designed with HTML5 |
+Deep Violet & Cyber Teal Theme
+
+</p>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

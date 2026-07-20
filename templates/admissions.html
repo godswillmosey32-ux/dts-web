@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admissions | Department of Data Science | University of Uyo</title>
+
+<style>
+
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+}
+
+/* ===========================
+   TOP BAR
+=========================== */
+
+.topbar{
+background:#00C2B8;
+color:white;
+text-align:center;
+padding:10px;
+font-weight:bold;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+background:#4B0082;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+position:sticky;
+top:1000;
+z-index:999;
+}
+
+.logo h1{
+color:#00C2B8;
+font-size:30px;
+}
+
+.logo p{
+color:white;
+font-size:14px;
+margin-top:5px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00C2B8;
+}
+
+/* Search */
+
+.search{
+display:flex;
+margin-top:10px;
+}
+
+.search input{
+padding:10px;
+width:220px;
+border:none;
+outline:none;
+}
+
+.search button{
+padding:10px 16px;
+border:none;
+background:#00C2B8;
+color:white;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+background:
+linear-gradient(rgba(75,0,130,.90),rgba(75,0,130,.90)),
+url("images/admission-banner.jpg");
+
+background-size:cover;
+background-position:center;
+padding:100px 20px;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+font-size:48px;
+color:#00C2B8;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:18px;
+}
+
+.hero .btn{
+margin-top:25px;
+display:inline-block;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+section{
+padding:70px 8%;
+}
+
+.title{
+font-size:34px;
+color:#4B0082;
+border-left:6px solid #00C2B8;
+padding-left:15px;
+margin-bottom:25px;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+border-top:5px solid #00C2B8;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#4B0082;
+margin-bottom:15px;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#00C2B8;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#4B0082;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+nav ul{
+flex-direction:column;
+margin-top:20px;
+}
+
+.search{
+margin-top:15px;
+}
+
+.hero h2{
+font-size:34px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+Admissions | Department of Data Science | University of Uyo
+</div>
+
+<header>
+
+<div class="logo">
+
+<h1>Department of Data Science</h1>
+
+<p>Faculty of Computing | University of Uyo</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="hod.html">HOD</a></li>
+<li><a href="programmes.html">Programmes</a></li>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="staff.html">Staff</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="search">
+
+<input type="text" placeholder="Search admissions">
+
+<button>Search</button>
+
+</div>
+
+</header>
+
+<!-- ===========================
+     HERO
+=========================== -->
+
+<section class="hero">
+
+<h2>Admissions 2026/2027</h2>
+
+<p>
+
+Begin your journey toward becoming a data scientist at the
+University of Uyo. Our programmes provide a strong foundation
+in Artificial Intelligence, Machine Learning, Data Analytics,
+Cloud Computing and emerging digital technologies.
+
+</p>
+
+<a href="#" class="btn">Apply Now</a>
+
+</section>
+
+<!-- ===========================
+     INTRODUCTION
+=========================== -->
+
+<section>
+
+<h2 class="title">Welcome to Admissions</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Why Choose Our Department?</h3>
+
+<p>
+
+The Department of Data Science provides world-class teaching,
+modern laboratories, experienced lecturers, industry-focused
+training and opportunities for cutting-edge research.
+
+Graduates are equipped with the knowledge and practical skills
+needed for successful careers in technology, finance,
+healthcare, government and research.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Admission Cycle</h3>
+
+<p>
+
+Admissions are offered annually for undergraduate and
+postgraduate programmes.
+
+Applicants are encouraged to submit complete applications
+before the official closing date and regularly monitor the
+University portal for updates on screening, admission lists
+and registration.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     GENERAL ADMISSION OVERVIEW
+=========================== -->
+
+<section>
+
+<h2 class="title">General Admission Overview</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Who Can Apply?</h3>
+
+<ul>
+
+<li>UTME Candidates</li>
+
+<li>Direct Entry Candidates</li>
+
+<li>Transfer Students</li>
+
+<li>International Applicants</li>
+
+<li>Postgraduate Applicants</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Admission Principles</h3>
+
+<p>
+
+Admission is based on merit, eligibility, and compliance with
+the admission requirements of the University of Uyo and the
+Department of Data Science.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+     GENERAL ADMISSION REQUIREMENTS
+=========================== -->
+
+<section>
+
+<h2 class="title">General Admission Requirements</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Eligibility</h3>
+
+<p>
+
+Applicants seeking admission into the Department of Data
+Science must satisfy both the general admission requirements
+of the University of Uyo and the specific departmental
+requirements.
+
+</p>
+
+<ul>
+
+<li>Must possess the required academic qualifications.</li>
+
+<li>Must meet the approved departmental cut-off mark.</li>
+
+<li>Must successfully participate in the Post-UTME screening (where applicable).</li>
+
+<li>Must provide authentic academic credentials.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Important Notice</h3>
+
+<p>
+
+Admission is offered strictly on merit and in accordance with
+the admission guidelines approved by the University Senate
+and the Joint Admissions and Matriculation Board (JAMB).
+
+Applicants are advised to regularly check the University's
+official admission portal for updates.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     JAMB (UTME) REQUIREMENTS
+=========================== -->
+
+<section>
+
+<h2 class="title">UTME (JAMB) Admission Requirements</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>UTME Requirements</h3>
+
+<ul>
+
+<li>Choose the University of Uyo as First Choice Institution.</li>
+
+<li>Obtain the minimum JAMB score approved for the admission year.</li>
+
+<li>Participate in the University's Post-UTME screening exercise.</li>
+
+<li>Upload O'Level results to the JAMB CAPS portal.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Recommended JAMB Subject Combination</h3>
+
+<ul>
+
+<li>English Language (Compulsory)</li>
+
+<li>Mathematics</li>
+
+<li>Physics</li>
+
+<li>Chemistry or Biology</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     O'LEVEL REQUIREMENTS
+=========================== -->
+
+<section>
+
+<h2 class="title">O'Level Requirements</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Required Subjects</h3>
+
+<ul>
+
+<li>English Language</li>
+
+<li>Mathematics</li>
+
+<li>Physics</li>
+
+<li>Chemistry</li>
+
+<li>One other Science subject</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Accepted Examination Bodies</h3>
+
+<ul>
+
+<li>WAEC</li>
+
+<li>NECO</li>
+
+<li>NABTEB (subject to University regulations)</li>
+
+</ul>
+
+<p>
+
+Candidates may combine results in accordance with the
+University's admission policy.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     DIRECT ENTRY
+=========================== -->
+
+<section>
+
+<h2 class="title">Direct Entry Admission</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Eligible Qualifications</h3>
+
+<ul>
+
+<li>National Diploma (ND)</li>
+
+<li>Higher National Diploma (HND)</li>
+
+<li>NCE</li>
+
+<li>IJMB</li>
+
+<li>JUPEB</li>
+
+<li>GCE A-Level</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Requirements</h3>
+
+<ul>
+
+<li>Relevant qualification from a recognized institution.</li>
+
+<li>Good academic performance in the previous programme.</li>
+
+<li>Meet all University of Uyo Direct Entry requirements.</li>
+
+<li>Submit all supporting documents during screening.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Admission Level</h3>
+
+<p>
+
+Successful Direct Entry candidates are normally admitted into
+200 Level, subject to University regulations and departmental
+approval.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     ADMISSION CHECKLIST
+=========================== -->
+
+<section>
+
+<h2 class="title">Admission Checklist</h2>
+
+<div class="card">
+
+<ul>
+
+<li>✔ Complete the online application form.</li>
+
+<li>✔ Upload all required credentials.</li>
+
+<li>✔ Verify your JAMB and O'Level details.</li>
+
+<li>✔ Print your application acknowledgement slip.</li>
+
+<li>✔ Monitor the admission portal for screening and admission updates.</li>
+
+<li>✔ Accept your admission on JAMB CAPS after receiving an offer.</li>
+
+</ul>
+
+</div>
+
+</section>
+<!-- ===========================
+     TRANSFER STUDENTS
+=========================== -->
+
+<section>
+
+<h2 class="title">Transfer Students</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Eligibility</h3>
+
+<p>
+
+Students from recognized universities may apply for transfer
+admission into the Department of Data Science subject to the
+University of Uyo transfer policy.
+
+</p>
+
+<ul>
+
+<li>Must be in good academic standing.</li>
+
+<li>Must have completed at least one academic session.</li>
+
+<li>Must satisfy departmental admission requirements.</li>
+
+<li>Transfer is subject to available space.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Required Documents</h3>
+
+<ul>
+
+<li>Academic Transcript</li>
+
+<li>Letter of Good Standing</li>
+
+<li>Admission Letter from Previous Institution</li>
+
+<li>O'Level Result</li>
+
+<li>Birth Certificate</li>
+
+<li>Completed Transfer Application Form</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     INTERNATIONAL STUDENTS
+=========================== -->
+
+<section>
+
+<h2 class="title">International Students</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Admission Requirements</h3>
+
+<ul>
+
+<li>Equivalent secondary school qualification.</li>
+
+<li>Official academic transcripts.</li>
+
+<li>International passport.</li>
+
+<li>English language proficiency (where applicable).</li>
+
+<li>Valid study visa before resumption.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Support Services</h3>
+
+<p>
+
+International students receive support with admissions,
+orientation, accommodation guidance, immigration procedures
+and academic advising throughout their studies.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     APPLICATION PROCESS
+=========================== -->
+
+<section>
+
+<h2 class="title">Application Process</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Step 1</h3>
+
+<p>Purchase the University of Uyo admission application form through the approved portal.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Step 2</h3>
+
+<p>Create your applicant account and complete the online application form.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Step 3</h3>
+
+<p>Upload all required documents and verify that your information is correct.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Step 4</h3>
+
+<p>Participate in the Post-UTME or screening exercise if required.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Step 5</h3>
+
+<p>Monitor your application status and admission updates through the admission portal.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Step 6</h3>
+
+<p>Accept your admission offer, pay the required fees and complete departmental registration.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     REQUIRED DOCUMENTS
+=========================== -->
+
+<section>
+
+<h2 class="title">Required Documents</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Undergraduate Applicants</h3>
+
+<ul>
+
+<li>JAMB Result Slip</li>
+
+<li>O'Level Result</li>
+
+<li>Birth Certificate</li>
+
+<li>Certificate of Origin</li>
+
+<li>Passport Photograph</li>
+
+<li>Application Acknowledgement Slip</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Direct Entry Applicants</h3>
+
+<ul>
+
+<li>Direct Entry Credentials</li>
+
+<li>Academic Transcript</li>
+
+<li>O'Level Result</li>
+
+<li>Birth Certificate</li>
+
+<li>Passport Photograph</li>
+
+<li>Certificate of Origin</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Postgraduate Applicants</h3>
+
+<ul>
+
+<li>Bachelor's Degree Certificate</li>
+
+<li>Academic Transcript</li>
+
+<li>Curriculum Vitae (CV)</li>
+
+<li>Research Proposal (Ph.D. Applicants)</li>
+
+<li>Passport Photograph</li>
+
+<li>Identification Documents</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     ADMISSION TIMELINE
+=========================== -->
+
+<section>
+
+<h2 class="title">Admission Timeline</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Application Opens</h3>
+
+<p>June</p>
+
+</div>
+
+<div class="card">
+
+<h3>Application Deadline</h3>
+
+<p>August</p>
+
+</div>
+
+<div class="card">
+
+<h3>Screening Exercise</h3>
+
+<p>September</p>
+
+</div>
+
+<div class="card">
+
+<h3>Admission List Released</h3>
+
+<p>October</p>
+
+</div>
+
+<div class="card">
+
+<h3>Registration</h3>
+
+<p>November</p>
+
+</div>
+
+<div class="card">
+
+<h3>Academic Session Begins</h3>
+
+<p>November / December</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+     FREQUENTLY ASKED QUESTIONS
+=========================== -->
+
+<section>
+
+<h2 class="title">Frequently Asked Questions (FAQs)</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>How do I gain admission?</h3>
+<p>
+Apply through JAMB (for UTME candidates) or Direct Entry, meet
+the required cut-off mark, participate in the screening exercise,
+and satisfy all departmental requirements.
+</p>
+</div>
+
+<div class="card">
+<h3>What are the O'Level requirements?</h3>
+<p>
+Five (5) credit passes including English Language,
+Mathematics, Physics, Chemistry and one other relevant
+science subject.
+</p>
+</div>
+
+<div class="card">
+<h3>Can I combine WAEC and NECO results?</h3>
+<p>
+Yes, subject to the admission policy of the University of
+Uyo for the current admission session.
+</p>
+</div>
+
+<div class="card">
+<h3>Is Direct Entry available?</h3>
+<p>
+Yes. Qualified candidates with ND, HND, NCE, IJMB, JUPEB or
+equivalent qualifications may apply.
+</p>
+</div>
+
+<div class="card">
+<h3>How long is the B.Sc. programme?</h3>
+<p>
+The programme lasts four (4) years for UTME candidates and
+three (3) years for Direct Entry candidates.
+</p>
+</div>
+
+<div class="card">
+<h3>Where can I get more information?</h3>
+<p>
+Visit the Department of Data Science office or contact the
+Admissions Office using the details below.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     QUICK LINKS
+=========================== -->
+
+<section>
+
+<h2 class="title">Quick Links</h2>
+
+<div class="grid">
+
+<div class="card" style="text-align:center;">
+<h3>Apply Online</h3>
+<a href="#" class="btn">Apply Now</a>
+</div>
+
+<div class="card" style="text-align:center;">
+<h3>Download Brochure</h3>
+<a href="#" class="btn">Download PDF</a>
+</div>
+
+<div class="card" style="text-align:center;">
+<h3>Academic Programmes</h3>
+<a href="programmes.html" class="btn">View Programmes</a>
+</div>
+
+<div class="card" style="text-align:center;">
+<h3>Contact Admissions</h3>
+<a href="contact.html" class="btn">Contact Us</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     CONTACT INFORMATION
+=========================== -->
+
+<section>
+
+<h2 class="title">Admissions Office</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Office Address</h3>
+
+<p>
+Department of Data Science<br>
+Faculty of Computing<br>
+University of Uyo<br>
+PMB 1017, Uyo,<br>
+Akwa Ibom State, Nigeria
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Contact Details</h3>
+
+<p><strong>Email:</strong> admissions.datascience@uniuyo.edu.ng</p>
+
+<p><strong>Phone:</strong> +234 (0) 800 123 4567</p>
+
+<p><strong>Office Hours:</strong> Monday – Friday (8:00 AM – 4:00 PM)</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+
+<footer
+style="
+background:#4B0082;
+color:white;
+padding:45px 8%;
+">
+
+
+
+<div class="grid">
+
+
+
+<div>
+
+<h2 style="color:#00C2B8;">
+Department of Data Science
+</h2>
+
+
+<p>
+
+Faculty of Computing<br>
+
+University of Uyo
+
+</p>
+
+
+<p>
+
+Advancing innovation through data-driven research,
+technology and collaboration.
+
+</p>
+
+
+</div>
+
+<div>
+
+<h3 style="color:#00C2B8;">
+Quick Links
+</h3>
+
+
+<p>
+<a href="index.html" style="color:white;">
+Home
+</a>
+</p>
+
+
+<p>
+<a href="about.html" style="color:white;">
+About
+</a>
+</p>
+
+
+<p>
+<a href="courses.html" style="color:white;">
+Courses
+</a>
+</p>
+
+
+<p>
+<a href="publications.html" style="color:white;">
+Publications
+</a>
+</p>
+
+
+<p>
+<a href="contact.html" style="color:white;">
+Contact
+</a>
+</p>
+
+
+</div>
+
+<div>
+
+<h3 style="color:#00C2B8;">
+Research Links
+</h3>
+
+
+<p>
+Research Projects
+</p>
+
+
+<p>
+Laboratories
+</p>
+
+
+<p>
+Publications
+</p>
+
+
+<p>
+Innovation Hub
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<hr style="
+margin:30px 0;
+border:1px solid #00C2B8;
+">
+
+
+
+<p style="text-align:center;">
+
+&copy; 2026 Department of Data Science,
+Faculty of Computing,
+University of Uyo.
+
+All Rights Reserved.
+
+</p>
+
+
+</footer>
+</body>
+</html>
