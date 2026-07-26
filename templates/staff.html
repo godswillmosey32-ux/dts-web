@@ -1,1079 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Staff Directory | Department of Data Science | University of Uyo</title>
-
-<style>
-
-/* ==================================
-   GLOBAL STYLES
-================================== */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#f4f7fb;
-color:#333;
-line-height:1.7;
-}
-
-/* ==================================
-   TOP BAR
-================================== */
-
-.topbar{
-background:#00C2B8;
-color:#fff;
-text-align:center;
-padding:10px;
-font-weight:bold;
-}
-
-/* ==================================
-   HEADER
-================================== */
-
-header{
-background:#4B0082;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 8%;
-flex-wrap:wrap;
-position:sticky;
-top:1000;
-z-index:999;
-}
-
-.logo{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin: 10px 0;
-}
-.logo h3{
-color:#fff;
-}
-
-.logo p{
-font-size:14px;
-margin-left:10px;
-text-align:right;
-color: #fff;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:20px;
-}
-
-nav ul li a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-nav ul li a:hover{
-color:#00C2B8;
-}
-/* ==================================
-   SEARCH
-================================== */
-
-.search{
-display:flex;
-margin-top:10px;
-}
-
-.search input{
-padding:8px;
-width:220px;
-border:none;
-outline:none;
-}
-
-.search button{
-background:#00C2B8;
-color:white;
-border:none;
-padding:8px 15px;
-cursor:pointer;
-}
-
-/* ==================================
-   HERO
-================================== */
-
-.hero{
-
-background:
-linear-gradient(rgba(75,0,130,.92),
-rgba(75,0,130,.92)),
-url("images/staff-banner.jpg");
-
-background-size:cover;
-background-position:center;
-
-padding:100px 20px;
-
-text-align:center;
-
-color:white;
-
-}
-
-.hero h2{
-
-font-size:48px;
-
-color:#00C2B8;
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-max-width:900px;
-
-margin:auto;
-
-font-size:18px;
-
-}
-
-/* ==================================
-   SECTION
-================================== */
-
-section{
-padding:70px 8%;
-}
-
-.title{
-font-size:34px;
-color:#4B0082;
-border-left:6px solid #00C2B8;
-padding-left:15px;
-margin-bottom:25px;
-}
-
-/* ==================================
-   GRID
-================================== */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-/* ==================================
-   CARD
-================================== */
-
-.card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-border-top:5px solid #00C2B8;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-color:#4B0082;
-margin-bottom:15px;
-}
-
-/* ==================================
-   BUTTON
-================================== */
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 24px;
-background:#00C2B8;
-color:white;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-background:#4B0082;
-}
-
-/* ==================================
-   RESPONSIVE
-================================== */
-
-@media(max-width:900px){
-
-header{
-flex-direction:column;
-text-align:center;
-}
-
-nav ul{
-flex-direction:column;
-margin-top:20px;
-}
-
-.search{
-margin-top:15px;
-}
-
-.hero h2{
-font-size:34px;
-}
-
-}
-
-</style>
-
+<title>Staff Login | Department of Data Science | University of Uyo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
 </head>
-
 <body>
 
-<div class="topbar">
+<div class="auth-shell">
 
-Department of Data Science • Faculty of Computing • University of Uyo
+  <!-- ===================== BRAND SIDE ===================== -->
+  <aside class="auth-side">
+    <div class="auth-side-brand">
+      <span class="brand-mark">DS</span>
+      <div class="auth-side-brand-text">
+        <h3>Data Science</h3>
+        <p>Faculty of Computing &middot; University of Uyo</p>
+      </div>
+    </div>
 
-</div>
+    <div class="auth-side-content">
+      <span class="eyebrow">Staff Portal</span>
+      <h1>Manage your courses and students with ease.</h1>
+      <p>
+        Access grade uploads, attendance records, announcements and
+        departmental resources from your staff console.
+      </p>
 
-<header>
+      <div class="auth-side-stats">
+        <div>
+          <p>45</p>
+          <p>Academic Staff</p>
+        </div>
+        <div>
+          <p>38</p>
+          <p>Active Courses</p>
+        </div>
+        <div>
+          <p>250+</p>
+          <p>Publications</p>
+        </div>
+      </div>
+    </div>
 
-<div class="logo">
+    <svg class="auth-side-graphic" viewBox="0 0 220 90" aria-hidden="true">
+      <g class="net-lines">
+        <line x1="18" y1="66" x2="60" y2="30"/>
+        <line x1="60" y1="30" x2="112" y2="48"/>
+        <line x1="112" y1="48" x2="160" y2="18"/>
+        <line x1="112" y1="48" x2="150" y2="72"/>
+        <line x1="60" y1="30" x2="20" y2="18"/>
+        <line x1="160" y1="18" x2="200" y2="34"/>
+      </g>
+      <g class="net-nodes">
+        <circle cx="18" cy="66" r="3.4"/>
+        <circle cx="20" cy="18" r="2.6"/>
+        <circle cx="60" cy="30" r="4"/>
+        <circle cx="112" cy="48" r="4.6" class="node-pulse"/>
+        <circle cx="160" cy="18" r="3"/>
+        <circle cx="150" cy="72" r="2.8"/>
+        <circle cx="200" cy="34" r="2.6"/>
+      </g>
+    </svg>
+  </aside>
 
-<h3>Department of Data Science</h3>
+  <!-- ===================== FORM SIDE ===================== -->
+  <main class="auth-main">
 
-<p>Faculty of Computing | University of Uyo</p>
+    <a href="index.html" class="auth-back">
+      <svg viewBox="0 0 24 24"><path d="m11 4-7 8 7 8"/><path d="M4 12h16"/></svg>
+      Back to website
+    </a>
 
-</div>
+    <div class="auth-card">
+      <h2>Staff Login</h2>
+      <p class="auth-sub">Sign in to access the staff console and department tools.</p>
 
-<nav>
+      <div class="form-success" id="loginSuccess">
+        <svg viewBox="0 0 24 24"><path d="M9 11.5 11 13.5 15.5 9"/><circle cx="12" cy="12" r="9"/></svg>
+        Signed in successfully. Redirecting to your console&hellip;
+      </div>
 
-<ul>
+      <form id="loginForm" novalidate>
 
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="hod.html">HOD</a></li>
-<li><a href="programmes.html">Programmes</a></li>
-<li><a href="admissions.html">Admissions</a></li>
-<li><a href="staff.html">Staff</a></li>
-<li><a href="research.html">Research</a></li>
-<li><a href="contact.html">Contact</a></li>
+        <div class="form-group">
+          <label for="loginId">Staff ID or Email</label>
+          <input class="form-control" type="text" id="loginId" name="loginId" placeholder="DS/STAFF/014 or you@uniuyo.edu.ng" required>
+          <p class="form-error">Please enter your staff ID or email.</p>
+        </div>
 
-</ul>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <div class="input-wrap">
+            <input class="form-control" type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required>
+            <button type="button" class="input-toggle" data-target="loginPassword" aria-label="Show password">
+              <svg class="icon-eye-open" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="icon-eye-closed" style="display:none" viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 5.2A10.7 10.7 0 0 1 12 5c6.5 0 10 7 10 7a15.6 15.6 0 0 1-3.3 4.2M6.7 6.7C4 8.5 2 12 2 12s3.5 7 10 7a10.6 10.6 0 0 0 3.4-.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+            </button>
+          </div>
+          <p class="form-error">Please enter your password.</p>
+        </div>
 
-</nav>
+        <div class="form-meta-row">
+          <label class="checkbox-row" style="margin-bottom:0;">
+            <input type="checkbox" name="remember">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="link-plain">Forgot password?</a>
+        </div>
 
-<div class="search">
+        <button type="submit" class="btn btn-block">Sign In</button>
 
-<input type="text" placeholder="Search staff...">
+      </form>
 
-<button>Search</button>
+      <div class="auth-divider">Not a Staff Member</div>
 
-</div>
+      <p class="auth-footer-text">
+        Are you a student? <a href="login.html">Sign in here</a>
+      </p>
 
-</header>
+      <p class="auth-footer-text">
+        Need staff portal access? <a href="contact.html">Contact the department</a>
+      </p>
+    </div>
 
-<!-- ==================================
-     HERO
-================================== -->
-
-<section class="hero">
-
-<h3>Staff Directory</h3>
-
-<p>
-
-Meet our team of dedicated academic and non-academic staff who
-are committed to excellence in teaching, research, innovation,
-student mentorship and professional service.
-
-</p>
-
-<a href="#academic-staff" class="btn">View Academic Staff</a>
-
-</section>
-
-<!-- ==================================
-     STAFF STATISTICS
-================================== -->
-
-<section>
-
-<h2 class="title">Department Statistics</h2>
-
-<div class="grid">
-
-<div class="card" style="text-align:center;">
-
-<h1 style="font-size:48px;color:#00C2B8;">32</h1>
-
-<h3>Academic Staff</h3>
-
-<p>Professors, Readers, Senior Lecturers and Lecturers.</p>
-
-</div>
-
-<div class="card" style="text-align:center;">
-
-<h1 style="font-size:48px;color:#00C2B8;">6</h1>
-
-<h3>Professors</h3>
-
-<p>Experienced researchers and academic leaders.</p>
-
-</div>
-
-<div class="card" style="text-align:center;">
-
-<h1 style="font-size:48px;color:#00C2B8;">18</h1>
-
-<h3>Support Staff</h3>
-
-<p>Administrative officers, ICT personnel and technologists.</p>
-
-</div>
-
-<div class="card" style="text-align:center;">
-
-<h1 style="font-size:48px;color:#00C2B8;">150+</h1>
-
-<h3>Research Publications</h3>
-
-<p>Published in reputable national and international journals.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==================================
-     ACADEMIC STAFF INTRODUCTION
-================================== -->
-
-<section id="academic-staff">
-
-<h2 class="title">Academic Staff</h2>
-
-<div class="card">
-
-<p>
-
-Our academic staff are highly qualified scholars with expertise
-in Artificial Intelligence, Machine Learning, Data Analytics,
-Big Data, Cloud Computing, Cybersecurity, Software Engineering
-and other emerging areas of Data Science.
-
-Click on each profile to learn more about qualifications,
-research interests, publications and courses taught.
-
-</p>
+  </main>
 
 </div>
 
-</section>
-<!-- ==================================
-     ACADEMIC STAFF PROFILES
-================================== -->
-
-<section>
-
-<h2 class="title">Academic Staff Profiles</h2>
-
-<div class="grid">
-
-<!-- Staff 1 -->
-
-<div class="card">
-
-<img src="../images/HOD.jpg"
-alt="Dr. Uduak George"
-style="width:100%;height:260px;object-fit:cover;border-radius:10px;">
-
-<h3 style="margin-top:15px;">Dr. Uduak George</h3>
-
-<p><strong>Rank:</strong> Head of Department / Senior Lecturer</p>
-
-<p><strong>Qualifications:</strong> B.Sc., M.Sc., Ph.D.</p>
-
-<p><strong>Email:</strong> uduakgeorge@uniuyo.edu.ng</p>
-
-<p><strong>Office:</strong> Room DS-201</p>
-
-<p><strong>Courses:</strong> Artificial Intelligence, Machine Learning</p>
-
-<p><strong>Research:</strong> AI, Data Mining, Big Data Analytics</p>
-
-<p>
-<a href="#">Google Scholar</a> |
-<a href="#">ORCID</a>
-</p>
-
-<a href="publications.html" class="btn">View Publications</a>
-
-</div>
-
-<!-- Staff 2 -->
-
-<div class="card">
-
-<img src="images/staff2.jpg"
-alt="Prof. Michael Johnson"
-style="width:100%;height:260px;object-fit:cover;border-radius:10px;">
-
-<h3 style="margin-top:15px;">Prof. Michael Johnson</h3>
-
-<p><strong>Rank:</strong> Professor</p>
-
-<p><strong>Qualifications:</strong> B.Sc., M.Sc., Ph.D.</p>
-
-<p><strong>Email:</strong> mjohnson@uniuyo.edu.ng</p>
-
-<p><strong>Office:</strong> Room DS-105</p>
-
-<p><strong>Courses:</strong> Data Structures, Algorithms</p>
-
-<p><strong>Research:</strong> Software Engineering, AI</p>
-
-<p>
-<a href="#">Google Scholar</a> |
-<a href="#">ORCID</a>
-</p>
-
-<a href="#" class="btn">View Publications</a>
-
-</div>
-
-<!-- Staff 3 -->
-
-<div class="card">
-
-<img src="images/staff3.jpg"
-alt="Dr. Grace James"
-style="width:100%;height:260px;object-fit:cover;border-radius:10px;">
-
-<h3 style="margin-top:15px;">Dr. Grace James</h3>
-
-<p><strong>Rank:</strong> Senior Lecturer</p>
-
-<p><strong>Qualifications:</strong> B.Sc., M.Sc., Ph.D.</p>
-
-<p><strong>Email:</strong> gjames@uniuyo.edu.ng</p>
-
-<p><strong>Office:</strong> Room DS-112</p>
-
-<p><strong>Courses:</strong> Database Systems, SQL</p>
-
-<p><strong>Research:</strong> Database Security, Cloud Computing</p>
-
-<p>
-<a href="#">Google Scholar</a> |
-<a href="#">ORCID</a>
-</p>
-
-<a href="publications.html" class="btn">View Publications</a>
-
-</div>
-
-<!-- Staff 4 -->
-
-<div class="card">
-
-<img src="images/staff4.jpg"
-alt="Dr. Samuel Peter"
-style="width:100%;height:260px;object-fit:cover;border-radius:10px;">
-
-<h3 style="margin-top:15px;">Dr. Samuel Peter</h3>
-
-<p><strong>Rank:</strong> Lecturer I</p>
-
-<p><strong>Qualifications:</strong> B.Sc., M.Sc., Ph.D.</p>
-
-<p><strong>Email:</strong> speter@uniuyo.edu.ng</p>
-
-<p><strong>Office:</strong> Room DS-118</p>
-
-<p><strong>Courses:</strong> Python Programming, Data Analytics</p>
-
-<p><strong>Research:</strong> Predictive Analytics, Machine Learning</p>
-
-<p>
-<a href="#">Google Scholar</a> |
-<a href="#">ORCID</a>
-</p>
-
-<a href="publications.html" class="btn">View Publications</a>
-
-</div>
-
-<!-- Staff 5 -->
-
-<div class="card">
-
-<img src="images/staff5.jpg"
-alt="Mrs. Esther Brown"
-style="width:100%;height:260px;object-fit:cover;border-radius:10px;">
-
-<h3 style="margin-top:15px;">Mrs. Esther Brown</h3>
-
-<p><strong>Rank:</strong> Lecturer II</p>
-
-<p><strong>Qualifications:</strong> B.Sc., M.Sc.</p>
-
-<p><strong>Email:</strong> ebrown@uniuyo.edu.ng</p>
-
-<p><strong>Office:</strong> Room DS-121</p>
-
-<p><strong>Courses:</strong> Statistics, Data Visualization</p>
-
-<p><strong>Research:</strong> Statistical Computing</p>
-
-<p>
-<a href="#">Google Scholar</a> |
-<a href="#">ORCID</a>
-</p>
-
-<a href="#" class="btn">View Publications</a>
-
-</div>
-
-<!-- Staff 6 -->
-
-<div class="card">
-
-<img src="images/staff6.jpg"
-alt="Mr. David Wilson"
-style="width:100%;height:260px;object-fit:cover;border-radius:10px;">
-
-<h3 style="margin-top:15px;">Mr. David Wilson</h3>
-
-<p><strong>Rank:</strong> Assistant Lecturer</p>
-
-<p><strong>Qualifications:</strong> B.Sc., M.Sc.</p>
-
-<p><strong>Email:</strong> dwilson@uniuyo.edu.ng</p>
-
-<p><strong>Office:</strong> Room DS-126</p>
-
-<p><strong>Courses:</strong> Web Programming, Java</p>
-
-<p><strong>Research:</strong> Software Development, Web Technologies</p>
-
-<p>
-<a href="#">Google Scholar</a> |
-<a href="#">ORCID</a>
-</p>
-
-<a href="#" class="btn">View Publications</a>
-
-</div>
-
-</div>
-
-</section>
-<!-- ==================================
-     NON-ACADEMIC STAFF
-================================== -->
-
-<section id="non-academic-staff">
-
-<h2 class="title">Non-Academic Staff</h2>
-
-<p style="margin-bottom:30px;">
-
-Our non-academic staff provide administrative, technical and
-student support services that ensure the smooth operation of
-the Department of Data Science.
-
-</p>
-
-<div class="grid">
-
-<!-- Administrative Officer -->
-
-<div class="card">
-
-<img src="images/admin1.jpg"
-alt="Administrative Officer"
-style="width:100%;height:250px;object-fit:cover;border-radius:10px;">
-
-<h3 style="margin-top:15px;">Mrs. Sarah Etim</h3>
-
-<p><strong>Position:</strong> Administrative Officer</p>
-
-<p><strong>Email:</strong> sarah.etim@uniuyo.edu.ng</p>
-
-<p><strong>Office:</strong> Departmental Administrative Office</p>
-
-<p>
-Coordinates departmental administration, student records and
-official correspondence.
-</p>
-
-</div>
-
-<!-- Secretary -->
-
-<div class="card">
-
-<img src="images/secretary.jpg"
-alt="Department Secretary"
-style="width:100%;height:250px;object-fit:cover;border-radius:10px;">
-
-<h3 style="margin-top:15px;">Miss Blessing James</h3>
-
-<p><strong>Position:</strong> Department Secretary</p>
-
-<p><strong>Email:</strong> secretary.datascience@uniuyo.edu.ng</p>
-
-<p><strong>Office:</strong> Main Department Office</p>
-
-<p>
-Provides administrative support, manages appointments and
-departmental documentation.
-</p>
-
-</div>
-
-<!-- ICT Officer -->
-
-<div class="card">
-
-<img src="images/ict.jpg"
-alt="ICT Officer"
-style="width:100%;height:250px;object-fit:cover;border-radius:10px;">
-
-<h3 style="margin-top:15px;">Mr. Emmanuel David</h3>
-
-<p><strong>Position:</strong> ICT Officer</p>
-
-<p><strong>Email:</strong> ict.datascience@uniuyo.edu.ng</p>
-
-<p><strong>Office:</strong> ICT Unit</p>
-
-<p>
-Maintains the department website, computer systems and network
-infrastructure.
-</p>
-
-</div>
-
-<!-- Laboratory Technologist -->
-
-<div class="card">
-
-<img src="images/lab-tech.jpg"
-alt="Laboratory Technologist"
-style="width:100%;height:250px;object-fit:cover;border-radius:10px;">
-
-<h3 style="margin-top:15px;">Mr. Victor Sunday</h3>
-
-<p><strong>Position:</strong> Laboratory Technologist</p>
-
-<p><strong>Email:</strong> lab.datascience@uniuyo.edu.ng</p>
-
-<p><strong>Office:</strong> AI & Data Science Laboratory</p>
-
-<p>
-Supports laboratory practical sessions, equipment maintenance
-and student projects.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==================================
-     DEPARTMENTAL UNITS
-================================== -->
-
-<section>
-
-<h2 class="title">Departmental Units</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Administration Unit</h3>
-
-<p>
-
-Handles admissions, departmental records, meetings,
-correspondence and general administration.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Academic Affairs Unit</h3>
-
-<p>
-
-Coordinates lectures, examinations, course registration,
-academic advising and timetable management.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>ICT Unit</h3>
-
-<p>
-
-Provides technical support, maintains computer laboratories,
-website management and network services.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Research & Innovation Unit</h3>
-
-<p>
-
-Promotes collaborative research, grant applications,
-publications and innovation projects.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Student Affairs Unit</h3>
-
-<p>
-
-Supports student welfare, counselling, SIWES coordination,
-scholarships and extracurricular activities.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Laboratory Unit</h3>
-
-<p>
-
-Manages AI laboratories, Data Science laboratories, equipment,
-software resources and laboratory safety.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==================================
-     STAFF SUPPORT SERVICES
-================================== -->
-
-<section>
-
-<h2 class="title">Staff Support Services</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Professional Development</h3>
-
-<p>
-
-Regular workshops, conferences, seminars and training
-programmes for continuous academic and professional growth.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Research Support</h3>
-
-<p>
-
-Access to research grants, journals, computing resources and
-international research collaborations.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Laboratory Facilities</h3>
-
-<p>
-
-Modern computing laboratories equipped with advanced hardware,
-software and internet connectivity.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>ICT Services</h3>
-
-<p>
-
-Technical assistance, institutional email support, learning
-management systems and website administration.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-<!-- ==================================
-     CONTACT INFORMATION
-================================== -->
-
-<section>
-
-<h2 class="title">Staff Contact Information</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Department Office</h3>
-
-<p>
-<strong>Department:</strong> Department of Data Science
-</p>
-
-<p>
-<strong>Faculty:</strong> Faculty of Computing
-</p>
-
-<p>
-<strong>University:</strong> University of Uyo
-</p>
-
-<p>
-<strong>Address:</strong><br>
-PMB 1017,<br>
-University of Uyo,<br>
-Uyo, Akwa Ibom State,<br>
-Nigeria.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Office Hours</h3>
-
-<p><strong>Monday:</strong> 8:00 AM – 4:00 PM</p>
-<p><strong>Tuesday:</strong> 8:00 AM – 4:00 PM</p>
-<p><strong>Wednesday:</strong> 8:00 AM – 4:00 PM</p>
-<p><strong>Thursday:</strong> 8:00 AM – 4:00 PM</p>
-<p><strong>Friday:</strong> 8:00 AM – 4:00 PM</p>
-
-</div>
-
-<div class="card">
-
-<h3>Contact Details</h3>
-
-<p><strong>Email:</strong><br>
-datascience@uniuyo.edu.ng
-</p>
-
-<p><strong>Office Phone:</strong><br>
-+234 (0) 800 123 4567
-</p>
-
-<p><strong>Website:</strong><br>
-www.datascience.uniuyo.edu.ng
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==================================
-     QUICK LINKS
-================================== -->
-
-<section>
-
-<h2 class="title">Quick Links</h2>
-
-<div class="grid">
-
-<div class="card" style="text-align:center;">
-
-<h3>Academic Programmes</h3>
-
-<p>Explore undergraduate and postgraduate programmes.</p>
-
-<a href="programmes.html" class="btn">
-View Programmes
-</a>
-
-</div>
-
-<div class="card" style="text-align:center;">
-
-<h3>Research</h3>
-
-<p>Discover research groups, laboratories and publications.</p>
-
-<a href="research.html" class="btn">
-Research
-</a>
-
-</div>
-
-<div class="card" style="text-align:center;">
-
-<h3>Admissions</h3>
-
-<p>Apply for admission into the Department.</p>
-
-<a href="admissions.html" class="btn">
-Apply Now
-</a>
-
-</div>
-
-<div class="card" style="text-align:center;">
-
-<h3>Contact Us</h3>
-
-<p>Reach the department for enquiries.</p>
-
-<a href="contact.html" class="btn">
-Contact
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==================================
-     FOOTER
-================================== -->
-
-<footer style="background:#4B0082;color:#ffffff;padding:45px 8%;">
-
-<div class="grid">
-
-<div>
-
-<h2 style="color:#00C2B8;">
-Department of Data Science
-</h2>
-
-<p>
-Faculty of Computing<br>
-University of Uyo
-</p>
-
-<p style="margin-top:15px;">
-Preparing future leaders in Artificial Intelligence,
-Machine Learning, Data Analytics and Digital Innovation.
-</p>
-
-</div>
-
-<div>
-
-<h3 style="color:#00C2B8;">Quick Navigation</h3>
-
-<p><a href="index.html" style="color:white;text-decoration:none;">Home</a></p>
-
-<p><a href="about.html" style="color:white;text-decoration:none;">About</a></p>
-
-<p><a href="hod.html" style="color:white;text-decoration:none;">HOD</a></p>
-
-<p><a href="programmes.html" style="color:white;text-decoration:none;">Programmes</a></p>
-
-<p><a href="staff.html" style="color:white;text-decoration:none;">Staff</a></p>
-
-<p><a href="research.html" style="color:white;text-decoration:none;">Research</a></p>
-
-</div>
-
-<div>
-
-<h3 style="color:#00C2B8;">Follow Us</h3>
-
-<p>Facebook</p>
-
-<p>Instagram</p>
-
-<p>LinkedIn</p>
-
-<p>YouTube</p>
-
-<p>X (Twitter)</p>
-
-</div>
-
-</div>
-
-<hr style="margin:30px 0;border:1px solid #00C2B8;">
-
-<p style="text-align:center;">
-
-&copy; 2026 Department of Data Science,
-Faculty of Computing,
-University of Uyo.
-
-All Rights Reserved.
-
-</p>
-
-
-</footer>
-
+<script src="auth.js"></script>
 </body>
 </html>

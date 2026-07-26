@@ -3,85 +3,136 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Department Login</title>
-
-<style>
-
-body{
-font-family:Arial, sans-serif;
-background:#f4f7fb;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-margin:0;
-}
-
-.login-box{
-background:white;
-padding:30px;
-width:350px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(0,0,0,.2);
-}
-
-h2{
-text-align:center;
-color:#4B0082;
-}
-
-input{
-width:100%;
-padding:12px;
-margin:10px 0;
-box-sizing:border-box;
-}
-
-button{
-width:100%;
-padding:12px;
-background:#00C2B8;
-color:white;
-border:none;
-font-size:16px;
-cursor:pointer;
-}
-
-button:hover{
-background:#4B0082;
-}
-
-</style>
-
+<title>Student Login | Department of Data Science | University of Uyo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
 </head>
-
 <body>
 
-<div class="login-box">
+<div class="auth-shell">
 
-<h2>Department Login</h2>
+  <!-- ===================== BRAND SIDE ===================== -->
+  <aside class="auth-side">
+    <div class="auth-side-brand">
+      <span class="brand-mark">DS</span>
+      <div class="auth-side-brand-text">
+        <h3>Data Science</h3>
+        <p>Faculty of Computing &middot; University of Uyo</p>
+      </div>
+    </div>
 
-<form action="/login" method="POST">
+    <div class="auth-side-content">
+      <span class="eyebrow">Student Portal</span>
+      <h1>Welcome back to your learning space.</h1>
+      <p>
+        Access your courses, results, timetable and department
+        announcements in one place.
+      </p>
 
-<input
-type="text"
-name="login_id"
-placeholder="Username / Registration Number / Staff ID"
-required>
+      <div class="auth-side-stats">
+        <div>
+          <p>1,500+</p>
+          <p>Students</p>
+        </div>
+        <div>
+          <p>38</p>
+          <p>Active Courses</p>
+        </div>
+        <div>
+          <p>92%</p>
+          <p>Avg. Attendance</p>
+        </div>
+      </div>
+    </div>
 
-<input
-type="password"
-name="password"
-placeholder="Password"
-required>
+    <svg class="auth-side-graphic" viewBox="0 0 220 90" aria-hidden="true">
+      <g class="net-lines">
+        <line x1="18" y1="66" x2="60" y2="30"/>
+        <line x1="60" y1="30" x2="112" y2="48"/>
+        <line x1="112" y1="48" x2="160" y2="18"/>
+        <line x1="112" y1="48" x2="150" y2="72"/>
+        <line x1="60" y1="30" x2="20" y2="18"/>
+        <line x1="160" y1="18" x2="200" y2="34"/>
+      </g>
+      <g class="net-nodes">
+        <circle cx="18" cy="66" r="3.4"/>
+        <circle cx="20" cy="18" r="2.6"/>
+        <circle cx="60" cy="30" r="4"/>
+        <circle cx="112" cy="48" r="4.6" class="node-pulse"/>
+        <circle cx="160" cy="18" r="3"/>
+        <circle cx="150" cy="72" r="2.8"/>
+        <circle cx="200" cy="34" r="2.6"/>
+      </g>
+    </svg>
+  </aside>
 
-<button type="submit">
-Login
-</button>
+  <!-- ===================== FORM SIDE ===================== -->
+  <main class="auth-main">
 
-</form>
+    <a href="index.html" class="auth-back">
+      <svg viewBox="0 0 24 24"><path d="m11 4-7 8 7 8"/><path d="M4 12h16"/></svg>
+      Back to website
+    </a>
+
+    <div class="auth-card">
+      <h2>Student Login</h2>
+      <p class="auth-sub">Sign in to access your dashboard, results and course materials.</p>
+
+      <div class="form-success" id="loginSuccess">
+        <svg viewBox="0 0 24 24"><path d="M9 11.5 11 13.5 15.5 9"/><circle cx="12" cy="12" r="9"/></svg>
+        Signed in successfully. Redirecting to your dashboard&hellip;
+      </div>
+
+   <form action="{{ url_for('login') }}" method="POST">
+
+        <div class="form-group">
+          <label for="loginId">Matric Number or Email</label>
+          <input class="form-control" type="text" id="loginId" name="loginId" placeholder="25/CO/DS/127 or you@example.com" required>
+          <p class="form-error">Please enter your matric number or email.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <div class="input-wrap">
+            <input class="form-control" type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required>
+            <button type="button" class="input-toggle" data-target="loginPassword" aria-label="Show password">
+              <svg class="icon-eye-open" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="icon-eye-closed" style="display:none" viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 5.2A10.7 10.7 0 0 1 12 5c6.5 0 10 7 10 7a15.6 15.6 0 0 1-3.3 4.2M6.7 6.7C4 8.5 2 12 2 12s3.5 7 10 7a10.6 10.6 0 0 0 3.4-.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+            </button>
+          </div>
+          <p class="form-error">Please enter your password.</p>
+        </div>
+
+        <div class="form-meta-row">
+          <label class="checkbox-row" style="margin-bottom:0;">
+            <input type="checkbox" name="remember">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="link-plain">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-block">Sign In</button>
+
+      </form>
+
+      <div class="auth-divider">New Student</div>
+
+      <p class="auth-footer-text">
+        Don't have an account yet?
+        <a href="register.html">Create one here</a>
+      </p>
+
+      <p class="auth-footer-text">
+        Staff member? <a href="staff-login.html">Sign in here</a>
+      </p>
+    </div>
+
+  </main>
 
 </div>
 
+<script src="auth.js"></script>
 </body>
 </html>

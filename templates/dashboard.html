@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard | Department of Data Science | University of Uyo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="app-shell">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-brand">
+      <span class="brand-mark">DS</span>
+      <div class="brand-text">
+        <h3>Student Portal</h3>
+        <p>Department of Data Science</p>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Primary">
+      <span class="nav-label">Menu</span>
+      <ul>
+        <li><a href="dashboard.html" class="active"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.5"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="1.5"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.5"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.5"/></svg><span>Dashboard</span></a></li>
+        <li><a href="#"><svg viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5A1.5 1.5 0 0 1 4 18.5z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg><span>My Courses</span></a></li>
+        <li><a href="#"><svg viewBox="0 0 24 24"><path d="M6 3h9l5 5v13H6z"/><path d="M15 3v5h5"/><path d="M9 13h6M9 16.5h6"/></svg><span>Grades</span></a></li>
+        <li><a href="#"><svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="16" rx="2"/><path d="M3.5 9.5h17"/><path d="M8 3v3M16 3v3"/></svg><span>Timetable</span></a></li>
+        <li><a href="#"><svg viewBox="0 0 24 24"><path d="M9 11.5 11 13.5 15.5 9"/><circle cx="12" cy="12" r="9"/></svg><span>Assignments</span></a></li>
+        <li><a href="#"><svg viewBox="0 0 24 24"><path d="M4 19V9.5l8-5 8 5V19"/><path d="M9 19v-6h6v6"/></svg><span>Attendance</span></a></li>
+        <li><a href="#"><svg viewBox="0 0 24 24"><rect x="3.5" y="6" width="17" height="12.5" rx="2"/><path d="M3.5 10.5h17"/><circle cx="7.3" cy="14.5" r="1"/></svg><span>Fees</span></a></li>
+      </ul>
+
+      <span class="nav-label">Account</span>
+      <ul>
+        <li><a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg><span>Profile</span></a></li>
+        <li><a href="index.html"><svg viewBox="0 0 24 24"><path d="M9 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3"/><path d="M15 16l4-4-4-4"/><path d="M19 12H9"/></svg><span>Log Out</span></a></li>
+      </ul>
+    </nav>
+
+    <svg class="sidebar-graphic" viewBox="0 0 220 90" aria-hidden="true">
+      <g class="net-lines">
+        <line x1="18" y1="66" x2="60" y2="30"/>
+        <line x1="60" y1="30" x2="112" y2="48"/>
+        <line x1="112" y1="48" x2="160" y2="18"/>
+        <line x1="112" y1="48" x2="150" y2="72"/>
+        <line x1="60" y1="30" x2="20" y2="18"/>
+        <line x1="160" y1="18" x2="200" y2="34"/>
+      </g>
+      <g class="net-nodes">
+        <circle cx="18" cy="66" r="3.4"/>
+        <circle cx="20" cy="18" r="2.6"/>
+        <circle cx="60" cy="30" r="4"/>
+        <circle cx="112" cy="48" r="4.6" class="node-pulse"/>
+        <circle cx="160" cy="18" r="3"/>
+        <circle cx="150" cy="72" r="2.8"/>
+        <circle cx="200" cy="34" r="2.6"/>
+      </g>
+    </svg>
+
+  </aside>
+
+  <!-- ===================== MAIN ===================== -->
+  <div class="main">
+
+    <header class="dash-topbar">
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle menu" aria-expanded="true" aria-controls="sidebar">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="search">
+        <input type="text" placeholder="Search courses, results, notices...">
+        <button aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>
+        </button>
+      </div>
+
+      <div class="dash-topbar-right">
+        <button class="icon-btn" aria-label="Notifications">
+          <svg viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 19a2 2 0 0 0 4 0"/></svg>
+          <span class="dot"></span>
+        </button>
+        <div class="topbar-user">
+          <span class="avatar">GJ</span>
+          <div>
+            <p class="topbar-user-name">Edafioghor Esther</p>
+            <p class="topbar-user-role">100L &middot; Data Science</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="dash-welcome">
+      <h1>Welcome back, Grace</h1>
+      <p>Here's what's happening with your academics this semester.</p>
+    </section>
+
+    <section class="dash-section">
+      <div class="stat-grid">
+        <div class="stat-card accent-indigo">
+          <div class="stat-card-text">
+            <p class="stat-label">Current CGPA</p>
+            <p class="stat-value">4.02</p>
+            <span class="stat-delta up">&uarr; 0.17 this semester</span>
+          </div>
+          <div class="stat-icon"><svg viewBox="0 0 24 24"><path d="M6 3h9l5 5v13H6z"/><path d="M15 3v5h5"/></svg></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-card-text">
+            <p class="stat-label">Enrolled Courses</p>
+            <p class="stat-value">7</p>
+            <span class="stat-delta flat">21 Units</span>
+          </div>
+          <div class="stat-icon"><svg viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5A1.5 1.5 0 0 1 4 18.5z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg></div>
+        </div>
+
+        <div class="stat-card accent-ok">
+          <div class="stat-card-text">
+            <p class="stat-label">Attendance Rate</p>
+            <p class="stat-value">92%</p>
+            <span class="stat-delta up">On track</span>
+          </div>
+          <div class="stat-icon"><svg viewBox="0 0 24 24"><path d="M4 19V9.5l8-5 8 5V19"/><path d="M9 19v-6h6v6"/></svg></div>
+        </div>
+
+        <div class="stat-card accent-warn">
+          <div class="stat-card-text">
+            <p class="stat-label">Pending Assignments</p>
+            <p class="stat-value">3</p>
+            <span class="stat-delta down">2 due this week</span>
+          </div>
+          <div class="stat-icon"><svg viewBox="0 0 24 24"><path d="M9 11.5 11 13.5 15.5 9"/><circle cx="12" cy="12" r="9"/></svg></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <div class="dash-cols">
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>GPA Trend</h3>
+            <a href="#">View Full Result &rarr;</a>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="gpaChart"></canvas>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Attendance</h3>
+            <a href="#">Details &rarr;</a>
+          </div>
+          <div class="chart-wrap small">
+            <canvas id="attendanceChart"></canvas>
+          </div>
+          <p style="text-align:center;margin-top:10px;color:var(--text-muted);font-size:12.5px;">92% present across all courses this semester</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <div class="dash-cols">
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Today's Timetable</h3>
+            <a href="#">Full Timetable &rarr;</a>
+          </div>
+          <ul class="list-rows">
+            <li>
+              <span class="row-time">08:00</span>
+              <div class="row-main">
+                <p class="row-title">Machine Learning I</p>
+                <p class="row-sub">Dr. Uduak George &middot; AI Lab 2</p>
+              </div>
+              <span class="badge badge-neutral">Lecture</span>
+            </li>
+            <li>
+              <span class="row-time">11:00</span>
+              <div class="row-main">
+                <p class="row-title">Big Data Analytics</p>
+                <p class="row-sub">Dr. Mary Johnson &middot; Lecture Hall 3</p>
+              </div>
+              <span class="badge badge-neutral">Lecture</span>
+            </li>
+            <li>
+              <span class="row-time">14:00</span>
+              <div class="row-main">
+                <p class="row-title">Statistical Computing Lab</p>
+                <p class="row-sub">Eng. Daniel Effiong &middot; Computing Lab 1</p>
+              </div>
+              <span class="badge badge-ok">Practical</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Assignments Due</h3>
+            <a href="#">View All &rarr;</a>
+          </div>
+          <ul class="list-rows">
+            <li>
+              <div class="row-main">
+                <p class="row-title">ML Model Evaluation Report</p>
+                <p class="row-sub">Machine Learning I</p>
+              </div>
+              <span class="badge badge-bad">Due Tomorrow</span>
+            </li>
+            <li>
+              <div class="row-main">
+                <p class="row-title">Data Cleaning Exercise</p>
+                <p class="row-sub">Big Data Analytics</p>
+              </div>
+              <span class="badge badge-warn">Due in 4 days</span>
+            </li>
+            <li>
+              <div class="row-main">
+                <p class="row-title">Regression Analysis Task</p>
+                <p class="row-sub">Statistical Computing</p>
+              </div>
+              <span class="badge badge-neutral">Due in 9 days</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Course Registration Progress</h3>
+          <a href="#">Register Courses &rarr;</a>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Units</th>
+                <th>Lecturer</th>
+                <th>Attendance</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cell-strong">DTS 301</td>
+                <td>Machine Learning I</td>
+                <td>3</td>
+                <td>Dr. Uduak George</td>
+                <td>
+                  <div class="progress"><div class="progress-fill" style="width:95%;"></div></div>
+                </td>
+                <td><span class="badge badge-ok">Enrolled</span></td>
+              </tr>
+              <tr>
+                <td class="cell-strong">DTS 305</td>
+                <td>Big Data Analytics</td>
+                <td>3</td>
+                <td>Dr. Mary Johnson</td>
+                <td>
+                  <div class="progress"><div class="progress-fill" style="width:88%;"></div></div>
+                </td>
+                <td><span class="badge badge-ok">Enrolled</span></td>
+              </tr>
+              <tr>
+                <td class="cell-strong">DTS 307</td>
+                <td>Statistical Computing</td>
+                <td>3</td>
+                <td>Eng. Daniel Effiong</td>
+                <td>
+                  <div class="progress"><div class="progress-fill" style="width:90%;"></div></div>
+                </td>
+                <td><span class="badge badge-ok">Enrolled</span></td>
+              </tr>
+              <tr>
+                <td class="cell-strong">DTS 309</td>
+                <td>Cloud Computing Fundamentals</td>
+                <td>2</td>
+                <td>Dr. Emem Bassey</td>
+                <td>
+                  <div class="progress"><div class="progress-fill" style="width:75%;"></div></div>
+                </td>
+                <td><span class="badge badge-warn">Low Attendance</span></td>
+              </tr>
+              <tr>
+                <td class="cell-strong">GST 301</td>
+                <td>Entrepreneurship Studies</td>
+                <td>2</td>
+                <td>Dr. Patience Umoh</td>
+                <td>
+                  <div class="progress"><div class="progress-fill" style="width:97%;"></div></div>
+                </td>
+                <td><span class="badge badge-ok">Enrolled</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="dash-section">
+      <div class="panel-head" style="padding:0 0 6px;">
+        <h3 style="font-family:var(--font-mono);font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">Quick Actions</h3>
+      </div>
+      <div class="quick-actions">
+        <a href="#" class="quick-action">
+          <div class="stat-icon"><svg viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5A1.5 1.5 0 0 1 4 18.5z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5a1.5 1.5 0 0 0 1.5-1.5z"/></svg></div>
+          <span>Register Courses</span>
+        </a>
+        <a href="#" class="quick-action">
+          <div class="stat-icon"><svg viewBox="0 0 24 24"><path d="M6 3h9l5 5v13H6z"/><path d="M15 3v5h5"/></svg></div>
+          <span>View Result Slip</span>
+        </a>
+        <a href="#" class="quick-action">
+          <div class="stat-icon"><svg viewBox="0 0 24 24"><rect x="3.5" y="6" width="17" height="12.5" rx="2"/><path d="M3.5 10.5h17"/></svg></div>
+          <span>Pay School Fees</span>
+        </a>
+        <a href="#" class="quick-action">
+          <div class="stat-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m5 18 4-4 3 3 4-5 3 3"/></svg></div>
+          <span>Download ID Card</span>
+        </a>
+      </div>
+    </section>
+
+    <footer style="margin-top:0;">
+      <p class="footer-bottom">
+        &copy; 2026 Department of Data Science, Faculty of Computing, University of Uyo. All Rights Reserved.
+      </p>
+    </footer>
+
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
