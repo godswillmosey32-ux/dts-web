@@ -71,7 +71,7 @@
   <!-- ===================== FORM SIDE ===================== -->
   <main class="auth-main">
 
-    <a href="index.html" class="auth-back">
+    <a href="{{ url_for('home') }}" class="auth-back">
       <svg viewBox="0 0 24 24"><path d="m11 4-7 8 7 8"/><path d="M4 12h16"/></svg>
       Back to website
     </a>
@@ -178,7 +178,7 @@
 
       <p class="auth-footer-text">
         Already have an account?
-        <a href="login.html">Sign in here</a>
+        <a href="{{ url_for('login') }}">Sign in here</a>
       </p>
     </div>
 
@@ -186,6 +186,6 @@
 
 </div>
 
-<script src="auth.js"></script>
+<script src="{{ url_for('static', filename='js/auth.js') }}"></script>
 </body>
 </html>
