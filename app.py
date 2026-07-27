@@ -1,6 +1,6 @@
 import os
 from flask import Flask, redirect, render_template, request
-app = Flask(name)
+app = Flask(__name__)
 @app.route("/")
 def home():
   return render_template("index.html")
