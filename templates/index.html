@@ -104,7 +104,7 @@
             Research for a smarter future.
           </p>
           <div class="buttons">
-            <a href="/student-portal" class="btn">Student Portal</a>
+            <a href="{{ url_for('student_portal') }}" class="btn">Student Portal</a>
             <a href="/staff-login" class="btn btn-outline-light">Staff Login</a>
           </div>
         </div>
@@ -413,7 +413,7 @@
         <div>
           <h3>Research Links</h3>
           <p><a href="{{ url_for('research') }}">Research Projects</a></p>
-          <p><a href="laboratories.html">Laboratories</a></p>
+          <p><a href="{{ url_for('laboratories') }}">Laboratories</a></p>
           <p><a href="publications.html">Publications</a></p>
           <p><a href="#">Innovation Hub</a></p>
         </div>
