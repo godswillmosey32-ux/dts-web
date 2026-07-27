@@ -80,6 +80,10 @@ def research():
 @app.route("/admin")
 def admin():
   return render_template("admin.html")
+@app.route("/logout")
+def logout():
+    # Clear the user's session here
+    return redirect("/")
 @app.route("/add_student")
 def add_student():
   return render_template("add_student.html")
