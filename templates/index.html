@@ -45,9 +45,10 @@
     </nav>
 
     <div class="sidebar-cta">
-      <a href="/student-portal" class="btn btn-block">Student Portal</a>
-      <a href="/staff-login" class="btn btn-block btn-outline">Staff Login</a>
-    </div>
+      <div class="sidebar-cta">
+    <a href="{{ url_for('student_portal') }}" class="btn btn-block">Student Portal</a>
+    <a href="{{ url_for('staff_login') }}" class="btn btn-block btn-outline">Staff Login</a>
+</div>
 
     <!-- Signature graphic: a small data-network motif -->
     <svg class="sidebar-graphic" viewBox="0 0 220 90" aria-hidden="true">
