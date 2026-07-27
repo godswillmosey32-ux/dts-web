@@ -4,6 +4,9 @@ app = Flask(__name__)
 @app.route("/")
 def home():
   return render_template("index.html")
+@app.route("/staff-login")
+def staff_login():
+    return render_template("staff-login.html")
 @app.route("/login", methods=["GET", "POST"])
 def login():
   if request.method == "POST":
