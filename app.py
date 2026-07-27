@@ -90,4 +90,4 @@ def add_student():
 def student_portal():
   return render_template("student-portal.html")
 if name == "main":
-app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
+  app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
