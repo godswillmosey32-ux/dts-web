@@ -18,9 +18,9 @@ def register():
 def staff_login():
   if request.method == "POST":
      return redirect("/staff")
-    email = request.form['email']
-    password = request.form['password']
-    return "Login successful"
+     email = request.form['email']
+     password = request.form['password']
+     return "Login successful"
   
 @app.route("/dashboard")
 def dashboard():
