@@ -4,9 +4,6 @@ app = Flask(__name__)
 @app.route("/")
 def home():
   return render_template("index.html")
-@app.route("/staff-login")
-def staff_login():
-    return render_template("staff-login.html")
 @app.route("/login", methods=["GET", "POST"])
 def login():
   if request.method == "POST":
@@ -17,6 +14,9 @@ def register():
   if request.method == "POST":
     return redirect("/dashboard")
   return render_template("register.html")
+@app.route("/staff-login")
+def staff_login():
+    return render_template("staff-login.html")
 @app.route("/dashboard")
 def dashboard():
   return render_template("dashboard.html")
