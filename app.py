@@ -10,6 +10,12 @@ def home():
 @app.route("/login", methods=["POST"])
 def login():
 
+@app.route("/register", methods=["POST"])
+def register():
+
+
+
+
     username = request.form["username"]
     password = request.form["password"]
 
