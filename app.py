@@ -14,7 +14,6 @@ def register():
   if request.method == "POST":
     return redirect("/login")
   return render_template("register.html")
-
 @app.route("/staff-login", methods=["GET", "POST"])
 def staff_login():
     if request.method == "POST":
