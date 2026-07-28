@@ -70,8 +70,7 @@
 
   <!-- ===================== FORM SIDE ===================== -->
   <main class="auth-main">
-
-    <a href="index.html" class="auth-back">
+<a href="{{ url_for('home') }}" class="auth-back">
       <svg viewBox="0 0 24 24"><path d="m11 4-7 8 7 8"/><path d="M4 12h16"/></svg>
       Back to website
     </a>
