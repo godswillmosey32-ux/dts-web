@@ -85,7 +85,7 @@
         Signed in successfully. Redirecting to your console&hellip;
       </div>
 
-      <form id="loginForm" novalidate>
+      <form id="loginForm" action="{{ url_for('staff_login') }}" method="POST" novalidate>
 
         <div class="form-group">
           <label for="loginId">Staff ID or Email</label>
@@ -124,7 +124,7 @@
       </p>
 
       <p class="auth-footer-text">
-        Need staff portal access? <a href="contact.html">Contact the department</a>
+       Need staff portal access? <a href="{{ url_for('contact') }}">Contact the department</a>
       </p>
     </div>
 
