@@ -366,7 +366,7 @@ section{
   padding:40px 20px;
   background:
     linear-gradient(180deg, rgba(51,0,90,.72) 0%, rgba(75,0,130,.55) 60%, var(--bg) 100%),
-    url("../static/Images/Class_ computer science.jpg");
+    url("{{ url_for('static', filename='Images/Class_ computer science.jpg') }}" );
   background-size:cover;
   background-position:center;
   color:var(--white);
