@@ -14,11 +14,11 @@ def register():
   if request.method == "POST":
     return redirect("/login")
   return render_template("register.html")
-@app.route("/staff-login", methods=["GET", "POST"])
+@app.route("/staff", methods=["GET", "POST"])
 def staff_login():
     if request.method == "POST":
-        return redirect("/staff")
-    return render_template("staff-login.html")
+        return redirect("/staff_portal")
+    return render_template("staff.html")
 @app.route("/dashboard")
 def dashboard():
   return render_template("dashboard.html")
